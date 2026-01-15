@@ -1,0 +1,77 @@
+{
+  "HEADER": {
+    "NAV": {
+      "COMPANY": "Unternehmen",
+      "PRODUCTS": "Produkte",
+      "CAREER": "Karriere",
+      "CONTACT": "Kontakt"
+    }
+  },
+  "HERO": {
+    "COMPANY": {
+      "TITLE": "Unternehmen",
+      "DESCRIPTION": "Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von Reinräumen, Prüfständen, die Anlagenintegration und den Sonderanlagenbau."
+    },
+    "PRODUCTS": {
+      "TITLE": "Produkte",
+      "DESCRIPTION": "Aus der Halbleiterindustrie kommend, mit einem starken Fokus auf Spitzentechnologie und Innovation, erfüllen unsere Produkte und Dienstleistungen zukunftsweisende Lösungen, die den höchsten Ansprüchen an Präzision, Zuverlässigkeit und Effizienz gerecht werden."
+    }
+  },
+  "CONTENT": {
+    "PARA1": "Die <span class=\"hl\">MBO</span> plant und errichtet Prozessumgebungen wie <span class=\"hl\">Reinräume</span>, Prüf-, Mess- und Klimakammern mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.",
+    "PARA2": "Die <span class=\"hl\">MBO</span> integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B. <span class=\"hl\">MBMW-Tools</span>, <span class=\"hl\">Photomask development systems</span>, <span class=\"hl\">Scanning Electron Microscopes</span>, <span class=\"hl\">Test benches</span>, <span class=\"hl\">Climate Chambers</span>, Cluster, usw., in Prozessumgebungen. Die Leistungen der <span class=\"hl\">MBO</span> umfassen dabei den vollen Projektzyklus.",
+    "SECTION_TITLE": "Single-Point-of-Accountability:"
+  },
+  "TIMELINE": {
+    "GATE": "G",
+    "STEPS": {
+      "INITIALIZATION": "Initialization",
+      "BASIC_ENGINEERING": "Basic Engineering",
+      "OFFER": "Offer",
+      "DETAIL_ENGINEERING": "Detail Engineering",
+      "CONSTRUCTION": "Construction",
+      "COMMISSIONING": "Commissioning",
+      "HANDOVER": "Handover",
+      "PROJECT_END": "Project End"
+    },
+    "NOTES": {
+      "CUSTOMER_REQUEST": "Customer Request",
+      "PROJECT_RELEASE": "Project Release",
+      "OFFER_PLANNING_RELEASE": "Offer Planning Release",
+      "PURCHASE_RELEASE": "Purchase Release",
+      "APPROVAL_CONSTRUCTION": "Approval for Construction",
+      "INSPECTION_RELEASE": "Inspection Release",
+      "STARTUP_RELEASE": "Startup Release"
+    }
+  },
+  "CAREER": {
+    "TITLE": "Karriere",
+    "PARA1": "Werden Sie Teil unseres Teams! Wir suchen ständig nach talentierten und motivierten Mitarbeitern, die mit uns gemeinsam die Zukunft gestalten wollen.",
+    "PARA2": "Bei <span class=\"hl\">MBO Trinity</span> erwarten Sie spannende Projekte, ein innovatives Umfeld und vielfältige Entwicklungsmöglichkeiten.",
+    "OPEN_POSITIONS": "Offene Stellen:",
+    "POSITIONS": {
+      "PROJECT_MANAGER": "Projektleiter (m/w/d) Anlagenbau",
+      "DESIGNER": "Konstrukteur (m/w/d) Reinraumtechnik",
+      "SERVICE_TECHNICIAN": "Servicetechniker (m/w/d)"
+    }
+  },
+  "QR_SECTION": {
+    "TITLE": "Steigen Sie ein in die Welt der <u>MBO</u>",
+    "STEP1": "Scannen des <span class=\"hl\">QR-Codes</span>",
+    "STEP2": "Browser (Chrome oder Safari)",
+    "STEP3": "Menüführung am Handy folgen",
+    "SCAN_ME": "Scan Me"
+  },
+  "FOOTER": {
+    "CONTACT": "<strong>MBO Trinity GmbH</strong> | mail: <a href=\"mailto:office@mbo-trinity.com\">office@mbo-trinity.com</a> | tel: +43 502044-0",
+    "COPYRIGHT": "© mbo trinity gmbh",
+    "PRIVACY": "Privacy Policy",
+    "IMPRINT": "Imprint",
+    "TERMS": "Allgemeine Geschäftsbedingungen"
+  },
+  "COMMON": {
+    "LOGO_ALT": "MBO Trinity Logo",
+    "COMPANY_NAME": "MBO Trinity GmbH",
+    "SLOGAN": "limits are a mindset"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "HEADER": {
+    "NAV": {
+      "COMPANY": "Company",
+      "PRODUCTS": "Products",
+      "CAREER": "Career",
+      "CONTACT": "Contact"
+    }
+  },
+  "HERO": {
+    "COMPANY": {
+      "TITLE": "Company",
+      "DESCRIPTION": "MBO Trinity GmbH is a leading provider of high-precision engineering services and innovative solutions for the construction of cleanrooms, test benches, plant integration and special plant construction."
+    },
+    "PRODUCTS": {
+      "TITLE": "Products",
+      "DESCRIPTION": "Coming from the semiconductor industry, with a strong focus on cutting-edge technology and innovation, our products and services fulfill forward-looking solutions that meet the highest standards of precision, reliability and efficiency."
+    }
+  },
+  "CONTENT": {
+    "PARA1": "<span class=\"hl\">MBO</span> plans and constructs process environments such as <span class=\"hl\">cleanrooms</span>, test, measurement and climate chambers with the necessary systems and aggregates to ensure that the strictest specifications are met and that work processes in these process environments can be carried out safely and efficiently.",
+    "PARA2": "<span class=\"hl\">MBO</span> integrates capital-intensive systems worth double-digit millions of euros, such as <span class=\"hl\">MBMW tools</span>, <span class=\"hl\">photomask development systems</span>, <span class=\"hl\">scanning electron microscopes</span>, <span class=\"hl\">test benches</span>, <span class=\"hl\">climate chambers</span>, clusters, etc., in process environments. <span class=\"hl\">MBO's</span> services encompass the full project cycle.",
+    "SECTION_TITLE": "Single-Point-of-Accountability:"
+  },
+  "TIMELINE": {
+    "GATE": "G",
+    "STEPS": {
+      "INITIALIZATION": "Initialization",
+      "BASIC_ENGINEERING": "Basic Engineering",
+      "OFFER": "Offer",
+      "DETAIL_ENGINEERING": "Detail Engineering",
+      "CONSTRUCTION": "Construction",
+      "COMMISSIONING": "Commissioning",
+      "HANDOVER": "Handover",
+      "PROJECT_END": "Project End"
+    },
+    "NOTES": {
+      "CUSTOMER_REQUEST": "Customer Request",
+      "PROJECT_RELEASE": "Project Release",
+      "OFFER_PLANNING_RELEASE": "Offer Planning Release",
+      "PURCHASE_RELEASE": "Purchase Release",
+      "APPROVAL_CONSTRUCTION": "Approval for Construction",
+      "INSPECTION_RELEASE": "Inspection Release",
+      "STARTUP_RELEASE": "Startup Release"
+    }
+  },
+  "CAREER": {
+    "TITLE": "Career",
+    "PARA1": "Become part of our team! We are constantly looking for talented and motivated employees who want to shape the future together with us.",
+    "PARA2": "At <span class=\"hl\">MBO Trinity</span>, you can expect exciting projects, an innovative environment and diverse development opportunities.",
+    "OPEN_POSITIONS": "Open Positions:",
+    "POSITIONS": {
+      "PROJECT_MANAGER": "Project Manager (m/f/d) Plant Construction",
+      "DESIGNER": "Designer (m/f/d) Cleanroom Technology",
+      "SERVICE_TECHNICIAN": "Service Technician (m/f/d)"
+    }
+  },
+  "QR_SECTION": {
+    "TITLE": "Enter the world of <u>MBO</u>",
+    "STEP1": "Scan the <span class=\"hl\">QR code</span>",
+    "STEP2": "Browser (Chrome or Safari)",
+    "STEP3": "Follow the menu on your phone",
+    "SCAN_ME": "Scan Me"
+  },
+  "FOOTER": {
+    "CONTACT": "<strong>MBO Trinity GmbH</strong> | mail: <a href=\"mailto:office@mbo-trinity.com\">office@mbo-trinity.com</a> | tel: +43 502044-0",
+    "COPYRIGHT": "© mbo trinity gmbh",
+    "PRIVACY": "Privacy Policy",
+    "IMPRINT": "Imprint",
+    "TERMS": "General Terms and Conditions"
+  },
+  "COMMON": {
+    "LOGO_ALT": "MBO Trinity Logo",
+    "COMPANY_NAME": "MBO Trinity GmbH",
+    "SLOGAN": "limits are a mindset"
+  }
+}

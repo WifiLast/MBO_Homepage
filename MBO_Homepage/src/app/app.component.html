@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html [attr.lang]="currentLanguage">
 
 <head>
     <meta charset="utf-8" />
@@ -14,22 +14,28 @@
     <div class="wrap">
         <header>
             <div class="brand">
-                <img src="/logo_small.png" alt="MBO Trinity Logo"
+                <img src="/logo_small.png" [attr.alt]="'COMMON.LOGO_ALT' | translate"
                     style="width:150px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
             </div>
 
             <nav aria-label="Hauptnavigation">
-                <a href="#unternehmen">Unternehmen</a>
-                <a href="#produkte">Produkte</a>
-                <a href="#karriere">Karriere</a>
-                <a href="#kontakt">Kontakt</a>
+                <a href="#unternehmen">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
+                <a href="#produkte">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
+                <a href="#karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
+                <a href="#kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
             </nav>
 
-            <div class="flag" title="AT">
-                <svg viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true">
-                    <rect width="3" height="2" fill="#ed2939" />
-                    <rect y="0.66" width="3" height="0.68" fill="#ffffff" />
-                </svg>
+            <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
+                <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'"
+                    style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
+                    [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" title="Deutsch">
+                    DE
+                </button>
+                <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'"
+                    style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
+                    [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" title="English">
+                    EN
+                </button>
             </div>
         </header>
 
@@ -50,21 +56,16 @@
 
                 <div class="cards">
                     <article class="card" id="unternehmen">
-                        <h3>Unternehmen</h3>
+                        <h3>{{ 'HERO.COMPANY.TITLE' | translate }}</h3>
                         <p>
-                            Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen
-                            Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von
-                            Reinräumen, Prüfständen, die Anlagenintegration und den Sonderanlagenbau.
+                            {{ 'HERO.COMPANY.DESCRIPTION' | translate }}
                         </p>
                     </article>
 
                     <article class="card" id="produkte">
-                        <h3>Produkte</h3>
+                        <h3>{{ 'HERO.PRODUCTS.TITLE' | translate }}</h3>
                         <p>
-                            Aus der Halbleiterindustrie kommend, mit einem starken Fokus auf Spitzentechnologie
-                            und Innovation, erfüllen unsere Produkte und Dienstleistungen zukunftsweisende
-                            Lösungen, die den höchsten Ansprüchen an Präzision, Zuverlässigkeit und Effizienz
-                            gerecht werden.
+                            {{ 'HERO.PRODUCTS.DESCRIPTION' | translate }}
                         </p>
                     </article>
                 </div>
@@ -73,64 +74,49 @@
             <!-- Scrollbarer Inhalt aus dem zweiten Bild (Header ignoriert) -->
             <section class="contentWrap" aria-label="Content">
                 <div class="scrollPanel">
-                    <p class="para">
-                        Die <span class="hl">MBO</span> plant und errichtet Prozessumgebungen wie <span
-                            class="hl">Reinräume</span>, Prüf-, Mess- und Klimakammern
-                        mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen
-                        erfüllt werden
-                        und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden
-                        können.
-                    </p>
+                    <p class="para" [innerHTML]="'CONTENT.PARA1' | translate"></p>
 
-                    <p class="para">
-                        Die <span class="hl">MBO</span> integriert investitionsintensive Anlagen im Wert von 2-stelligen
-                        Millionen Euro Beträgen, wie z.B.
-                        <span class="hl">MBMW-Tools</span>, <span class="hl">Photomask development systems</span>, <span
-                            class="hl">Scanning Electron Microscopes</span>,
-                        <span class="hl">Test benches</span>, <span class="hl">Climate Chambers</span>, Cluster, usw.,
-                        in Prozessumgebungen.
-                        Die Leistungen der <span class="hl">MBO</span> umfassen dabei den vollen Projektzyklus.
-                    </p>
+                    <p class="para" [innerHTML]="'CONTENT.PARA2' | translate"></p>
 
                     <div class="sectionTitle">
                         <span class="bulletDot" aria-hidden="true"></span>
-                        Single-Point-of-Accountability:
+                        {{ 'CONTENT.SECTION_TITLE' | translate }}
                     </div>
 
                     <div class="timeline" role="group" aria-label="Projektphasen">
                         <!-- Lane 1 -->
                         <div class="lane">
-                            <div class="gate"><span>G0</span></div>
-                            <div class="step">Initialization</div>
-                            <div class="gate"><span>G1</span></div>
-                            <div class="step">Basic Engineering</div>
-                            <div class="gate"><span>G2</span></div>
-                            <div class="step">Offer</div>
-                            <div class="gate"><span>G3</span></div>
-                            <div class="step">Detail Engineering</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}0</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.INITIALIZATION' | translate }}</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}1</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.BASIC_ENGINEERING' | translate }}</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}2</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.OFFER' | translate }}</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}3</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.DETAIL_ENGINEERING' | translate }}</div>
                         </div>
                         <div class="under" aria-hidden="false">
-                            <div class="note">Customer Request</div>
-                            <div class="note">Project Release</div>
-                            <div class="note">Offer Planning Release</div>
-                            <div class="note">Purchase Release</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.CUSTOMER_REQUEST' | translate }}</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.PROJECT_RELEASE' | translate }}</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.OFFER_PLANNING_RELEASE' | translate }}</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.PURCHASE_RELEASE' | translate }}</div>
                         </div>
 
                         <!-- Lane 2 -->
                         <div class="lane" style="margin-top:10px;">
-                            <div class="gate"><span>G4</span></div>
-                            <div class="step">Construction</div>
-                            <div class="gate"><span>G5</span></div>
-                            <div class="step">Commissioning</div>
-                            <div class="gate"><span>G6</span></div>
-                            <div class="step">Handover</div>
-                            <div class="gate"><span>G7</span></div>
-                            <div class="step">Project End</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}4</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.CONSTRUCTION' | translate }}</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}5</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.COMMISSIONING' | translate }}</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}6</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.HANDOVER' | translate }}</div>
+                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}7</span></div>
+                            <div class="step">{{ 'TIMELINE.STEPS.PROJECT_END' | translate }}</div>
                         </div>
                         <div class="under" aria-hidden="false">
-                            <div class="note">Approval for Construction</div>
-                            <div class="note">Inspection Release</div>
-                            <div class="note">Startup Release</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.APPROVAL_CONSTRUCTION' | translate }}</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.INSPECTION_RELEASE' | translate }}</div>
+                            <div class="note">{{ 'TIMELINE.NOTES.STARTUP_RELEASE' | translate }}</div>
                         </div>
                     </div>
 
@@ -140,33 +126,42 @@
             </section>
 
             <section class="contentWrap" id="karriere" aria-label="Karriere">
-                <div class="scrollPanel">
-                    <h3 class="sectionTitle" style="margin-top:0;">Karriere</h3>
-                    <p class="para">
-                        Werden Sie Teil unseres Teams! Wir suchen ständig nach talentierten und motivierten
-                        Mitarbeitern,
-                        die mit uns gemeinsam die Zukunft gestalten wollen.
-                    </p>
-                    <p class="para">
-                        Bei <span class="hl">MBO Trinity</span> erwarten Sie spannende Projekte, ein innovatives Umfeld
-                        und
-                        vielfältige Entwicklungsmöglichkeiten.
-                    </p>
-
-                    <div class="sectionTitle">
-                        <span class="bulletDot" aria-hidden="true"></span>
-                        Offene Stellen:
+                <section class="stage" aria-label="QR Section">
+                    <div class="photoCard" aria-label="AR Handy">
+                        <img src="/ar_handy.jpg" alt="AR Experience"
+                            style="max-height: 420px; width: auto; border-radius: 10px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);">
                     </div>
 
-                    <ul class="para" style="list-style: none; padding-left: 0;">
-                        <li style="margin-bottom: 12px;">➢ Projektleiter (m/w/d) Anlagenbau</li>
-                        <li style="margin-bottom: 12px;">➢ Konstrukteur (m/w/d) Reinraumtechnik</li>
-                        <li style="margin-bottom: 12px;">➢ Servicetechniker (m/w/d)</li>
-                    </ul>
+                    <div class="centerText">
+                        <h1 [innerHTML]="'QR_SECTION.TITLE' | translate"></h1>
+                        <ol>
+                            <li [innerHTML]="'QR_SECTION.STEP1' | translate"></li>
+                            <li>{{ 'QR_SECTION.STEP2' | translate }}</li>
+                            <li>{{ 'QR_SECTION.STEP3' | translate }}</li>
+                        </ol>
+                    </div>
 
-                    <!-- filler spacing to make scrolling feel like the reference -->
-                    <div style="height:40px;"></div>
-                </div>
+                    <div class="qrWrap">
+                        <div class="qrCard" aria-label="QR Code">
+                            <img src="/qr_code.png" alt="QR Code" style="width: 100%; height: auto;">
+                        </div>
+
+                        <div class="scanBtn" role="button" [attr.aria-label]="'QR_SECTION.SCAN_ME' | translate">
+
+                        </div>
+                    </div>
+                </section>
+
+                <div class="slogan">{{ 'COMMON.SLOGAN' | translate }}</div>
+
+                <footer>
+                    <div [innerHTML]="'FOOTER.CONTACT' | translate"></div>
+                    <div>
+                        {{ 'FOOTER.COPYRIGHT' | translate }} | <a href="#">{{ 'FOOTER.PRIVACY' | translate }}</a> | <a
+                            href="#">{{ 'FOOTER.IMPRINT' | translate }}</a> | <a href="#">{{ 'FOOTER.TERMS' | translate
+                            }}</a>
+                    </div>
+                </footer>
             </section>
         </main>
     </div>
