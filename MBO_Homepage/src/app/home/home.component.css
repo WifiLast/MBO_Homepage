@@ -10,6 +10,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 84px 0 24px;
+    height: 700px;
     min-height: 300px;
 }
 
