@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MBO Trinity GmbH – Mock</title>
+  <style>
+    :root{
+      --bg0:#021024;
+      --bg1:#062a4f;
+      --bg2:#0a3f74;
+      --card:#0b2a55cc;
+      --line:#1c5aa8;
+      --text:#eaf3ff;
+      --muted:#cfe4ff;
+      --accent:#2d7cff;
+      --radius:28px;
+      --shadow: 0 18px 40px rgba(0,0,0,.45);
+      --border: 2px solid rgba(80,160,255,.55);
+      --mono: Calibri, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:var(--mono);
+      font-size:14pt;
+      color:#ffffff;
+      background: url('/background.png') center center / cover fixed;
+      overflow-x:hidden;
+    }
+    .tech{
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.28;
+      background:
+        linear-gradient(90deg, rgba(120,190,255,.20) 1px, transparent 1px) 0 0 / 96px 96px,
+        linear-gradient(180deg, rgba(120,190,255,.15) 1px, transparent 1px) 0 0 / 96px 96px,
+        repeating-linear-gradient(135deg, rgba(120,190,255,.14) 0 2px, transparent 2px 44px);
+      mix-blend-mode:screen;
+      filter: blur(.2px);
+    }
+    .wrap{ min-height:100%; display:flex; flex-direction:column; }
+
+    /* Header (kept from previous mock) */
+    header{
+      height:92px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:18px 34px;
+      border-bottom:1px solid rgba(120,190,255,.25);
+      background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.06));
+      backdrop-filter: blur(4px);
+    }
+    .brand{ display:flex; align-items:center; gap:14px; min-width:240px; }
+    .brand .wordmark{ display:flex; flex-direction:column; line-height:1.05; }
+    .brand .wordmark strong{ font-size:34px; letter-spacing:.5px; }
+    .brand .wordmark span{ font-size:14px; color:var(--muted); font-weight:600; letter-spacing:.4px; }
+    nav{ display:flex; gap:74px; font-size:22px; letter-spacing:.2px; }
+    nav a{ color:var(--text); text-decoration:none; opacity:.92; }
+    nav a:hover{ opacity:1; }
+    .flag{
+      width:34px; height:22px; border-radius:4px; overflow:hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.25);
+    }
+    .flag svg{ width:100%; height:100%; display:block; }
+
+    main{ flex:1; position:relative; padding:48px 44px 56px; }
+
+    /* HERO (unchanged) */
+    .hero{ position:relative; max-width:1200px; margin:0 auto; padding:42px 0 12px; }
+    .heroRow{ display:flex; align-items:center; gap:34px; justify-content:space-between; }
+    .heroText{ flex:1; padding-right:20px; }
+    .heroImage{ flex:1; text-align:center; max-width:50%; display:flex; align-items:center; justify-content:center; }
+    .heroImage img{ max-width:100%; height:auto; }
+    .shield{ width:190px; height:210px; filter: drop-shadow(0 22px 35px rgba(0,0,0,.55)); opacity:.98; }
+    .heroTitle{ display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:14px; }
+    .heroTitle .big{ font-size:104px; font-weight:800; letter-spacing:2px; line-height:1; }
+    .heroTitle .sub{ font-size:56px; font-weight:700; letter-spacing:.6px; line-height:1.05; opacity:.96; }
+    .tagline{ margin-top:18px; text-align:center; font-size:30px; font-weight:700; text-shadow: 0 10px 28px rgba(0,0,0,.55); }
+    .tagline u{ text-decoration-thickness:3px; text-underline-offset:6px; }
+
+    .cards{
+      max-width:1220px;
+      margin:46px auto 0;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:70px;
+      align-items:stretch;
+    }
+    .card{
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(12,40,85,.78), rgba(8,22,48,.72));
+      border: var(--border);
+      box-shadow: var(--shadow);
+      padding:28px 30px 26px;
+      position:relative;
+      overflow:hidden;
+    }
+    .card:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(700px 180px at 30% 0%, rgba(45,124,255,.25), transparent 65%),
+        radial-gradient(700px 220px at 80% 30%, rgba(120,190,255,.18), transparent 70%);
+      pointer-events:none;
+    }
+    .card > *{ position:relative; }
+    .card h3{
+      margin:0 0 14px;
+      font-size:30px;
+      font-weight:800;
+      letter-spacing:.3px;
+      display:inline-block;
+      padding:4px 12px;
+      border-left:4px solid rgba(255,255,255,.85);
+      background: rgba(0,0,0,.18);
+    }
+    .card p{ margin:0; font-size:18px; line-height:1.6; color:rgba(235,246,255,.92); }
+
+    /* NEW: Scrollable content section (header ignored in this content) */
+    .contentWrap{
+      max-width:1220px;
+      margin:28px auto 0;
+      padding:0 4px;
+    }
+    .scrollPanel{
+      height:520px;              /* scrollable area */
+      overflow:auto;
+      border-radius: 22px;
+      border: 1px solid rgba(120,190,255,.35);
+      background: linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.06));
+      box-shadow: 0 18px 46px rgba(0,0,0,.42);
+      padding:26px 26px 28px;
+      backdrop-filter: blur(3px);
+    }
+    .scrollPanel::-webkit-scrollbar{ width:10px; height:10px; }
+    .scrollPanel::-webkit-scrollbar-thumb{
+      background: rgba(120,190,255,.35);
+      border-radius: 10px;
+      border:2px solid rgba(0,0,0,.25);
+    }
+    .scrollPanel::-webkit-scrollbar-track{ background: rgba(0,0,0,.15); border-radius:10px; }
+
+    .para{
+      font-size:26px;
+      line-height:1.55;
+      color: rgba(235,246,255,.95);
+      text-shadow: 0 10px 22px rgba(0,0,0,.55);
+      margin:0 0 26px;
+    }
+    .para .hl{ text-decoration: underline; text-decoration-thickness:2px; text-underline-offset:6px; }
+
+    .sectionTitle{
+      margin:26px 0 16px;
+      font-size:28px;
+      font-weight:800;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-shadow: 0 10px 22px rgba(0,0,0,.55);
+    }
+    .bulletDot{
+      width:8px; height:8px; border-radius:2px;
+      background: rgba(255,255,255,.9);
+      box-shadow: 0 8px 16px rgba(0,0,0,.45);
+    }
+
+    /* Timeline */
+    .timeline{
+      margin-top:14px;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+    .lane{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+    .step{
+      flex:1 1 120px;
+      min-width: 160px;
+      position:relative;
+      height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:18px;
+      letter-spacing:.2px;
+      color: rgba(240,248,255,.95);
+      background: rgba(85,140,220,.62);
+      border: 1px solid rgba(160,210,255,.35);
+      clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 50%, calc(100% - 24px) 100%, 0 100%, 24px 50%);
+      box-shadow: 0 14px 30px rgba(0,0,0,.35);
+    }
+    .gate{
+      width:56px;
+      height:56px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:900;
+      color:#fff;
+      background: #d81f2a;
+      transform: rotate(45deg);
+      border-radius:8px;
+      box-shadow: 0 14px 26px rgba(0,0,0,.45);
+      border: 1px solid rgba(255,255,255,.22);
+      flex:0 0 auto;
+    }
+    .gate span{ transform: rotate(-45deg); display:block; letter-spacing:.5px; }
+
+    .under{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      padding-left:74px;
+      margin-top:-6px;
+      color: rgba(220,238,255,.92);
+      font-size:18px;
+      text-shadow: 0 10px 22px rgba(0,0,0,.55);
+    }
+    .under .note{
+      min-width: 180px;
+      flex:1 1 160px;
+      opacity:.95;
+    }
+
+    @media (max-width: 1100px){
+      nav{ gap:38px; font-size:20px; }
+      .heroTitle .big{ font-size:84px; }
+      .heroTitle .sub{ font-size:46px; }
+      .shield{ width:160px; height:178px; }
+      .cards{ gap:34px; }
+      .para{ font-size:22px; }
+      .scrollPanel{ height:520px; }
+    }
+    @media (max-width: 860px){
+      header{ padding:14px 18px; }
+      nav{ display:none; }
+      main{ padding:34px 18px 44px; }
+      .heroRow{ flex-direction:column; align-items:center; gap:18px; }
+      .heroTitle{ align-items:center; text-align:center; }
+      .tagline{ font-size:22px; }
+      .cards{ grid-template-columns:1fr; gap:22px; margin-top:30px; }
+      .scrollPanel{ height:540px; padding:18px; }
+      .under{ padding-left:0; }
+      .gate{ width:50px; height:50px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tech" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="/logo_small.png" alt="MBO Trinity Logo" style="width:150px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
+      </div>
+
+      <nav aria-label="Hauptnavigation">
+        <a href="#unternehmen">Unternehmen</a>
+        <a href="#produkte">Produkte</a>
+        <a href="#karriere">Karriere</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="flag" title="AT">
+        <svg viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true">
+          <rect width="3" height="2" fill="#ed2939"/>
+          <rect y="0.66" width="3" height="0.68" fill="#ffffff"/>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="heroRow">
+          <div class="heroText">
+            <!-- Text content goes here -->
+          </div>
+          <div class="heroImage">
+            <img src="/logo_groß.png" alt="MBO Trinity GmbH" style="max-width:100%; height:auto; filter: drop-shadow(0 22px 35px rgba(0,0,0,.55));">
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card" id="unternehmen">
+            <h3>Unternehmen</h3>
+            <p>
+              Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen
+              Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von
+              Reinräumen, Prüfständen, die Anlagenintegration und den Sonderanlagenbau.
+            </p>
+          </article>
+
+          <article class="card" id="produkte">
+            <h3>Produkte</h3>
+            <p>
+              Aus der Halbleiterindustrie kommend, mit einem starken Fokus auf Spitzentechnologie
+              und Innovation, erfüllen unsere Produkte und Dienstleistungen zukunftsweisende
+              Lösungen, die den höchsten Ansprüchen an Präzision, Zuverlässigkeit und Effizienz
+              gerecht werden.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Scrollbarer Inhalt aus dem zweiten Bild (Header ignoriert) -->
+      <section class="contentWrap" aria-label="Content">
+        <div class="scrollPanel">
+          <p class="para">
+            Die <span class="hl">MBO</span> plant und errichtet Prozessumgebungen wie <span class="hl">Reinräume</span>, Prüf-, Mess- und Klimakammern
+            mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden
+            und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.
+          </p>
+
+          <p class="para">
+            Die <span class="hl">MBO</span> integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B.
+            <span class="hl">MBMW-Tools</span>, <span class="hl">Photomask development systems</span>, <span class="hl">Scanning Electron Microscopes</span>,
+            <span class="hl">Test benches</span>, <span class="hl">Climate Chambers</span>, Cluster, usw., in Prozessumgebungen.
+            Die Leistungen der <span class="hl">MBO</span> umfassen dabei den vollen Projektzyklus.
+          </p>
+
+          <div class="sectionTitle">
+            <span class="bulletDot" aria-hidden="true"></span>
+            Single-Point-of-Accountability:
+          </div>
+
+          <div class="timeline" role="group" aria-label="Projektphasen">
+            <!-- Lane 1 -->
+            <div class="lane">
+              <div class="gate"><span>G0</span></div>
+              <div class="step">Initialization</div>
+              <div class="gate"><span>G1</span></div>
+              <div class="step">Basic Engineering</div>
+              <div class="gate"><span>G2</span></div>
+              <div class="step">Offer</div>
+              <div class="gate"><span>G3</span></div>
+              <div class="step">Detail Engineering</div>
+            </div>
+            <div class="under" aria-hidden="false">
+              <div class="note">Customer Request</div>
+              <div class="note">Project Release</div>
+              <div class="note">Offer Planning Release</div>
+              <div class="note">Purchase Release</div>
+            </div>
+
+            <!-- Lane 2 -->
+            <div class="lane" style="margin-top:10px;">
+              <div class="gate"><span>G4</span></div>
+              <div class="step">Construction</div>
+              <div class="gate"><span>G5</span></div>
+              <div class="step">Commissioning</div>
+              <div class="gate"><span>G6</span></div>
+              <div class="step">Handover</div>
+              <div class="gate"><span>G7</span></div>
+              <div class="step">Project End</div>
+            </div>
+            <div class="under" aria-hidden="false">
+              <div class="note">Approval for Construction</div>
+              <div class="note">Inspection Release</div>
+              <div class="note">Startup Release</div>
+            </div>
+          </div>
+
+          <!-- filler spacing to make scrolling feel like the reference -->
+          <div style="height:140px;"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

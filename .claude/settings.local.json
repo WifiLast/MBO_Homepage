@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"c:\\Users\\MartinStark\\Documents\\GitHub\\PLS\\MBO_Homepage\\modify_html.ps1\")",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \"c:\\Users\\MartinStark\\Documents\\GitHub\\PLS\\MBO_Homepage\\add_sticky_header.ps1\")",
+      "Bash(ng generate:*)",
+      "Bash(copy app.component.html homehome.component.html)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
