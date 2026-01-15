@@ -19,10 +19,10 @@
             </div>
 
             <nav aria-label="Hauptnavigation">
-                <a href="#unternehmen">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
-                <a href="#produkte">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
-                <a href="#karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
-                <a href="#kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
+                <a routerLink="/unternehmen" routerLinkActive="active">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
+                <a routerLink="/" fragment="produkte">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
+                <a routerLink="/" fragment="karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
+                <a routerLink="/" fragment="kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
             </nav>
 
             <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
@@ -39,131 +39,7 @@
             </div>
         </header>
 
-        <main>
-            <section class="hero" aria-label="Hero">
-                <div class="heroRow">
-                    <div class="heroColumn">
-                        <!-- Column 1 content goes here -->
-                    </div>
-                    <div class="heroColumn">
-                        <img src="/logo_groß.png" alt="MBO Trinity GmbH"
-                            style="max-width:100%; height:auto; filter: drop-shadow(0 22px 35px rgba(0,0,0,.55));">
-                    </div>
-                    <div class="heroColumn">
-                        <!-- Column 3 content goes here -->
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <article class="card" id="unternehmen">
-                        <h3>{{ 'HERO.COMPANY.TITLE' | translate }}</h3>
-                        <p>
-                            {{ 'HERO.COMPANY.DESCRIPTION' | translate }}
-                        </p>
-                    </article>
-
-                    <article class="card" id="produkte">
-                        <h3>{{ 'HERO.PRODUCTS.TITLE' | translate }}</h3>
-                        <p>
-                            {{ 'HERO.PRODUCTS.DESCRIPTION' | translate }}
-                        </p>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Scrollbarer Inhalt aus dem zweiten Bild (Header ignoriert) -->
-            <section class="contentWrap" aria-label="Content">
-                <div class="scrollPanel">
-                    <p class="para" [innerHTML]="'CONTENT.PARA1' | translate"></p>
-
-                    <p class="para" [innerHTML]="'CONTENT.PARA2' | translate"></p>
-
-                    <div class="sectionTitle">
-                        <span class="bulletDot" aria-hidden="true"></span>
-                        {{ 'CONTENT.SECTION_TITLE' | translate }}
-                    </div>
-
-                    <div class="timeline" role="group" aria-label="Projektphasen">
-                        <!-- Lane 1 -->
-                        <div class="lane">
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}0</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.INITIALIZATION' | translate }}</div>
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}1</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.BASIC_ENGINEERING' | translate }}</div>
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}2</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.OFFER' | translate }}</div>
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}3</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.DETAIL_ENGINEERING' | translate }}</div>
-                        </div>
-                        <div class="under" aria-hidden="false">
-                            <div class="note">{{ 'TIMELINE.NOTES.CUSTOMER_REQUEST' | translate }}</div>
-                            <div class="note">{{ 'TIMELINE.NOTES.PROJECT_RELEASE' | translate }}</div>
-                            <div class="note">{{ 'TIMELINE.NOTES.OFFER_PLANNING_RELEASE' | translate }}</div>
-                            <div class="note">{{ 'TIMELINE.NOTES.PURCHASE_RELEASE' | translate }}</div>
-                        </div>
-
-                        <!-- Lane 2 -->
-                        <div class="lane" style="margin-top:10px;">
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}4</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.CONSTRUCTION' | translate }}</div>
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}5</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.COMMISSIONING' | translate }}</div>
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}6</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.HANDOVER' | translate }}</div>
-                            <div class="gate"><span>{{ 'TIMELINE.GATE' | translate }}7</span></div>
-                            <div class="step">{{ 'TIMELINE.STEPS.PROJECT_END' | translate }}</div>
-                        </div>
-                        <div class="under" aria-hidden="false">
-                            <div class="note">{{ 'TIMELINE.NOTES.APPROVAL_CONSTRUCTION' | translate }}</div>
-                            <div class="note">{{ 'TIMELINE.NOTES.INSPECTION_RELEASE' | translate }}</div>
-                            <div class="note">{{ 'TIMELINE.NOTES.STARTUP_RELEASE' | translate }}</div>
-                        </div>
-                    </div>
-
-                    <!-- filler spacing to make scrolling feel like the reference -->
-                    <div style="height:140px;"></div>
-                </div>
-            </section>
-
-            <section class="contentWrap" id="karriere" aria-label="Karriere">
-                <section class="stage" aria-label="QR Section">
-                    <div class="photoCard" aria-label="AR Handy">
-                        <img src="/ar_handy.jpg" alt="AR Experience"
-                            style="max-height: 420px; width: auto; border-radius: 10px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);">
-                    </div>
-
-                    <div class="centerText">
-                        <h1 [innerHTML]="'QR_SECTION.TITLE' | translate"></h1>
-                        <ol>
-                            <li [innerHTML]="'QR_SECTION.STEP1' | translate"></li>
-                            <li>{{ 'QR_SECTION.STEP2' | translate }}</li>
-                            <li>{{ 'QR_SECTION.STEP3' | translate }}</li>
-                        </ol>
-                    </div>
-
-                    <div class="qrWrap">
-                        <div class="qrCard" aria-label="QR Code">
-                            <img src="/qr_code.png" alt="QR Code" style="width: 100%; height: auto;">
-                        </div>
-
-                        <div class="scanBtn" role="button" [attr.aria-label]="'QR_SECTION.SCAN_ME' | translate">
-
-                        </div>
-                    </div>
-                </section>
-
-                <div class="slogan">{{ 'COMMON.SLOGAN' | translate }}</div>
-
-                <footer>
-                    <div [innerHTML]="'FOOTER.CONTACT' | translate"></div>
-                    <div>
-                        {{ 'FOOTER.COPYRIGHT' | translate }} | <a href="#">{{ 'FOOTER.PRIVACY' | translate }}</a> | <a
-                            href="#">{{ 'FOOTER.IMPRINT' | translate }}</a> | <a href="#">{{ 'FOOTER.TERMS' | translate
-                            }}</a>
-                    </div>
-                </footer>
-            </section>
-        </main>
+        <router-outlet></router-outlet>
     </div>
 </body>
 
