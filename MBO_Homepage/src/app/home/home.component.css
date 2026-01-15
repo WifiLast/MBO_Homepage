@@ -221,7 +221,6 @@ main {
     justify-content: center;
     font-weight: 900;
     color: #fff;
-    background: #d81f2a;
     transform: rotate(45deg);
     border-radius: 8px;
     box-shadow: 0 14px 26px rgba(0, 0, 0, .45);
@@ -229,7 +228,7 @@ main {
 }
 
 /* Dashed line straight down from center of gate */
-.gate::after {
+.gate::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -243,10 +242,21 @@ main {
     z-index: -1;
 }
 
+.gate::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #d81f2a;
+    border-radius: 8px;
+    z-index: 0;
+}
+
 .gate span {
     transform: rotate(-45deg);
     display: block;
     letter-spacing: .5px;
+    position: relative;
+    z-index: 1;
 }
 
 .note {
