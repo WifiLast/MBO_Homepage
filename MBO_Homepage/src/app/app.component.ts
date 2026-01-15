@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [TranslateModule, CommonModule],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, TranslateModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
