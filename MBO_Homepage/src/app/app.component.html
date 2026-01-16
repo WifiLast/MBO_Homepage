@@ -4,10 +4,10 @@
     <header>
         <div class="brand">
             <img src="/logo_small.png" [attr.alt]="'COMMON.LOGO_ALT' | translate"
-                style="width:150px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
+                style="width:170px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
         </div>
 
-        <nav aria-label="Hauptnavigation">
+        <nav  style="position: relative;left:10%" aria-label="Hauptnavigation">
             <a routerLink="/unternehmen" routerLinkActive="active">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
             <a routerLink="/" fragment="produkte">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
             <a routerLink="/" fragment="karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>

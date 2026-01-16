@@ -573,9 +573,7 @@ main {
     }
 
     .timeline {
-        height: 480px;
-        overflow-x: auto;
-        overflow-y: hidden;
+        display: none;
     }
 
     .step {
@@ -714,8 +712,7 @@ main {
     }
 
     .timeline {
-        height: 520px;
-        margin-top: 10px;
+        display: none;
     }
 
     .step {
@@ -847,7 +844,7 @@ main {
     }
 
     .timeline {
-        height: 560px;
+        display: none;
     }
 
     .step {
