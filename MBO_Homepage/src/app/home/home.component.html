@@ -1,14 +1,35 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <div class="heroColumn">
-            <!-- Column 1 content goes here -->
-        </div>
-        <div class="heroColumn">
-            <img src="/logo_gro�.png" alt="MBO Trinity GmbH"
-                style="max-width:100%; height:auto; filter: drop-shadow(0 22px 35px rgba(0,0,0,.55));">
-        </div>
-        <div class="heroColumn">
-            <!-- Column 3 content goes here -->
+        <div class="slideshow-container"
+             (touchstart)="onTouchStart($event)"
+             (touchend)="onTouchEnd($event)">
+            <div class="slide"
+                 *ngFor="let slide of slides; let i = index"
+                 [class.active]="i === currentSlide"
+                 [class.zoom-out]="i === currentSlide">
+                <img [src]="slide" [alt]="'Slide ' + (i + 1)">
+            </div>
+
+            <div class="slideshow-text-overlay">
+                <h1>{{ 'HERO.TITLE' | translate }}</h1>
+                <p>{{ 'HERO.SUBTITLE' | translate }}</p>
+            </div>
+
+            <button class="slide-nav prev" (click)="prevSlide()" aria-label="Previous slide">
+                &#10094;
+            </button>
+            <button class="slide-nav next" (click)="nextSlide()" aria-label="Next slide">
+                &#10095;
+            </button>
+
+            <div class="slide-indicators">
+                <button *ngFor="let slide of slides; let i = index"
+                      class="indicator"
+                      [class.active]="i === currentSlide"
+                      (click)="goToSlide(i)"
+                      [attr.aria-label]="'Go to slide ' + (i + 1)">
+                </button>
+            </div>
         </div>
     </div>
 

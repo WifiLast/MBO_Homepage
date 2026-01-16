@@ -22,6 +22,7 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +32,8 @@ body {
     font-size: 14pt;
     color: #ffffff;
     background: url('/background.png') center center / cover fixed;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 app-root {
