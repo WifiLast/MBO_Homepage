@@ -7,11 +7,10 @@ main {
 /* HERO (unchanged) */
 .hero {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 134px 0 12px;
-    min-height: 100vh;
-    scroll-snap-align: start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 90vh;
 }
 
 .heroRow {
@@ -19,7 +18,8 @@ main {
     align-items: center;
     justify-content: center;
     height: 50%;
-    padding: 0 20px;
+    padding: 0;
+    width: 100%;
 }
 
 .heroColumn {
@@ -27,7 +27,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-height: 200px;
 }
 
 #hero_text {
@@ -39,10 +39,10 @@ main {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 350px;
+    min-height: 400px;
     overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* Text Overlay */
@@ -97,7 +97,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 0;
     transform: scale(1.15);
 }
 
@@ -244,13 +244,14 @@ main {
 
 .cards {
     max-width: 1220px;
-    margin: 46px auto 0;
+    margin: -20px auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
     align-items: stretch;
     position: relative;
     z-index: 100;
+    padding: 0 20px;
 }
 
 .card {
@@ -291,17 +292,14 @@ main {
 .contentWrap {
     max-width: 1220px;
     margin: 0 auto;
-    /* padding: 150px 4px 0; */
-    min-height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 #karriere {
-    padding-top: 100px;
+    padding-top: 0;
 }
 
 .scrollPanel {
@@ -309,11 +307,10 @@ main {
     /* overflow removed */
     border-radius: 22px;
     /* border removed */
-    background: linear-gradient(180deg, rgba(0, 0, 0, .20), rgba(0, 0, 0, .06));
-    box-shadow: 0 18px 46px rgba(0, 0, 0, .42);
+    background: transparent;
+    box-shadow: none;
     padding: 26px 26px 28px;
-    backdrop-filter: blur(3px);
-    margin-top: 100px;
+    margin-top: 0;
 }
 
 
@@ -494,7 +491,7 @@ main {
     }
 
     .hero {
-        padding: 100px 0 12px;
+        padding: 0;
         min-height: auto;
     }
 
@@ -506,7 +503,7 @@ main {
     }
 
     .slideshow-container {
-        min-height: 280px;
+        min-height: 400px;
     }
 
     .slideshow-text-overlay {
@@ -541,7 +538,7 @@ main {
     .cards {
         grid-template-columns: 1fr;
         gap: 22px;
-        margin-top: 30px;
+        margin-top: -60px;
         padding: 0 10px;
     }
 
@@ -563,7 +560,7 @@ main {
 
     .scrollPanel {
         padding: 18px;
-        margin-top: 60px;
+        margin-top: 0;
     }
 
     .para {
@@ -613,16 +610,16 @@ main {
     }
 
     .hero {
-        padding: 80px 0 12px;
+        padding: 0;
     }
 
     .heroRow {
-        padding: 0 5px;
+        padding: 0;
     }
 
     .slideshow-container {
-        min-height: 240px;
-        border-radius: 8px;
+        min-height: 350px;
+        border-radius: 0;
     }
 
     .slideshow-text-overlay {
@@ -666,7 +663,7 @@ main {
 
     .cards {
         gap: 18px;
-        margin-top: 24px;
+        margin-top: -50px;
         padding: 0 5px;
     }
 
@@ -690,12 +687,12 @@ main {
     }
 
     #karriere {
-        padding-top: 60px;
+        padding-top: 0;
     }
 
     .scrollPanel {
         padding: 16px;
-        margin-top: 40px;
+        margin-top: 0;
         border-radius: 16px;
     }
 
@@ -798,7 +795,7 @@ main {
 
 @media (max-width: 480px) {
     .slideshow-container {
-        min-height: 200px;
+        min-height: 300px;
     }
 
     .slideshow-text-overlay {
@@ -821,6 +818,7 @@ main {
     }
 
     .cards {
+        margin-top: -40px;
         gap: 16px;
     }
 

@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'MBO_Homepage';
   currentLanguage = 'de';
+  mobileMenuOpen = false;
 
   constructor(private readonly translate: TranslateService) {
     this.translate.setDefaultLang('de');
@@ -22,5 +23,13 @@ export class AppComponent {
     this.translate.use(lang).subscribe(() => {
       this.currentLanguage = lang;
     });
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
   }
 }

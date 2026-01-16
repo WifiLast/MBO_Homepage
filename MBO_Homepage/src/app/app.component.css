@@ -85,6 +85,94 @@ nav a.active {
     font-weight: 700;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-menu-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .95), rgba(0, 0, 0, .90));
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(120, 190, 255, .25);
+    z-index: 1050;
+    transition: right 0.3s ease;
+    padding-top: 100px;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
+.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+}
+
+.mobile-menu nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 18px 30px;
+    font-size: 20px;
+    opacity: 0.92;
+    border-bottom: 1px solid rgba(120, 190, 255, .15);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu nav a:hover,
+.mobile-menu nav a.active {
+    opacity: 1;
+    font-weight: 700;
+    background: rgba(120, 190, 255, .1);
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1040;
+}
+
+.mobile-menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
 .flag {
     width: 34px;
     height: 22px;
@@ -105,14 +193,141 @@ nav a.active {
         gap: 38px;
         font-size: 20px;
     }
+
+    .brand {
+        min-width: 200px;
+    }
 }
 
 @media (max-width: 860px) {
     header {
         padding: 14px 18px;
+        height: 80px;
+    }
+
+    .brand {
+        min-width: auto;
+    }
+
+    .brand img {
+        width: 120px !important;
+        height: 48px !important;
     }
 
     nav {
         display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+    .header-right {
+        gap: 15px;
+    }
+
+    .language-switcher {
+        gap: 8px !important;
+    }
+
+    .language-switcher button {
+        padding: 4px 8px !important;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 12px 15px;
+        height: 70px;
+    }
+
+    .brand img {
+        width: 100px !important;
+        height: 40px !important;
+    }
+
+    .header-right {
+        gap: 12px;
+    }
+
+    .mobile-menu-button {
+        width: 28px;
+        height: 22px;
+    }
+
+    .hamburger-line {
+        height: 2.5px;
+    }
+
+    .mobile-menu {
+        width: 260px;
+        padding-top: 90px;
+    }
+
+    .mobile-menu nav a {
+        padding: 16px 25px;
+        font-size: 18px;
+    }
+
+    .language-switcher {
+        gap: 6px !important;
+    }
+
+    .language-switcher button {
+        padding: 4px 7px !important;
+        font-size: 13px;
+        border-radius: 3px !important;
+    }
+
+    .tech {
+        background:
+            linear-gradient(90deg, rgba(120, 190, 255, .15) 1px, transparent 1px) 0 0 / 64px 64px,
+            linear-gradient(180deg, rgba(120, 190, 255, .12) 1px, transparent 1px) 0 0 / 64px 64px,
+            repeating-linear-gradient(135deg, rgba(120, 190, 255, .10) 0 2px, transparent 2px 32px);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 12px;
+        height: 65px;
+    }
+
+    .brand img {
+        width: 90px !important;
+        height: 36px !important;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .mobile-menu-button {
+        width: 26px;
+        height: 20px;
+    }
+
+    .hamburger-line {
+        height: 2px;
+    }
+
+    .mobile-menu {
+        width: 240px;
+        padding-top: 80px;
+    }
+
+    .mobile-menu nav a {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .language-switcher {
+        gap: 5px !important;
+    }
+
+    .language-switcher button {
+        padding: 3px 6px !important;
+        font-size: 12px;
     }
 }

@@ -14,19 +14,38 @@
             <a routerLink="/" fragment="kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
         </nav>
 
-        <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
-            <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'"
-                style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
-                [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" title="Deutsch">
-                DE
-            </button>
-            <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'"
-                style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
-                [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" title="English">
-                EN
+        <div class="header-right">
+            <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
+                <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'"
+                    style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
+                    [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" title="Deutsch">
+                    DE
+                </button>
+                <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'"
+                    style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
+                    [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" title="English">
+                    EN
+                </button>
+            </div>
+
+            <button class="mobile-menu-button" (click)="toggleMobileMenu()" [attr.aria-label]="'Menu'" [attr.aria-expanded]="mobileMenuOpen">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </button>
         </div>
     </header>
+
+    <div class="mobile-menu" [class.open]="mobileMenuOpen">
+        <nav aria-label="Mobile Navigation">
+            <a routerLink="/unternehmen" routerLinkActive="active" (click)="closeMobileMenu()">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
+            <a routerLink="/" fragment="produkte" (click)="closeMobileMenu()">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
+            <a routerLink="/" fragment="karriere" (click)="closeMobileMenu()">{{ 'HEADER.NAV.CAREER' | translate }}</a>
+            <a routerLink="/" fragment="kontakt" (click)="closeMobileMenu()">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
+        </nav>
+    </div>
+
+    <div class="mobile-menu-overlay" [class.open]="mobileMenuOpen" (click)="closeMobileMenu()" (keydown.enter)="closeMobileMenu()" (keydown.space)="closeMobileMenu()" tabindex="0" role="button" [attr.aria-label]="'Close menu'"></div>
 
     <router-outlet></router-outlet>
 </div>
