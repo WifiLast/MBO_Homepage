@@ -45,12 +45,16 @@ app-root {
 }
 
 .contentWrap {
-    font-size: 26px !important;
+    font-size: 30px !important;
     min-height: 520px;
 }
 
 .contentWrap .para,
 .contentWrap p,
 .contentWrap li {
-    font-size: 26px !important;
+    font-size: 30px !important;
+}
+
+.para {
+    font-size: 20px;
 }
