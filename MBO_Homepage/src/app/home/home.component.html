@@ -1,20 +1,11 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <div class="slideshow-container"
-             (touchstart)="onTouchStart($event)"
-             (touchend)="onTouchEnd($event)">
-            <div class="slide"
-                 *ngFor="let slide of slides; let i = index"
-                 [class.active]="i === currentSlide"
-                 [class.zoom-out]="i === currentSlide">
-                <img [src]="slide" [alt]="'Slide ' + (i + 1)">
-            </div>
-
-            <div class="slideshow-text-overlay">
-                <h1>{{ 'HERO.TITLE' | translate }}</h1>
-                <p>{{ 'HERO.SUBTITLE' | translate }}</p>
-            </div>
-        </div>
+        <app-slideshow
+            [slides]="slides"
+            [showOverlay]="true"
+            [overlayTitle]="'HERO.TITLE' | translate"
+            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
+        </app-slideshow>
     </div>
 
     <div class="cards">

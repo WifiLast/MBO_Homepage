@@ -1,0 +1,15 @@
+<div class="slideshow-container"
+     (touchstart)="onTouchStart($event)"
+     (touchend)="onTouchEnd($event)">
+    <div class="slide"
+         *ngFor="let slide of slides; let i = index"
+         [class.active]="i === currentSlide"
+         [class.zoom-out]="i === currentSlide">
+        <img [src]="slide" [alt]="'Slide ' + (i + 1)">
+    </div>
+
+    <div class="slideshow-text-overlay" *ngIf="showOverlay">
+        <h1>{{ overlayTitle }}</h1>
+        <p>{{ overlaySubtitle }}</p>
+    </div>
+</div>
