@@ -93,33 +93,4 @@
     </div>
 </section>
 
-<section class="contentWrap" id="karriere" aria-label="Karriere">
-    <section class="stage" aria-label="QR Section">
-        <div class="photoCard" aria-label="AR Handy">
-            <img src="ar_handy.jpg" alt="AR Experience"
-                style="max-height: 420px; width: auto; border-radius: 10px; box-shadow: 0 20px 50px rgba(0,0,0,0.6);">
-        </div>
-
-        <div class="centerText">
-            <h1 [innerHTML]="'QR_SECTION.TITLE' | translate"></h1>
-            <ol>
-                <li [innerHTML]="'QR_SECTION.STEP1' | translate"></li>
-                <li>{{ 'QR_SECTION.STEP2' | translate }}</li>
-                <li>{{ 'QR_SECTION.STEP3' | translate }}</li>
-            </ol>
-        </div>
-
-        <div class="qrWrap">
-            <div class="qrCard" aria-label="QR Code">
-                <img src="https://wifilast.github.io/testmbo.github.com/qr_code.png" alt="QR Code"
-                    style="width: 100%; height: auto;">
-            </div>
-
-            <div class="scanBtn" role="button" [attr.aria-label]="'QR_SECTION.SCAN_ME' | translate">
-
-            </div>
-        </div>
-    </section>
-
-    <div class="slogan">{{ 'COMMON.SLOGAN' | translate }}</div>
-</section>
+<app-karriere-section></app-karriere-section>

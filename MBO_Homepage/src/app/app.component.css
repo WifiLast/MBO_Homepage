@@ -77,6 +77,59 @@ nav {
     letter-spacing: .2px;
 }
 
+nav .nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav .dropdown-toggle::after {
+    content: "▾";
+    font-size: 0.7em;
+    opacity: 0.8;
+}
+
+nav .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 260px;
+    padding: 10px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(120, 190, 255, .25);
+    background: rgba(0, 0, 0, .9);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    z-index: 1200;
+}
+
+nav .dropdown-menu a {
+    display: block;
+    padding: 10px 18px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+nav .dropdown-menu a:hover {
+    background: rgba(120, 190, 255, .12);
+}
+
+nav .nav-item:hover .dropdown-menu,
+nav .nav-item:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 nav a {
     color: var(--text);
     text-decoration: none;
@@ -157,6 +210,26 @@ nav a.active {
     opacity: 1;
     font-weight: 700;
     background: rgba(120, 190, 255, .1);
+}
+
+.mobile-submenu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(120, 190, 255, .15);
+}
+
+.mobile-submenu-label {
+    padding: 10px 30px 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    opacity: .6;
+}
+
+.mobile-submenu a {
+    padding: 12px 40px;
+    font-size: 18px;
 }
 
 .mobile-menu-overlay {
