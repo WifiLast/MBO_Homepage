@@ -39,3 +39,18 @@ app-root {
     display: block;
     min-height: 100%;
 }
+
+.scrollPanel--empty {
+    min-height: 520px;
+}
+
+.contentWrap {
+    font-size: 26px !important;
+    min-height: 520px;
+}
+
+.contentWrap .para,
+.contentWrap p,
+.contentWrap li {
+    font-size: 26px !important;
+}

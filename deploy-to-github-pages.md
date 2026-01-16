@@ -46,7 +46,7 @@ git push origin main
 ## Important Notes
 
 - The `baseHref` and `deployUrl` are both set to `/testmbo.github.com/` in `angular.json`
-- Your site should be accessible at: `https://wifilast.github.io/testmbo.github.com/`
+- Your site should be accessible at: ``
 - The background.png path needs manual fixing because inline CSS isn't processed by Angular's build
 - Make sure all files from the `browser` folder are copied, including:
   - index.html (after fixing background path)

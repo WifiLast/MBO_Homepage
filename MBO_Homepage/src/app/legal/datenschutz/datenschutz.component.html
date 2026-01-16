@@ -1,1 +1,16 @@
-<p>datenschutz works!</p>
+<section class="hero" aria-label="Hero">
+    <div class="heroRow">
+        <app-slideshow
+            [slides]="slides"
+            [showOverlay]="true"
+            [overlayTitle]="'HERO.TITLE' | translate"
+            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
+        </app-slideshow>
+    </div>
+</section>
+
+<section class="contentWrap" aria-label="Content">
+    <div class="scrollPanel scrollPanel--empty"></div>
+</section>
+
+<app-karriere-section></app-karriere-section>

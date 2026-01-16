@@ -12,11 +12,11 @@ import { KarriereSectionComponent } from '../components/karriere-section/karrier
 })
 export class HomeComponent {
   slides = [
-    'https://wifilast.github.io/testmbo.github.com/bilder/ART/Bau/20240415_115933.jpg',
-    'https://wifilast.github.io/testmbo.github.com/bilder/ART/Bau/20240418_071549.jpg',
-    'https://wifilast.github.io/testmbo.github.com/bilder/ART/Bau/20240514_134945.jpg',
-    'https://wifilast.github.io/testmbo.github.com/bilder/ART/Bau/20240514_134951.jpg',
-    'https://wifilast.github.io/testmbo.github.com/bilder/ART/Bau/20240514_135011.jpg',
-    'https://wifilast.github.io/testmbo.github.com/bilder/ART/Bau/20240515_104609.jpg'
+    'Bilder/ART/Bau/20240415_115933.jpg',
+    'Bilder/ART/Bau/20240418_071549.jpg',
+    'Bilder/ART/Bau/20240514_134945.jpg',
+    'Bilder/ART/Bau/20240514_134951.jpg',
+    'Bilder/ART/Bau/20240514_135011.jpg',
+    'Bilder/ART/Bau/20240515_104609.jpg'
   ];
 }

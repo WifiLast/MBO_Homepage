@@ -73,5 +73,55 @@
     "LOGO_ALT": "MBO Trinity Logo",
     "COMPANY_NAME": "MBO Trinity GmbH",
     "SLOGAN": "limits are a mindset"
+  },
+  "ANLAGENINTEGRATION": {
+    "PARA1": "<span class=\"hl\">MBO Trinity GmbH</span> plans and constructs cleanrooms in compliance with ISO 14644-1 cleanroom standards.",
+    "PARA2": "We integrate cleanrooms into existing buildings or plan and construct new cleanroom systems. We realize highly complex high-tech cleanroom systems, e.g., with full-surface laminar flow with a negative-pressure plenum, CG distributors, raised floors and return air ducts with an integrated mu-metal chamber, etc. Our services cover complete cleanroom outfitting, e.g., media supply, machine foundations, exhaust systems, vibration isolation systems, electrical systems, fire protection, explosion protection, gas warning systems, crane systems, air conditioning and more. Comprehensive planning is at the center of every project. For detailed planning we use flow visualization software, FEM software, and BIM systems for 3D planning.",
+    "SECTION_TITLE": "Construction and Acceptance",
+    "PARA3": "Construction is carried out depending on requirements by our qualified installers or our subcontractors.<br>Compliance with safety and operating standards for personnel and machines<br>Coordination, site inspection, PPE, workplace preparation<br>Compliance with budget and installation specifications as well as schedules<br>Validation of functionality through all required tests and acceptance (FAT)<br>Handover of systems, documentation and training<br>Ensuring flawless function and high-quality execution",
+    "SPECS_TITLE": "Specifications",
+    "SPECS": "Specifications our cleanrooms achieve include:<br>Standard for main body installation area: ISO 3 (14644-1)<br>Magnetic field fluctuation tolerances: \\(AC \\le 0.03\\,\\mu\\text{T}\\), \\(DC < 0.03\\,\\mu\\text{T}\\)<br>Temperature stability of ambient air: \\(\\pm 20\\,\\text{mK}\\)<br>Pressure stability: \\(\\pm 1\\,\\text{Pa}\\)<br>Humidity stability: \\(\\pm 0.2\\,\\%\\)<br>Laminar flow downwarded<br>Floor vibration criteria \\(\\le \\mathrm{VC{-}E}\\)"
+  },
+  "PRAEZISIONSKLIMAGERAET": {
+    "PARA1": "<span class=\"hl\">MBO Trinity GmbH</span> builds and integrates high-precision, highly complex solutions for climate control in process environments, as well as in-house developed precision climate device skids such as the A²HTC.",
+    "SECTION_TITLE": "Applications",
+    "PARA2": "Cleanrooms<br>Laboratories<br>Test benches, test stands, climate chambers<br>Separated process environments<br>Protected areas with laminar flow or turbulent mixed flow",
+    "SPECS_TITLE": "Specifications",
+    "SPECS": "Designed for maximum supply reliability and tight specifications, e.g.:<br>Temperature: \\(21\\,^{\\circ}\\mathrm{C}\\) - \\(23\\,^{\\circ}\\mathrm{C}\\); stability \\(\\pm 0.02\\,\\mathrm{K}\\)<br>Relative humidity: \\(35\\,\\%\\) - \\(50\\,\\%\\); stability \\(\\pm 1\\,\\%\\)<br>Pressure: stability \\(\\pm 1\\,\\mathrm{Pa}\\)"
+  },
+  "PRAEZISIONSTERMOSTAT": {
+    "PARA1": "<span class=\"hl\">MBO Trinity GmbH</span> builds and integrates high-precision liquid-to-liquid process thermostats and cooling systems for highly sensitive equipment.",
+    "SECTION_TITLE": "Typical Systems",
+    "PARA2": "MBMW tools<br>Photomask development systems<br>Sputtering tools<br>Scanning electron microscopes<br>Test benches<br>and more",
+    "PARA3": "The systems serve as process cooling for equipment with the highest demands on temperature stability, controllable flow rates and stable pressure. Planning and construction of custom systems tailored to your requirements.",
+    "SPECS_TITLE": "Specification",
+    "SPECS": "Constant supply temperature with stability of \\(\\pm 0.2\\,\\mathrm{K}\\)."
+  },
+  "REINRAUMLOESUNG": {
+    "PARA1": "<span class=\"hl\">MBO Trinity GmbH</span> plans and constructs cleanrooms in compliance with ISO 14644-1 cleanroom standards.",
+    "PARA2": "We integrate cleanrooms into existing buildings or plan and construct new cleanroom systems. We realize highly complex high-tech cleanroom systems, e.g., with full-surface laminar flow with a negative-pressure plenum, CG distributors, raised floors and return air ducts with an integrated mu-metal chamber, etc. Our services cover complete cleanroom outfitting, e.g., media supply, machine foundations, exhaust systems, vibration isolation systems, electrical systems, fire protection, explosion protection, gas warning systems, crane systems, air conditioning and more. Comprehensive planning is at the center of every project. For detailed planning we use flow visualization software, FEM software, and BIM systems for 3D planning.",
+    "SECTION_TITLE": "Construction and Acceptance",
+    "PARA3": "Construction is carried out depending on requirements by our qualified installers or our subcontractors.<br>Compliance with safety and operating standards for personnel and machines<br>Coordination, site inspection, PPE, workplace preparation<br>Compliance with budget and installation specifications as well as schedules<br>Validation of functionality through all required tests and acceptance (FAT)<br>Handover of systems, documentation and training<br>Ensuring flawless function and high-quality execution",
+    "SPECS_TITLE": "Specifications",
+    "SPECS": "Specifications our cleanrooms achieve include:<br>Standard for main body installation area: ISO 3 (14644-1)<br>Magnetic field fluctuation tolerances: \\(AC \\le 0.03\\,\\mu\\text{T}\\), \\(DC < 0.03\\,\\mu\\text{T}\\)<br>Temperature stability of ambient air: \\(\\pm 20\\,\\text{mK}\\)<br>Pressure stability: \\(\\pm 1\\,\\text{Pa}\\)<br>Humidity stability: \\(\\pm 0.2\\,\\%\\)<br>Laminar flow downwarded<br>Floor vibration criteria \\(\\le \\mathrm{VC{-}E}\\)"
+  },
+  "KARRIERE": {
+    "SECTION1_TITLE": "Working at MBO",
+    "SECTION1_PARA1": "At <span class=\"hl\">MBO Trinity</span> we design, plan and realize high-tech process and cleanroom environments where precision, responsibility and innovation are daily practice.",
+    "SECTION1_PARA2": "Our projects operate at the technical limits in the semiconductor, pharma and high-tech industries. We look for people who think ahead, take responsibility and create solutions.",
+    "SECTION1_SUBTITLE": "Why MBO?",
+    "SECTION1_LIST": "Demanding projects on real high-tech facilities:<br>Cleanrooms to ISO 14644<br>Precision climate and process stability systems<br>Interfaces to highly sensitive production tools<br>Projects with internationally leading industry and technology companies",
+    "SECTION2_TITLE": "Responsibility & Trust",
+    "SECTION2_LIST": "Short decision paths<br>Direct contact with project management and executive leadership<br>Ownership from day one<br>Trust instead of micromanagement",
+    "SECTION2_SUBTITLE": "Engineering with substance",
+    "SECTION2_PARA": "We stand for clean planning, traceable solutions and technical excellence rather than compromise. Facts, standards and function matter more than buzzwords.",
+    "SECTION3_TITLE": "Who we are looking for",
+    "SECTION3_PARA": "We look for technicians, engineers and project professionals who work in a structured way, take responsibility, understand technical relations and enjoy solving complex tasks in a team.",
+    "SECTION3_SUBTITLE": "Typical profiles at MBO",
+    "SECTION3_LIST": "Project managers (TGA / cleanroom / plant engineering)<br>HVAC engineers<br>Automation & controls technicians<br>Designers / planners<br>Service & commissioning technicians<br>(motivated juniors and experienced specialists welcome)",
+    "SECTION4_TITLE": "What we offer",
+    "SECTION4_LIST": "Technically challenging tasks with real relevance<br>Modern tools & professional project structures<br>Fair, performance-based compensation<br>Flexible working models depending on role & project<br>Training in a high-tech environment<br>A competent, collegial team that sticks together",
+    "SECTION4_SUBTITLE": "Join MBO now",
+    "SECTION4_PARA": "Want to work on high-end technology projects and looking for an environment where expertise matters?<br>Send us your application or get in touch informally — also on your own initiative."
   }
 }

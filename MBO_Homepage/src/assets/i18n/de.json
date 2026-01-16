@@ -73,5 +73,55 @@
     "LOGO_ALT": "MBO Trinity Logo",
     "COMPANY_NAME": "MBO Trinity GmbH",
     "SLOGAN": "limits are a mindset"
+  },
+  "ANLAGENINTEGRATION": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.",
+    "PARA2": "Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumumsysteme. Dabei realisieren wir hoch komplexe Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Metallkammer, etc. Unsere Leistungen umspannen die komplette Reinraumausstattung wie z.B.: Medienversorgung, Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Brandschutz, Explosionsschutz, Gaswarnanlagen, Krananlagen, Klimatisierung u.v.m. Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.",
+    "SECTION_TITLE": "Errichtung und Abnahme",
+    "PARA3": "Die Errichtung erfolgt je nach Erfordernis mit unseren qualifizierten Monteuren oder mit unseren Sub-Contractoren.<br>Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen<br>Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung<br>Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne<br>Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)<br>Übergabe der Anlagen, Dokumentation und Schulung<br>Gewährleistung der einwandfreien Funktion und der qualitativ hochwertigen Ausführung",
+    "SPECS_TITLE": "Spezifikationen",
+    "SPECS": "Spezifikationen die unsere Reinräume erreichen, sind z.B.:<br>Standard for main body installation area: ISO 3 (14644-1)<br>Magnetic field fluctuation tolerances: \\(AC \\le 0.03\\,\\mu\\text{T}\\), \\(DC < 0.03\\,\\mu\\text{T}\\)<br>Temperature stability of ambient air: \\(\\pm 20\\,\\text{mK}\\)<br>Pressure stability: \\(\\pm 1\\,\\text{Pa}\\)<br>Humidity stability: \\(\\pm 0.2\\,\\%\\)<br>Laminar flow downwarded<br>Floor vibration criteria \\(\\le \\mathrm{VC{-}E}\\)"
+  },
+  "PRAEZISIONSKLIMAGERAET": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> baut und integriert hochpräzise und hochkomplexe Lösungen zur Klimatisierung von Prozessumgebungen sowie eigenentwickelte Skids von Präzisionsklimageräten wie z.B. den A²HTC.",
+    "SECTION_TITLE": "Einsatzbereiche",
+    "PARA2": "Reinräume<br>Labore<br>Test Benches, Prüfstände, Klimakammern<br>Abgegrenzte Prozessumgebungen<br>Schutzbereiche mit Laminarflow oder turbulenter Mischströmung",
+    "SPECS_TITLE": "Spezifikationen",
+    "SPECS": "Ausgelegt für höchste Versorgungssicherheit und engste Spezifikationen, z.B.:<br>Temperatur: \\(21\\,^{\\circ}\\mathrm{C}\\) - \\(23\\,^{\\circ}\\mathrm{C}\\); Stabilität \\(\\pm 0{,}02\\,\\mathrm{K}\\)<br>Rel. Luftfeuchte: \\(35\\,\\%\\) - \\(50\\,\\%\\); Stabilität \\(\\pm 1\\,\\%\\)<br>Druck: Stabilität \\(\\pm 1\\,\\mathrm{Pa}\\)"
+  },
+  "PRAEZISIONSTERMOSTAT": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> baut und integriert hochpräzise Liquid-to-Liquid-Prozessthermostate und Kühlsysteme zur Kühlung hochsensibler Anlagen.",
+    "SECTION_TITLE": "Anwendungsbeispiele",
+    "PARA2": "MBMW-Tools<br>Photomask Development Systems<br>Sputtering Tools<br>Scanning Electron Microscopes<br>Test Benches<br>u.v.m.",
+    "PARA3": "Die Liquid-to-Liquid-Prozessthermostate und Kühlsysteme dienen als Prozesskühlung für Anlagen mit höchsten Anforderungen an Temperaturstabilität, regelbaren Volumenstrom und stabilen Druck. Planung und Errichtung von individuell auf Ihre Anforderungen abgestimmten Systemen.",
+    "SPECS_TITLE": "Spezifikation",
+    "SPECS": "Konstante Vorlauftemperatur mit einer Temperaturstabilität von \\(\\pm 0{,}2\\,\\mathrm{K}\\)."
+  },
+  "REINRAUMLOESUNG": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.",
+    "PARA2": "Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumsysteme. Dabei realisieren wir hoch komplexe Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Metallkammer, etc. Unsere Leistungen umspannen die komplette Reinraumausstattung wie z.B.: Medienversorgung, Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Brandschutz, Explosionsschutz, Gaswarnanlagen, Krananlagen, Klimatisierung u.v.m. Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.",
+    "SECTION_TITLE": "Errichtung und Abnahme",
+    "PARA3": "Die Errichtung erfolgt je nach Erfordernis mit unseren qualifizierten Monteuren oder mit unseren Sub-Contractoren.<br>Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen<br>Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung<br>Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne<br>Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)<br>Übergabe der Anlagen, Dokumentation und Schulung<br>Gewährleistung der einwandfreien Funktion und der qualitativ hochwertigen Ausführung",
+    "SPECS_TITLE": "Spezifikationen",
+    "SPECS": "Spezifikationen die unsere Reinräume erreichen, sind z.B.:<br>Standard for main body installation area: ISO 3 (14644-1)<br>Magnetic field fluctuation tolerances: \\(AC \\le 0.03\\,\\mu\\text{T}\\), \\(DC < 0.03\\,\\mu\\text{T}\\)<br>Temperature stability of ambient air: \\(\\pm 20\\,\\text{mK}\\)<br>Pressure stability: \\(\\pm 1\\,\\text{Pa}\\)<br>Humidity stability: \\(\\pm 0.2\\,\\%\\)<br>Laminar flow downwarded<br>Floor vibration criteria \\(\\le \\mathrm{VC{-}E}\\)"
+  },
+  "KARRIERE": {
+    "SECTION1_TITLE": "Arbeiten bei MBO",
+    "SECTION1_PARA1": "Bei <span class=\"hl\">MBO Trinity</span> entwickeln, planen und realisieren wir hochtechnisierte Prozess- und Reinraumumgebungen, in denen Präzision, Verantwortung und Innovation tägliche Praxis sind.",
+    "SECTION1_PARA2": "Unsere Projekte bewegen sich an der technischen Grenze des Machbaren – in der Halbleiter-, Pharma- und High-Tech-Industrie. Dafür suchen wir Menschen, die mitdenken, Verantwortung übernehmen und Lösungen schaffen.",
+    "SECTION1_SUBTITLE": "Warum MBO?",
+    "SECTION1_LIST": "Anspruchsvolle Projekte an realen High-Tech-Anlagen:<br>Reinräume nach ISO 14644<br>Präzisions-Klima- und Prozessstabilitätssysteme<br>Schnittstellen zu hochsensiblen Produktions-Tools<br>Projekte mit international führenden Industrie- und Technologieunternehmen",
+    "SECTION2_TITLE": "Verantwortung & Vertrauen",
+    "SECTION2_LIST": "Kurze Entscheidungswege<br>Direkter Kontakt zu Projektleitung und Geschäftsführung<br>Eigenverantwortung ab dem ersten Tag<br>Vertrauen statt Mikromanagement",
+    "SECTION2_SUBTITLE": "Technik mit Substanz",
+    "SECTION2_PARA": "Wir stehen für saubere Planung, nachvollziehbare Lösungen und technische Exzellenz statt Kompromisse. Bei uns zählen Fakten, Normen und Funktion – nicht Buzzwords.",
+    "SECTION3_TITLE": "Wen wir suchen",
+    "SECTION3_PARA": "Wir suchen Techniker:innen, Ingenieur:innen und Projektprofis, die strukturiert arbeiten, Verantwortung übernehmen, technische Zusammenhänge verstehen und gerne im Team komplexe Aufgaben lösen.",
+    "SECTION3_SUBTITLE": "Typische Profile bei MBO",
+    "SECTION3_LIST": "Projektleiter:innen (TGA / Reinraum / Anlagenbau)<br>HKLS- / HVAC-Ingenieur:innen<br>Automatisierungs- & Regelungstechniker:innen<br>Konstrukteur:innen / Planer:innen<br>Service- & Inbetriebnahme-Techniker:innen<br>(auch engagierte Einsteiger:innen und erfahrene Spezialisten willkommen)",
+    "SECTION4_TITLE": "Was wir bieten",
+    "SECTION4_LIST": "Technisch anspruchsvolle Aufgaben mit echter Relevanz<br>Moderne Arbeitsmittel & professionelle Projektstrukturen<br>Faire, leistungsgerechte Vergütung<br>Flexible Arbeitsmodelle je nach Rolle & Projekt<br>Weiterbildung im High-Tech-Umfeld<br>Ein kollegiales, kompetentes Team, das zusammenhält",
+    "SECTION4_SUBTITLE": "Jetzt Teil der MBO werden",
+    "SECTION4_PARA": "Du möchtest an High-End-Technologieprojekten mitarbeiten und suchst ein Umfeld, in dem Know-how zählt?<br>Sende uns deine Bewerbung oder nimm unkompliziert Kontakt auf – gerne auch initiativ."
   }
 }

@@ -1,1 +1,48 @@
-<p>kontakt works!</p>
+<section class="hero" aria-label="Hero">
+    <div class="heroRow">
+        <app-slideshow
+            [slides]="slides"
+            [showOverlay]="true"
+            [overlayTitle]="'HERO.TITLE' | translate"
+            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
+        </app-slideshow>
+    </div>
+</section>
+
+<section class="contentWrap" aria-label="Content">
+    <div class="scrollPanel">
+        <div class="kontakt-grid kontakt-grid--text-map">
+            <article class="kontakt-card">
+                <h2 class="kontakt-title">Branch:<br>Puch bei Hallein / Salzburg</h2>
+                <p class="kontakt-meta">Urstein Nord 17<br>A-5412 Puch bei Hallein</p>
+                <p class="kontakt-meta">
+                    Phone: <a class="kontakt-link" href="tel:+435020440">+43 502044-0</a><br>
+                    E-mail: <a class="kontakt-link" href="mailto:office@mbo-services.at">office&#64;mbo-services.at</a>
+                </p>
+                <a class="kontakt-btn" href="#">Detail &amp; Route planner »</a>
+            </article>
+            <div class="kontakt-mapWrap">
+                <iframe class="kontakt-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=13.0725%2C47.7099%2C13.0925%2C47.7299&layer=mapnik&marker=47.7199%2C13.0825"></iframe>
+            </div>
+        </div>
+
+        <div class="kontakt-grid kontakt-grid--map-text">
+            <div class="kontakt-mapWrap">
+                <iframe class="kontakt-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=16.2757%2C48.0949%2C16.2957%2C48.1149&layer=mapnik&marker=48.1049%2C16.2857"></iframe>
+            </div>
+            <article class="kontakt-card">
+                <h2 class="kontakt-title">Branch:<br>Brunn am Gebirge / Niederösterreich</h2>
+                <p class="kontakt-meta">Industriestraße B16, Top B4/01<br>A-2345 Brunn am Gebirge</p>
+                <p class="kontakt-meta">
+                    Phone: <a class="kontakt-link" href="tel:+435020440">+43 502044-0</a><br>
+                    E-mail: <a class="kontakt-link" href="mailto:office@mbo-services.at">office&#64;mbo-services.at</a>
+                </p>
+                <a class="kontakt-btn" href="#">Detail &amp; Route planner »</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<app-karriere-section></app-karriere-section>
