@@ -10,7 +10,8 @@
       "Bash(npm uninstall:*)",
       "Bash(dir:*)",
       "Bash(copy:*)",
-      "Bash(ng serve:*)"
+      "Bash(ng serve:*)",
+      "Bash(powershell.exe -Command \"(Get-Content index.html) -replace ''url\\(/background\\.png\\)'', ''url(/testmbo.github.com/background.png)'' | Set-Content index.html\")"
     ],
     "deny": [],
     "ask": []

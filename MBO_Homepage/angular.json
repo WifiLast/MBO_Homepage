@@ -50,7 +50,9 @@
                   "maximumError": "1MB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/testmbo.github.com/",
+              "deployUrl": "/testmbo.github.com/"
             },
             "development": {
               "optimization": false,
