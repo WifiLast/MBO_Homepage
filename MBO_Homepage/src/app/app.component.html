@@ -1,46 +1,32 @@
-<!doctype html>
-<html [attr.lang]="currentLanguage">
+<div class="tech" aria-hidden="true"></div>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>MBO Trinity GmbH – Mock</title>
+<div class="wrap">
+    <header>
+        <div class="brand">
+            <img src="/logo_small.png" [attr.alt]="'COMMON.LOGO_ALT' | translate"
+                style="width:150px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
+        </div>
 
-</head>
+        <nav aria-label="Hauptnavigation">
+            <a routerLink="/unternehmen" routerLinkActive="active">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
+            <a routerLink="/" fragment="produkte">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
+            <a routerLink="/" fragment="karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
+            <a routerLink="/" fragment="kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
+        </nav>
 
-<body>
-    <div class="tech" aria-hidden="true"></div>
+        <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
+            <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'"
+                style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
+                [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" title="Deutsch">
+                DE
+            </button>
+            <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'"
+                style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
+                [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" title="English">
+                EN
+            </button>
+        </div>
+    </header>
 
-    <div class="wrap">
-        <header>
-            <div class="brand">
-                <img src="/logo_small.png" [attr.alt]="'COMMON.LOGO_ALT' | translate"
-                    style="width:150px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
-            </div>
-
-            <nav aria-label="Hauptnavigation">
-                <a routerLink="/unternehmen" routerLinkActive="active">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
-                <a routerLink="/" fragment="produkte">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
-                <a routerLink="/" fragment="karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
-                <a routerLink="/" fragment="kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
-            </nav>
-
-            <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
-                <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'"
-                    style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
-                    [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" title="Deutsch">
-                    DE
-                </button>
-                <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'"
-                    style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
-                    [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" title="English">
-                    EN
-                </button>
-            </div>
-        </header>
-
-        <router-outlet></router-outlet>
-    </div>
-</body>
-
-</html>
+    <router-outlet></router-outlet>
+</div>
