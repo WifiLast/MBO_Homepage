@@ -103,6 +103,8 @@
   display:flex;
   align-items:center;   /* statt center */
 }
+.screen.tight-top{ padding-top: 0; }
+.screen.tight-bottom{ padding-bottom: 0; }
 .screen > .wrap,
 .screen > .heroCenter{
   width:100%;            /* WICHTIG: Content bekommt Breite */
@@ -254,6 +256,7 @@
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(123,210,255,.25);
   box-shadow: 0 18px 45px rgba(0,0,0,.40);
+  position: relative; overflow: hidden;
 }
 .yearBox .year{
   font-size: 28px;
@@ -349,7 +352,7 @@
 }
 
 /* responsive */
-@media (max-width: 980px){
+@media (max-width: 680px){
   .menu{ display:none; }
   .twoColGrid{ grid-template-columns: 1fr; }
   .subGrid{ grid-template-columns: 1fr; }
@@ -656,34 +659,42 @@
   .uBottom{ grid-template-columns: 1fr; }
   .uTriangle::after{ width: 70%; }
 }
-/* Unternehmen (Folie 2) */
+/* Unternehmen */
 .uSection{
-  align-items: flex-start;     /* nicht in die Mitte kleben */
-  padding-top: 70px;           /* Abstand nach oben wie Folie */
-  padding-bottom: 40px;
+  display:block;
+  padding: 70px 0 40px;
 }
 
-/* Grid: links Text, rechts MBO-Panel */
 .uGrid{
-  display: grid;
-  grid-template-columns: 720px 520px;
-  justify-content: space-between;
-  align-items: start;
-  gap: 40px;
+  display:grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(300px, 520px);
+  gap: 24px;
+  align-items:start;
 }
 
-/* rechte Seite wirklich rechts */
-.uRight{ justify-self: end; }
-
-/* Responsive */
-@media (max-width: 1260px){
-  .uGrid{ grid-template-columns: 1fr 520px; }
+.uPanel{
+  width: 100%;        /* statt 520px fix */
+  max-width: 520px;
 }
-@media (max-width: 980px){
-  .uSection{ padding-top: 30px; }
+
+/* Text links darf wirklich kleiner werden */
+.uLeft{ 
+  min-width: 0;        /* wichtig für Grid! */
+  max-width: 720px;
+}
+
+/* Rechte Spalte bleibt rechts */
+.uRight{
+  justify-self:end;
+  min-width: 0;
+}
+
+/* Mobile: erst wirklich spät stapeln */
+@media (max-width: 680px){
   .uGrid{ grid-template-columns: 1fr; }
-  .uRight{ justify-self: start; }
+  .uRight{ justify-self:start; }
 }
+
 /* ===== Folie-Look für Unternehmen rechts ===== */
 .uRight.uFolie .uPanel{
   background: transparent !important;
@@ -757,4 +768,219 @@
 /* Optional: Engineering etwas weiter links */
 .uRight.uFolie .uEng{
   padding-left: 0;
+}
+/* Folie 2 – final touches */
+.uRight.uFolie .uTriangle{
+  height: 92px;          /* mehr Platz */
+  margin: 10px 0 14px;
+}
+.uRight.uFolie .uTriangle::before{
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  border-bottom: 88px solid rgba(255,255,255,.20);
+  top: 0;
+}
+
+/* Abstand oben zwischen Title und Logo wie Folie */
+.uRight.uFolie .uTitle{
+  margin: 0 0 14px;
+}
+
+/* Text links: etwas weiter “rein”, wie Folie */
+.uLeft{
+  padding-top: 14px;
+}
+.uLeft p{
+  max-width: 700px;
+  line-height: 1.8;
+}
+/* ✅ ganz unten in deine CSS-Datei */
+.screen.twoCol.tight-bottom,
+.screen.twoCol.tight-top{
+  min-height: auto;
+  height: auto;
+}
+/* TwoCol-Sections sollen oben starten (kein vertikales Zentrieren) */
+.screen.twoCol{
+  align-items: flex-start;
+}
+/* === Story-Look links === */
+.storyTitle{
+  margin: 0 0 10px;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  text-shadow: 0 14px 40px rgba(0,0,0,.55);
+}
+.storyLead{
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.75;
+  opacity: .95;
+  max-width: 760px;
+}
+
+/* Chips */
+.chips{ display:flex; flex-wrap:wrap; gap:10px; margin: 0 0 18px; }
+.chip{
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.28);
+  border: 1px solid rgba(140,220,255,.22);
+  box-shadow: 0 14px 35px rgba(0,0,0,.35);
+  backdrop-filter: blur(10px);
+}
+
+/* Story blocks: kleine “Cards” links */
+.storyBlock{
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.04));
+  border: 1px solid rgba(140,220,255,.20);
+  box-shadow: 0 18px 45px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.storyBlock::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background: radial-gradient(700px 120px at -10% 30%, rgba(120,210,255,.22), transparent 60%);
+  opacity: .85;
+  pointer-events:none;
+}
+.storyBlock h3{
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: .02em;
+}
+.storyBlock p{ margin:0; line-height: 1.65; opacity:.92; }
+
+.storyBlock:hover{
+  transform: translateY(-2px);
+  border-color: rgba(140,220,255,.34);
+  box-shadow: 0 24px 60px rgba(0,0,0,.55), 0 0 30px rgba(120,210,255,.10);
+}
+
+/* === Timeline rechts: gleicher Abstand + “leben” === */
+.rightStack{
+  gap: 18px;           /* gleichmäßig */
+  padding-top: 0;      /* weg mit extra Luft */
+}
+
+/* Bonus: subtiler “Scanline” über die ganze Section */
+.screen.twoCol{
+  position: relative;
+}
+.screen.twoCol::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, transparent, rgba(120,210,255,.06), transparent);
+  opacity:.55;
+  mix-blend-mode: screen;
+  animation: scan 6.5s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes scan{
+  0%{ transform: translateY(-40%); opacity:.25; }
+  50%{ transform: translateY(30%); opacity:.55; }
+  100%{ transform: translateY(-40%); opacity:.25; }
+}
+/* TwoCol: nicht vertikal zentrieren -> verhindert "Luftloch" */
+.screen.twoCol{
+  align-items: flex-start;
+  padding-top: 44px;          /* Platz wegen sticky nav */
+  padding-bottom: 44px;
+  min-height: auto;           /* wichtig: kein 520px Zwang */
+}
+
+/* falls du tight-top/bottom verwendest */
+.screen.twoCol.tight-top{ padding-top: 24px; }
+.screen.twoCol.tight-bottom{ padding-bottom: 24px; }
+/* Links: bessere Lesbarkeit + "premium" */
+.leftText{
+  max-width: 760px;
+  position: relative;
+}
+
+/* Absätze rhythmischer + visuell verbunden */
+.leftText p{
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: .01em;
+  opacity: .95;
+  text-shadow: 0 14px 38px rgba(0,0,0,.55);
+}
+
+/* Feine Separator-Line zwischen den Absätzen (ohne Text ändern) */
+.leftText p + p{
+  position: relative;
+  padding-top: 14px;
+}
+.leftText p + p::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 78%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(120,210,255,.35), rgba(120,210,255,0));
+  opacity: .45;
+}
+/* Rechte Spalte: gleicher Abstand immer */
+.rightStack{
+  gap: 18px;        /* fix und konstant */
+  padding-top: 0;   /* nimmt dir "extra Luft" weg */
+}
+
+/* Cards hochwertiger */
+.yearBox{
+  background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+  border: 1px solid rgba(140,220,255,.22);
+  box-shadow: 0 22px 55px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter: blur(12px);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+/* dezenter "Edge Glow" */
+.yearBox::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius: 22px;
+  background: radial-gradient(600px 120px at 20% 20%, rgba(120,210,255,.20), transparent 60%);
+  opacity: .9;
+  pointer-events:none;
+}
+
+/* Hover macht’s lebendig */
+.yearBox:hover{
+  transform: translateY(-2px);
+  border-color: rgba(140,220,255,.35);
+  box-shadow: 0 28px 70px rgba(0,0,0,.60), 0 0 32px rgba(120,210,255,.10);
+}
+.screen.twoCol{
+  position: relative;
+}
+.screen.twoCol::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, transparent, rgba(120,210,255,.06), transparent);
+  opacity:.55;
+  mix-blend-mode: screen;
+  animation: scan 7s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes scan{
+  0%{ transform: translateY(-40%); opacity:.25; }
+  50%{ transform: translateY(30%); opacity:.55; }
+  100%{ transform: translateY(-40%); opacity:.25; }
 }
