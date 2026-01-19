@@ -51,8 +51,8 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/testmbo.github.com/",
-              "deployUrl": "/testmbo.github.com/"
+              "baseHref": "",
+              "deployUrl": ""
             },
             "development": {
               "optimization": false,

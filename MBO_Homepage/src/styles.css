@@ -31,7 +31,7 @@ body {
     font-family: var(--mono);
     font-size: 14pt;
     color: #ffffff;
-    background: url('https://wifilast.github.io/testmbo.github.com/background.png') center center / cover fixed;
+    background: url('background.png') center center / cover fixed;
     overflow-y: scroll;
 }
 
@@ -56,5 +56,5 @@ app-root {
 }
 
 .para {
-    font-size: 20px;
+    font-size: 2cm;
 }
