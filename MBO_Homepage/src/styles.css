@@ -31,7 +31,7 @@ body {
     font-family: var(--mono);
     font-size: 14pt;
     color: #ffffff;
-    background: url('/background.png') center center / cover fixed;
+    background: url('../public/background.png') center center / cover fixed;
     overflow-y: scroll;
 }
 
