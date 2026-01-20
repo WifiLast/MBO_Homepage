@@ -1,31 +1,33 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <app-slideshow
-            [slides]="slides"
-            [showOverlay]="true"
-            [overlayTitle]="'HERO.TITLE' | translate"
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
 </section>
 
 <section class="contentWrap" aria-label="Content">
-    <div class="scrollPanel">
-        <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA1' | translate"></p>
+    <div class="content-row">
+        <div class="scrollPanel">
+            <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA1' | translate"></p>
 
-        <div class="sectionTitle">
-            <span class="bulletDot" aria-hidden="true"></span>
-            {{ 'PRAEZISIONSTERMOSTAT.SECTION_TITLE' | translate }}
+            <div class="sectionTitle">
+                <span class="bulletDot" aria-hidden="true"></span>
+                {{ 'PRAEZISIONSTERMOSTAT.SECTION_TITLE' | translate }}
+            </div>
+            <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA2' | translate"></p>
+
+            <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA3' | translate"></p>
+
+            <div class="sectionTitle">
+                <span class="bulletDot" aria-hidden="true"></span>
+                {{ 'PRAEZISIONSTERMOSTAT.SPECS_TITLE' | translate }}
+            </div>
+            <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.SPECS' | translate"></p>
         </div>
-        <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA2' | translate"></p>
-
-        <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA3' | translate"></p>
-
-        <div class="sectionTitle">
-            <span class="bulletDot" aria-hidden="true"></span>
-            {{ 'PRAEZISIONSTERMOSTAT.SPECS_TITLE' | translate }}
+        <div class="model-wrapper">
+            <model-viewer src="/CT2_0.glb" alt="CT2 Model" auto-rotate camera-controls></model-viewer>
         </div>
-        <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.SPECS' | translate"></p>
     </div>
 </section>
 

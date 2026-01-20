@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { SlideshowComponent } from '../../components/slideshow/slideshow.component';
@@ -15,21 +15,22 @@ declare global {
   selector: 'app-praezisionstermostat',
   imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent],
   templateUrl: './praezisionstermostat.component.html',
-  styleUrl: './praezisionstermostat.component.css'
+  styleUrl: './praezisionstermostat.component.css',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PraezisionstermostatComponent implements AfterViewInit, OnDestroy {
   private langChangeSub?: Subscription;
 
   slides = [
-    'Bilder/ART/Bau/20240415_115933.jpg',
-    'Bilder/ART/Bau/20240418_071549.jpg',
-    'Bilder/ART/Bau/20240514_134945.jpg',
-    'Bilder/ART/Bau/20240514_134951.jpg',
-    'Bilder/ART/Bau/20240514_135011.jpg',
-    'Bilder/ART/Bau/20240515_104609.jpg',
+    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240418_071549.jpg',
+    '/Bilder/ART/Bau/20240514_134945.jpg',
+    '/Bilder/ART/Bau/20240514_134951.jpg',
+    '/Bilder/ART/Bau/20240514_135011.jpg',
+    '/Bilder/ART/Bau/20240515_104609.jpg',
   ];
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService) { }
 
   ngAfterViewInit(): void {
     this.typesetMath();

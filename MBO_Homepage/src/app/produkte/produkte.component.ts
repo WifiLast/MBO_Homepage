@@ -3,20 +3,21 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { SlideshowComponent } from '../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../components/karriere-section/karriere-section.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-produkte',
-  imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent],
+  imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent, RouterModule],
   templateUrl: './produkte.component.html',
   styleUrl: './produkte.component.css'
 })
 export class ProdukteComponent {
   slides = [
-    'Bilder/ART/Bau/20240415_115933.jpg',
-    'Bilder/ART/Bau/20240418_071549.jpg',
-    'Bilder/ART/Bau/20240514_134945.jpg',
-    'Bilder/ART/Bau/20240514_134951.jpg',
-    'Bilder/ART/Bau/20240514_135011.jpg',
-    'Bilder/ART/Bau/20240515_104609.jpg',
+    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240418_071549.jpg',
+    '/Bilder/ART/Bau/20240514_134945.jpg',
+    '/Bilder/ART/Bau/20240514_134951.jpg',
+    '/Bilder/ART/Bau/20240514_135011.jpg',
+    '/Bilder/ART/Bau/20240515_104609.jpg',
   ];
 }

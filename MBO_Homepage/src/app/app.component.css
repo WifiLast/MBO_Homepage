@@ -3,16 +3,13 @@
     inset: 0;
     pointer-events: none;
     opacity: .28;
-    background:
-        linear-gradient(90deg, rgba(120, 190, 255, .20) 1px, transparent 1px) 0 0 / 96px 96px,
-        linear-gradient(180deg, rgba(120, 190, 255, .15) 1px, transparent 1px) 0 0 / 96px 96px,
-        repeating-linear-gradient(135deg, rgba(120, 190, 255, .14) 0 2px, transparent 2px 44px);
     mix-blend-mode: screen;
     filter: blur(.2px);
 }
-.navigation{
+
+.navigation {
     position: relative;
-    left:10%;
+    left: 10%;
 }
 
 .wrap {
