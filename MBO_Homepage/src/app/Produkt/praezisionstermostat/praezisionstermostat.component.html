@@ -4,36 +4,50 @@
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
+
+    <div class="cards">
+        <article class="card invisible-card">
+            <h3>Placeholder</h3>
+            <p>
+                This card is invisible
+            </p>
+        </article>
+
+        <article class="card" id="praezisionstermostat">
+            <h3>Cooling Tower 2.0</h3>
+            <p>
+                Der Cooling Tower CT 2.0 als Liquid-to-Liquid-Prozessthermostat dient als Prozesskühlung für Anlagen mit
+                höchster Anforderung an Temper-aturstabilität, definierten Volumenstrom, stabilen Druck und
+                Versorgungssicherheit mit einer abgeführten Wärmemenge von bis zu 800 kW. </p>
+        </article>
+    </div>
 </section>
 
 <section class="contentWrap" aria-label="Content">
     <div class="content-row">
         <div class="scrollPanel">
-            <p class="para">
-                {{ 'PRAEZISIONSTERMOSTAT.PARA1_PRE' | translate }}<span class="hl">MBO Trinity GmbH</span>{{
-                'PRAEZISIONSTERMOSTAT.PARA1_POST' | translate }}
-            </p>
+                    <p>
+            Die MBO Trinity GmbH baut und integriert hochpräzise Liquid-to-Liquid-Prozessthermostate und Kühlsysteme zur
+            Kühlung von hochsensiblen Anlagen wie z.B.: MBMW-Tools, Photomask Development Systems, Sputtering Tools,
+            Scanning Electron Microscopes, Test Benches, usw.
+        </p>
+        <p>
+            Die Kühlsysteme und Prozessthermostate sind für höchste Versorgungssicherheit und für die Einhaltung engster
+            Spezifikationen konzipiert.
+        </p>
 
-            <div class="sectionTitle">
-                <span class="bulletDot" aria-hidden="true"></span>
-                {{ 'PRAEZISIONSTERMOSTAT.SECTION_TITLE' | translate }}
-            </div>
-            <p class="para">
-                {{ 'PRAEZISIONSTERMOSTAT.PARA2_LINE1' | translate }}<br>
-                {{ 'PRAEZISIONSTERMOSTAT.PARA2_LINE2' | translate }}<br>
-                {{ 'PRAEZISIONSTERMOSTAT.PARA2_LINE3' | translate }}<br>
-                {{ 'PRAEZISIONSTERMOSTAT.PARA2_LINE4' | translate }}<br>
-                {{ 'PRAEZISIONSTERMOSTAT.PARA2_LINE5' | translate }}<br>
-                {{ 'PRAEZISIONSTERMOSTAT.PARA2_LINE6' | translate }}
-            </p>
-
-            <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.PARA3' | translate"></p>
-
-            <div class="sectionTitle">
-                <span class="bulletDot" aria-hidden="true"></span>
-                {{ 'PRAEZISIONSTERMOSTAT.SPECS_TITLE' | translate }}
-            </div>
-            <p class="para" [innerHTML]="'PRAEZISIONSTERMOSTAT.SPECS' | translate"></p>
+        <p>
+            Die Liquid-to-Liquid-Prozessthermostate und Kühlsysteme dienen als Prozesskühlung für Anlagen mit höchster
+            Anforderung an Temperaturstabilität, regelbaren Volumenstrom und stabilen Druck.
+        </p>
+        <p>
+            Die Kühlsysteme sind für die Einhaltung einer konstanten Vorlauftemperatur mit einer Temperaturstabilität
+            von ± 0,2 K konzipiert.
+        </p>
+        <p>
+            Planung und Errichtung von individuell auf Ihre Anforderung abgestimmte Liquid-to-Liquid-Prozessthermostaten
+            und Kühlsysteme.
+        </p>
         </div>
         <div class="model-wrapper">
             <model-viewer src="/CT2_0.glb" alt="CT2 Model" auto-rotate camera-controls disable-zoom
