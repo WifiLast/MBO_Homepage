@@ -1,3 +1,8 @@
+:host{
+  --content-max: 1500px;
+  --gutter: 18px; /* oder clamp(18px, 4vw, 60px) wenn du willst */
+}
+
 :host { display:block; }
 
 .page{
@@ -14,10 +19,11 @@
 .topbar, main, .footerLine { position:relative; z-index:1; }
 
 .wrap{
-  max-width: 1220px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 var(--gutter);
 }
+
 
 /* TOP NAV */
 .topbar{
@@ -30,14 +36,15 @@
 }
 
 .topbarInner{
-  max-width: 1220px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 18px 18px;
+  padding: 18px var(--gutter);
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:18px;
 }
+
 
 .brand{
   display:flex;
@@ -114,29 +121,21 @@
 .mini{ min-height: 220px; }
 
 .footerLine{
-  max-width: 1220px;
+  max-width: var(--content-max);
   margin: 10px auto 0;
-  padding: 0 18px 10px;
-  opacity:.85;
-  display:flex;
-  justify-content:space-between;
-  gap: 12px;
-  font-size: 13px;
-  flex-wrap:wrap;
+  padding: 0 var(--gutter) 10px;
 }
+
 
 /* HERO */
 .hero{ min-height: 520px; }
 .heroCenter{
   width:100%;
-  max-width: 1220px;
+  max-width: var(--content-max); /* statt 12500px */
   margin: 0 auto;
-  padding: 0 18px;
-  position:relative;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  padding: 0 var(--gutter);
 }
+
 .heroLogoWrap{
   width: min(620px, 92vw);
   display:flex;
@@ -161,10 +160,11 @@
 /* two column screens */
 .twoColGrid{
   display:grid;
-  grid-template-columns: 1.1fr 0.6fr;
-  gap: 25px;
+  grid-template-columns: minmax(0, 1fr) 460px; /* links rest, rechts fix */
+  gap: 32px;                                  /* wie oben */
   align-items:start;
 }
+
 
 .glass{
   background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06));
@@ -243,75 +243,122 @@
   gap: 14px;
   padding-top: 8px;
 }
-.yearBox{
-  padding: 14px 22px;
-  min-height: 105px;
-  border-radius: 22px;
+/* timeline boxes */
+.rightStack{
+  display:flex;
+  flex-direction:column;
+  gap: 14px;
+  padding-top: 8px;
+}
 
-  /* Glas-Look wie deine Cards */
+/* === YearBox: Glas + Content centered + Watermark centered === */
+.yearBox{
+  padding: 18px 26px;
+  min-height: 120px;
+  border-radius: 24px;
+
   background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
-  border: 1px solid rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.16);
   box-shadow: 0 22px 55px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.10);
   backdrop-filter: blur(12px);
 
-  /* Text mittig + vertikal */
+  position: relative;
+  overflow: hidden;
+
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   text-align:center;
-
-  position: relative;
-  overflow: hidden;
 }
 
-/* Watermark: sichtbar, aber safe (nicht abgeschnitten) */
-.yearBox::after{
-  content: attr(data-year);
+/* Glow ganz hinten */
+.yearBox::before{
+  content:"";
   position:absolute;
-  inset: -10px;                 /* verhindert Abschneiden */
-  display:grid;
-  place-items:center;
-  font-size: clamp(64px, 8vw, 110px);
-  font-weight: 900;
-  letter-spacing: .06em;
-  opacity: .10;                 /* glassig */
-  color: rgba(255,255,255,1);
+  inset:-2px;
+  border-radius: 22px;
+  background: radial-gradient(600px 120px at 20% 20%, rgba(120,210,255,.20), transparent 60%);
+  opacity: .9;
   pointer-events:none;
   z-index: 0;
 }
 
-/* Inhalte über Watermark */
-.yearBox .year{
-  width: 100%;
-  text-align: center;
-  margin: 0 0 4px;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1.05;
-}
+/* Watermark mittig (horizontal + vertikal) */
+.yearBox::after{
+  content: attr(data-year);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
 
-.yearBox .txt{
-  position: relative;
+  line-height: 1;       /* wichtig gegen "Absacken" */
+  transform: none;
+
+  font-size: clamp(56px, 7vw, 105px);
+  font-weight: 900;
+  letter-spacing: .06em;
+  opacity: .2;
+  color: rgba(255,255,255,1);
+  white-space: nowrap;
+  pointer-events: none;
+
   z-index: 1;
 }
 
-/* Abstände kompakter */
+/* Content immer über Watermark */
+.yearBox .year,
+.yearBox .txt{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
 .yearBox .year{
   margin: 0 0 4px;
   font-size: 30px;
   font-weight: 900;
   line-height: 1.05;
 }
+
 .yearBox .txt{
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.25;
   opacity: .96;
   text-shadow: 0 3px 16px rgba(0,0,0,.55);
 }
+/* Hover Pop */
+.yearBox{
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease,
+    background .18s ease;
+  will-change: transform;
+}
 
+.yearBox:hover{
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(140,220,255,.34);
+  background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.07));
+  box-shadow:
+    0 28px 70px rgba(0,0,0,.65),
+    inset 0 1px 0 rgba(255,255,255,.14);
+}
+
+/* Glow beim Hover stärker */
+.yearBox:hover::before{
+  opacity: 1;
+}
+
+/* Watermark beim Hover minimal deutlicher */
+.yearBox:hover::after{
+  opacity: .16;
+}
+ /* Yearbox Ende -------------------*/
 
 
 /* QR screen */
@@ -636,9 +683,10 @@
 .screen.twoCol.tight-bottom{ padding-bottom: 24px; }
 /* Links: bessere Lesbarkeit + "premium" */
 .leftText{
-  max-width: 760px;
-  position: relative;
+  max-width: none;  /* <<< wichtig */
+  min-width: 0;
 }
+
 
 /* Absätze rhythmischer + visuell verbunden */
 .leftText p{
@@ -686,32 +734,33 @@
 
 /* Wrap-Variante, die NICHT bis 1220px aufzieht */
 .wrap.narrow{
-  max-width: 1380px;            /* z.B. 980–1100 testen */
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 18px;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
-/* optional: noch bisschen "Innen-Gutter" */
-.wrap.narrow{
-  padding-left: clamp(18px, 4vw, 60px);
-  padding-right: clamp(18px, 4vw, 60px);
-}
 /* ===== Unternehmen: flex statt grid ===== */
+/* ===== Unternehmen: flex ===== */
 #unternehmen .uGrid{
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: nowrap;
+  display:flex;
+  gap: 32px;                 /* gleicher Abstand wie Timeline */
+  align-items:flex-start;
 
-  width: 100%;
-  margin: 0 auto;        /* Block mittig */
+  justify-content: space-between;   /* <<< wichtig */
+  width:100%;
+  margin:0;                         /* <<< kein auto */
 }
 
-/* Logos: fixere Breite */
+#unternehmen .uLeft{
+  flex: 1 1 auto;            /* <<< nimmt den rest */
+  min-width: 0;
+}
+
 #unternehmen .uRight{
-  flex: 0 1 520px;
+  flex: 0 0 520px;            /* <<< fix */
   max-width: 520px;
+  margin-left: auto;          /* <<< klebt rechts */
 }
 
 /* responsive */
@@ -719,11 +768,35 @@
   #unternehmen .uGrid{
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
+
   #unternehmen .uLeft,
   #unternehmen .uRight{
+    width: 100%;
     max-width: 100%;
+    margin-left: 0;
   }
+
+  #unternehmen .uRight{
+    flex: 0 1 auto;           /* <<< nicht fix auf 520 am handy */
+  }
+}
+
+
+/* links soll den restlichen platz nehmen */
+#unternehmen .uLeft{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* rechts fix, klebt rechts */
+#unternehmen .uRight{
+  flex: 0 0 520px;
+  max-width: 520px;
+  margin-left: auto;
+}
+
 }
 /* ===== Einheitlicher Textblock (Einzug + Blockbreite + Typo) ===== */
 :host .leftText,
@@ -733,7 +806,7 @@
   margin: 0;                 /* kein extra Verschieben */
   font-size: 1.4rem;         /* gleiche Schriftgröße */
   font-weight: 500;
-  line-height: 1.6;          /* als Verhältnis -> überall gleich */
+  line-height: 2;          /* als Verhältnis -> überall gleich */
   letter-spacing: .01em;
   opacity: .95;
 }
@@ -742,9 +815,10 @@
 :host .leftText p,
 :host #unternehmen .uLeft p{
   font: inherit;             /* übernimmt alles vom Container */
-  margin: 0 0 px;
+  margin: 0 0 15px;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.6;  
 }
 :host .leftText p:last-child,
 :host #unternehmen .uLeft p:last-child{ margin-bottom: 0; }
