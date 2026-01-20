@@ -166,10 +166,10 @@
   align-items:start;
 }
 .leftText p{
-  font-size: 20px;
+  font-size: 1.4rem;
   font-weight: 500;
   opacity: 0.95;
-  line-height: 1.7;
+  line-height: 1.5rem;
   letter-spacing: 0.01em;
   margin: 0 0 16px;
 }
@@ -703,9 +703,9 @@
 
 /* Unternehmen-Textblock links */
 :host #unternehmen .uLeft p{
-  font-size: 20px;        /* <-- Größe */
+  font-size: 1.4rem;        /* <-- Größe */
   font-weight: 500;       /* <-- Intensität (400 normal, 500/600 kräftiger) */
-  line-height: 1.7;
+  line-height: 1.5rem;
   letter-spacing: 0.01em;
   opacity: 0.95;          /* <-- heller/dunkler */
   text-shadow: 0 3px 16px rgba(0,0,0,.55); /* optional */
