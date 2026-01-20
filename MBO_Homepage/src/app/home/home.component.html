@@ -1,9 +1,6 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <app-slideshow
-            [slides]="slides"
-            [showOverlay]="true"
-            [overlayTitle]="'HERO.TITLE' | translate"
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
@@ -28,64 +25,87 @@
 <!-- Scrollbarer Inhalt aus dem zweiten Bild (Header ignoriert) -->
 <section class="contentWrap" aria-label="Content">
     <div class="scrollPanel">
-        <p class="para" [innerHTML]="'CONTENT.PARA1' | translate"></p>
+        <p class="para">
+            {{ 'CONTENT.PARA1_PART1' | translate }}<span class="hl">MBO</span>{{ 'CONTENT.PARA1_PART2' | translate
+            }}<span class="hl">{{ 'CONTENT.CLEANROOMS' | translate }}</span>{{ 'CONTENT.PARA1_PART3' | translate }}
+        </p>
 
-        <p class="para" [innerHTML]="'CONTENT.PARA2' | translate"></p>
+        <p class="para">
+            {{ 'CONTENT.PARA2_PRE' | translate }}<span class="hl">MBO</span>{{ 'CONTENT.PARA2_ACTION' | translate
+            }}<span class="hl">{{ 'CONTENT.ITEM_MBMW' | translate }}</span>, <span class="hl">{{
+                'CONTENT.ITEM_PHOTOMASK' | translate }}</span>, <span class="hl">{{ 'CONTENT.ITEM_SEM' | translate
+                }}</span>, <span class="hl">{{ 'CONTENT.ITEM_TESTBENCHES' | translate }}</span>, <span class="hl">{{
+                'CONTENT.ITEM_CLIMATE' | translate }}</span>{{ 'CONTENT.PARA2_POST' | translate }}<span
+                class="hl">MBO</span>{{ 'CONTENT.PARA2_END' | translate }}
+        </p>
 
         <div class="sectionTitle">
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'CONTENT.SECTION_TITLE' | translate }}
         </div>
 
-        <div class="timeline" role="group" aria-label="Projektphasen">
+        <div class="timeline" style="max-width: 1220px;" role="group" aria-label="Projektphasen">
             <!-- Row 1 -->
             <!-- Gate 0 -->
             <div class="gate" style="left: 0%; top: 0;"><span>{{ 'TIMELINE.GATE' | translate }}0</span></div>
-            <div class="step" style="left: calc(0% + 74px); top: 0;">{{ 'TIMELINE.STEPS.INITIALIZATION' | translate }}</div>
+            <div class="step" style="left: calc(0% + 74px); top: 0;">{{ 'TIMELINE.STEPS.INITIALIZATION' | translate }}
+            </div>
             <div class="noteLine" style="left: 49px; top: 90px;"></div>
             <div class="note" style="left: 69px; top: 100px;">{{ 'TIMELINE.NOTES.CUSTOMER_REQUEST' | translate }}</div>
 
             <!-- Gate 1 -->
             <div class="gate" style="left: 25%; top: 0;"><span>{{ 'TIMELINE.GATE' | translate }}1</span></div>
-            <div class="step" style="left: calc(25% + 74px); top: 0;">{{ 'TIMELINE.STEPS.BASIC_ENGINEERING' | translate }}</div>
+            <div class="step" style="left: calc(25% + 74px); top: 0;">{{ 'TIMELINE.STEPS.BASIC_ENGINEERING' | translate
+                }}</div>
             <div class="noteLine" style="left: calc(25% + 49px); top: 90px;"></div>
-            <div class="note" style="left: calc(25% + 69px); top: 100px;">{{ 'TIMELINE.NOTES.PROJECT_RELEASE' | translate }}</div>
+            <div class="note" style="left: calc(25% + 69px); top: 100px;">{{ 'TIMELINE.NOTES.PROJECT_RELEASE' |
+                translate }}</div>
 
             <!-- Gate 2 -->
             <div class="gate" style="left: 50%; top: 0;"><span>{{ 'TIMELINE.GATE' | translate }}2</span></div>
             <div class="step" style="left: calc(50% + 74px); top: 0;">{{ 'TIMELINE.STEPS.OFFER' | translate }}</div>
             <div class="noteLine" style="left: calc(50% + 49px); top: 90px;"></div>
-            <div class="note" style="left: calc(50% + 69px); top: 100px;">{{ 'TIMELINE.NOTES.OFFER_PLANNING_RELEASE' | translate }}</div>
+            <div class="note" style="left: calc(50% + 69px); top: 100px;">{{ 'TIMELINE.NOTES.OFFER_PLANNING_RELEASE' |
+                translate }}</div>
 
             <!-- Gate 3 -->
             <div class="gate" style="left: 75%; top: 0;"><span>{{ 'TIMELINE.GATE' | translate }}3</span></div>
-            <div class="step" style="left: calc(75% + 74px); top: 0;">{{ 'TIMELINE.STEPS.DETAIL_ENGINEERING' | translate }}</div>
+            <div class="step" style="left: calc(75% + 74px); top: 0;">{{ 'TIMELINE.STEPS.DETAIL_ENGINEERING' | translate
+                }}</div>
             <div class="noteLine" style="left: calc(75% + 49px); top: 90px;"></div>
-            <div class="note" style="left: calc(75% + 69px); top: 100px;">{{ 'TIMELINE.NOTES.PURCHASE_RELEASE' | translate }}</div>
+            <div class="note" style="left: calc(75% + 69px); top: 100px;">{{ 'TIMELINE.NOTES.PURCHASE_RELEASE' |
+                translate }}</div>
 
             <!-- Row 2 -->
             <!-- Gate 4 -->
             <div class="gate" style="left: 0%; top: 200px;"><span>{{ 'TIMELINE.GATE' | translate }}4</span></div>
-            <div class="step" style="left: calc(0% + 74px); top: 200px;">{{ 'TIMELINE.STEPS.CONSTRUCTION' | translate }}</div>
+            <div class="step" style="left: calc(0% + 74px); top: 200px;">{{ 'TIMELINE.STEPS.CONSTRUCTION' | translate }}
+            </div>
             <div class="noteLine" style="left: 49px; top: 292px;"></div>
-            <div class="note" style="left: 69px; top: 300px;">{{ 'TIMELINE.NOTES.APPROVAL_CONSTRUCTION' | translate }}</div>
+            <div class="note" style="left: 69px; top: 300px;">{{ 'TIMELINE.NOTES.APPROVAL_CONSTRUCTION' | translate }}
+            </div>
 
             <!-- Gate 5 -->
             <div class="gate" style="left: 25%; top: 200px;"><span>{{ 'TIMELINE.GATE' | translate }}5</span></div>
-            <div class="step" style="left: calc(25% + 74px); top: 200px;">{{ 'TIMELINE.STEPS.COMMISSIONING' | translate }}</div>
+            <div class="step" style="left: calc(25% + 74px); top: 200px;">{{ 'TIMELINE.STEPS.COMMISSIONING' | translate
+                }}</div>
             <div class="noteLine" style="left: calc(25% + 49px); top: 292px;"></div>
-            <div class="note" style="left: calc(25% + 69px); top: 300px;">{{ 'TIMELINE.NOTES.INSPECTION_RELEASE' | translate }}</div>
+            <div class="note" style="left: calc(25% + 69px); top: 300px;">{{ 'TIMELINE.NOTES.INSPECTION_RELEASE' |
+                translate }}</div>
 
             <!-- Gate 6 -->
             <div class="gate" style="left: 50%; top: 200px;"><span>{{ 'TIMELINE.GATE' | translate }}6</span></div>
-            <div class="step" style="left: calc(50% + 74px); top: 200px;">{{ 'TIMELINE.STEPS.HANDOVER' | translate }}</div>
+            <div class="step" style="left: calc(50% + 74px); top: 200px;">{{ 'TIMELINE.STEPS.HANDOVER' | translate }}
+            </div>
             <div class="noteLine" style="left: calc(50% + 49px); top: 292px;"></div>
-            <div class="note" style="left: calc(50% + 69px); top: 300px;">{{ 'TIMELINE.NOTES.STARTUP_RELEASE' | translate }}</div>
+            <div class="note" style="left: calc(50% + 69px); top: 300px;">{{ 'TIMELINE.NOTES.STARTUP_RELEASE' |
+                translate }}</div>
 
             <!-- Gate 7 -->
             <div class="gate" style="left: 75%; top: 200px;"><span>{{ 'TIMELINE.GATE' | translate }}7</span></div>
             <div class="noteLine" style="left: calc(75% + 49px); top: 292px;"></div>
-            <div class="note" style="left: calc(75% + 69px); top: 300px;">{{ 'TIMELINE.STEPS.PROJECT_END' | translate }}</div>
+            <div class="note" style="left: calc(75% + 69px); top: 300px;">{{ 'TIMELINE.STEPS.PROJECT_END' | translate }}
+            </div>
         </div>
 
         <!-- filler spacing to make scrolling feel like the reference -->

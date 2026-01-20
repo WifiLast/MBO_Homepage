@@ -1,9 +1,6 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <app-slideshow
-            [slides]="slides"
-            [showOverlay]="true"
-            [overlayTitle]="'HERO.TITLE' | translate"
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
@@ -15,13 +12,25 @@
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION1_TITLE' | translate }}
         </div>
-        <p class="para" [innerHTML]="'KARRIERE.SECTION1_PARA1' | translate"></p>
+        <p class="para">
+            {{ 'KARRIERE.SECTION1_PARA1_PRE' | translate }}<span class="hl">MBO Trinity</span>{{
+            'KARRIERE.SECTION1_PARA1_POST' | translate }}
+        </p>
         <p class="para" [innerHTML]="'KARRIERE.SECTION1_PARA2' | translate"></p>
         <div class="sectionTitle">
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION1_SUBTITLE' | translate }}
         </div>
-        <p class="para" [innerHTML]="'KARRIERE.SECTION1_LIST' | translate"></p>
+        <div class="para">
+            <h4> &#8614; {{ 'KARRIERE.SECTION1_LIST_HEADER' | translate }}</h4>{{ 'KARRIERE.SECTION1_LIST_INTRO' |
+            translate }}<br>
+            <ul>
+                <li>{{ 'KARRIERE.SECTION1_LIST_ITEM1' | translate }}</li> <br>
+                <li>{{ 'KARRIERE.SECTION1_LIST_ITEM2' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION1_LIST_ITEM3' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION1_LIST_ITEM4' | translate }}</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -31,7 +40,14 @@
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION2_TITLE' | translate }}
         </div>
-        <p class="para" [innerHTML]="'KARRIERE.SECTION2_LIST' | translate"></p>
+        <div class="para">
+            <ul>
+                <li>{{ 'KARRIERE.SECTION2_LIST_ITEM1' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION2_LIST_ITEM2' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION2_LIST_ITEM3' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION2_LIST_ITEM4' | translate }}</li>
+            </ul>
+        </div>
         <div class="sectionTitle">
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION2_SUBTITLE' | translate }}
@@ -51,7 +67,16 @@
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION3_SUBTITLE' | translate }}
         </div>
-        <p class="para" [innerHTML]="'KARRIERE.SECTION3_LIST' | translate"></p>
+        <div class="para">
+            <ul>
+                <li>{{ 'KARRIERE.SECTION3_LIST_ITEM1' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION3_LIST_ITEM2' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION3_LIST_ITEM3' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION3_LIST_ITEM4' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION3_LIST_ITEM5' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION3_LIST_ITEM6' | translate }}</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -61,12 +86,24 @@
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION4_TITLE' | translate }}
         </div>
-        <p class="para" [innerHTML]="'KARRIERE.SECTION4_LIST' | translate"></p>
+        <div class="para">
+            <ul>
+                <li>{{ 'KARRIERE.SECTION4_LIST_ITEM1' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION4_LIST_ITEM2' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION4_LIST_ITEM3' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION4_LIST_ITEM4' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION4_LIST_ITEM5' | translate }}</li><br>
+                <li>{{ 'KARRIERE.SECTION4_LIST_ITEM6' | translate }}</li>
+            </ul>
+        </div>
         <div class="sectionTitle">
             <span class="bulletDot" aria-hidden="true"></span>
             {{ 'KARRIERE.SECTION4_SUBTITLE' | translate }}
         </div>
-        <p class="para" [innerHTML]="'KARRIERE.SECTION4_PARA' | translate"></p>
+        <p class="para">
+            {{ 'KARRIERE.SECTION4_PARA_LINE1' | translate }}<br>
+            {{ 'KARRIERE.SECTION4_PARA_LINE2' | translate }}
+        </p>
     </div>
 </section>
 

@@ -106,7 +106,7 @@ app-slideshow {
 
 .cards {
     max-width: 100%;
-    margin: -20px auto 0;
+    margin: -120px auto 0;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 24px;

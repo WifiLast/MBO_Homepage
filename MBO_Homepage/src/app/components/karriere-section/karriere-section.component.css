@@ -1,9 +1,11 @@
 .contentWrap {
     max-width: 1220px;
+    height: 100% !important;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: visible;
 }
 
 #karriere {
@@ -185,7 +187,12 @@
     align-items: center;
     gap: 40px;
     padding: 10px 0 10px;
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }

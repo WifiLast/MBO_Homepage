@@ -10,7 +10,8 @@ main {
     width: 100%;
     margin: 0;
     padding: 0;
-    min-height: 90vh;
+    height: calc(100dvh - var(--header-height));
+    overflow: hidden;
 }
 
 .heroRow {
@@ -155,7 +156,8 @@ app-slideshow {
 .contentWrap {
     max-width: 1220px;
     margin: 0 auto;
-    min-height: 80vh;
+    height: 100dvh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -6,9 +6,10 @@
         </div>
 
         <div class="centerText">
-            <h1 [innerHTML]="'QR_SECTION.TITLE' | translate"></h1>
+            <h1>{{ 'QR_SECTION.TITLE_PRE' | translate }} <u>MBO</u></h1>
             <ol>
-                <li [innerHTML]="'QR_SECTION.STEP1' | translate"></li>
+                <li>{{ 'QR_SECTION.STEP1_PRE' | translate }} <span class="hl">{{ 'QR_SECTION.QR_CODE' | translate
+                        }}</span></li>
                 <li>{{ 'QR_SECTION.STEP2' | translate }}</li>
                 <li>{{ 'QR_SECTION.STEP3' | translate }}</li>
             </ol>
