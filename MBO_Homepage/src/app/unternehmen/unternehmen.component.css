@@ -166,10 +166,12 @@
   align-items:start;
 }
 .leftText p{
-  margin: 0 0 0px;
   font-size: 20px;
-  line-height: 1.6;
-  text-shadow: 0 2px 18px rgba(0,0,0,.35);
+  font-weight: 500;
+  opacity: 0.95;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  margin: 0 0 16px;
 }
 .leftText p:last-child{ margin-bottom:0; }
 
@@ -446,7 +448,7 @@
 .uTriangle{
   position: relative;
   height: 88px;
-  margin: 6px 0 8px;
+  margin: 0px 0 0px;
 }
 
 /* Dreieck */
@@ -454,31 +456,17 @@
   content:"";
   position:absolute;
   left: 50%;
-  top: 6px;
+  top: 4px;
   transform: translateX(-50%);
   width:0;height:0;
-  border-left: 34px solid transparent;
-  border-right: 34px solid transparent;
-  border-bottom: 58px solid rgba(255,255,255,.28);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 65px solid rgba(255,255,255,.28);
   filter: drop-shadow(0 14px 24px rgba(0,0,0,.55));
   opacity: .75;
 }
 
-/* Verbindungslinien (schmal + sauber wie Folie) */
-.uTriangle::after{
-  content:"";
-  position:absolute;
-  left: 50%;
-  top: 58px;
-  transform: translateX(-50%);
-  width: calc(100% - 28px);
-  height: 26px;
-  border-top: 2px solid rgba(255,255,255,.16);
-  border-left: 2px solid rgba(255,255,255,.16);
-  border-right: 2px solid rgba(255,255,255,.16);
-  border-radius: 0 0 18px 18px;
-  opacity: .95;
-}
+
 
 /* unten: exakt zwei kleine „Logo-Karten“ */
 .uBottom{
@@ -713,11 +701,17 @@
   margin: 0 auto;        /* Block mittig */
 }
 
-/* Text: flexibel, aber begrenzt für Lesbarkeit */
-#unternehmen .uLeft{
-  flex: 1 1 420px;
-  max-width: 680px;
+/* Unternehmen-Textblock links */
+:host #unternehmen .uLeft p{
+  font-size: 20px;        /* <-- Größe */
+  font-weight: 500;       /* <-- Intensität (400 normal, 500/600 kräftiger) */
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  opacity: 0.95;          /* <-- heller/dunkler */
+  text-shadow: 0 3px 16px rgba(0,0,0,.55); /* optional */
+  margin: 0 0 16px;
 }
+
 
 /* Logos: fixere Breite */
 #unternehmen .uRight{
