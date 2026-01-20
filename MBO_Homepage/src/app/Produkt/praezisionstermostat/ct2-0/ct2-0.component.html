@@ -1,16 +1,73 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <app-slideshow
-            [slides]="slides"
-            [showOverlay]="true"
-            [overlayTitle]="'HERO.TITLE' | translate"
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
 </section>
 
 <section class="contentWrap" aria-label="Content">
-    <div class="scrollPanel scrollPanel--empty"></div>
+    <div class="content-row">
+        <div class="scrollPanel">
+            <p>
+                Der Cooling Tower CT 2.0 als Liquid-to-Liquid-Prozessthermostat dient als Prozesskühlung für Anlagen mit
+                höchster Anforderung an Temperaturstabilität, definierten Volumenstrom, stabilen Druck und
+                Versorgungssicherheit mit einer abgeführten Wärmemenge von bis zu 800 kW.
+            </p>
+            <p>
+                Der Cooling Tower CT 2.0 kann mit 2 Betriebsmodi betrieben werden:
+            </p>
+
+            <ul>
+                <li>Modus 1: Konstante Vorlauftemperatur mit einer Temperaturstabilität von ± 0,2 K</li>
+
+                <li>Modus 2: Up- & Downramping der Vorlauftemperatur</li>
+
+            </ul>
+
+            <p>
+                Klassische Anwendungsbereiche sind:
+            </p>
+
+            <ul>
+                <li>Multi-Beam-Mask-Writer </li>
+                <li>Rasterelektronenmikroskope</li>
+                <li>Prüfstände</li>
+                <li>Rechenzentren - Cluster Cooling</li>
+                <li>Bioreaktoren</li>
+                <li>Usw.</li>
+            </ul>
+        </div>
+        <div class="ct_image">
+            <img src="/CT2_0.png" alt="Cooling Tower CT 2.0">
+        </div>
+    </div>
 </section>
+
+
+<section class="contentWrap" aria-label="Content">
+    <div class="content-row">
+        <div class="scrollPanel">
+            <img style="width: 480px;height: 300px;" src="/heat_exhange.png" alt="Heat Exchange">
+            <div>
+                <p>
+                    Am Cooling Tower CT 2.0 können bis zu 4 Utilities angeschlossen werden.
+                </p>
+                <p>
+                    Der Cooling Tower CT 2.0 versorgt alle Utilities mit derselben Vorlauftemperatur und führt die
+                    Wärmelasten über den Wärmetauscher an die Gebäudekälteversorgung ab.
+                </p>
+                <p>
+                    Für jedes Utility ist der Volumenstrom separat regelbar, wobei der Systemdruck für alle Utilities am
+                    gewünschten Druckpunkt konstant gehalten wird.
+                </p>
+            </div>
+        </div>
+        <div class="ct_image">
+            <img src="/CT2_0_open.png" alt="Cooling Tower CT 2.0">
+        </div>
+    </div>
+</section>
+
 
 <app-karriere-section></app-karriere-section>

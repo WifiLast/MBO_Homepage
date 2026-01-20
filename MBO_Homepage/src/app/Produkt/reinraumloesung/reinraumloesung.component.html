@@ -1,46 +1,112 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <app-slideshow
-            [slides]="slides"
-            [showOverlay]="true"
-            [overlayTitle]="'HERO.TITLE' | translate"
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
+
+    <div class="cards">
+        <article class="card invisible-card">
+            <h3>Placeholder</h3>
+            <p>
+                This card is invisible
+            </p>
+        </article>
+
+        <article class="card" id="reinraumloesung">
+            <h3>Reinraumtechnologie</h3>
+            <p>
+                Mit entscheidendem Know-How und Erfahrung auf dem Gebiet der Reinraumtechnik entwickelt und errichtet
+                die MBO Trinity GmbH komplexe Reinraumlösungen für höchste Anforderungen in der Halbleiterindustrie und
+                Forschung.
+            </p>
+        </article>
+    </div>
 </section>
 
 
 <section class="contentWrap" aria-label="Content">
     <div class="scrollPanel">
-        <p class="para" [innerHTML]="'REINRAUMLOESUNG.PARA1' | translate"></p>
-        <p class="para" [innerHTML]="'REINRAUMLOESUNG.PARA2' | translate"></p>
+        <p>
+            Die MBO Trinity GmbH plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.
+        </p>
+        <p>
+            Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumumsysteme.
+        </p>
+        <p>
+            Dabei realisieren wir hoch komplexeste Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit
+            Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Matallkammer, etc.
+        </p>
+        <p>
+            Unsre Leistungen umspannen dabei auch die komplette Reinraumausstattung wie z.B.: die Medienversorgung,
+            Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Systeme
+            für den Brandschutz, Maßnahmen des Explosionsschutzes, Gaswarnanlagen, Krananlagen, Klimatisierung, etc.
+        </p>
+        <p>
+            Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen
+            wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.
+        </p>
+        <p>
+            Die Errichtung erfolgt je nach Erfordernis mit unsren qualifizierten Monteuren oder mit unsren
+            Sub-Contractoren.
+        </p>
+        <p>
+            Dabei legen wir insbesondere Wert auf:
+        </p>
+        <ul>
+            <p>
+                <li>Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen</li>
+            </p>
+            <p>
+                <li>Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung</li>
+            </p>
+            <p>
+                <li>Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne</li>
+            </p>
+            <p>
+                <li>Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)</li>
+            </p>
+            <p>
+                <li>Übergabe der Anlagen, Dokumentation und Schulung</li>
+            </p>
+            <p>
+                <li>Gewährleistung der einwandfreien Funktion und der Qualitativ hochwertigen Ausführung</li>
+            </p>
 
+        </ul>
+        <p>
+            Spezifikationen die unsre Reinräume zu erreichen haben sind z.B.:
+        </p>
+        <ul>
+            <p>
+                <li>Standard for main body installation area: ISO 3 (14644-1)</li>
+            </p>
+            <p>
+                <li>Magnetic field fluctuation tolerances: AC ≤ 0.03 µT, DC < 0.03 µT</li>
+            </p>
+            <p>
+                <li>Temperature stability of ambient air: ±20 mK</li>
+            </p>
+            <p>
+                <li>Pressure stability: ±1 Pa</li>
+            </p>
+            <p>
+                <li>Humidity stability: ±0.2 %</li>
+            </p>
+            <p>
+                <li>Laminar flow downwarded</li>
+            </p>
+                    <p>
+                <li>Floor vibration criteria ≤ VC-E</li>
+            </p>
+
+        </ul>
     </div>
 </section>
 
-<section class="contentWrap" aria-label="Content">
-    <div class="scrollPanel">
-        <div class="sectionTitle">
-            <span class="bulletDot" aria-hidden="true"></span>
-            {{ 'REINRAUMLOESUNG.SECTION_TITLE' | translate }}
-        </div>
-        <p class="para" [innerHTML]="'REINRAUMLOESUNG.PARA3' | translate"></p>
 
 
-    </div>
-</section>
 
-<section class="contentWrap" aria-label="Content">
-    <div class="scrollPanel">
-
-        <div class="sectionTitle">
-            <span class="bulletDot" aria-hidden="true"></span>
-            {{ 'REINRAUMLOESUNG.SECTION_TITLE' | translate }}
-        </div>
-        <p class="para" [innerHTML]="'REINRAUMLOESUNG.PARA3' | translate"></p>
-
-    </div>
-</section>
 
 
 <app-karriere-section></app-karriere-section>

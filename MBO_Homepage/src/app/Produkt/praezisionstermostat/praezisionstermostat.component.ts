@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { SlideshowComponent } from '../../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../../components/karriere-section/karriere-section.component';
 import { Subscription } from 'rxjs';
@@ -13,7 +14,7 @@ declare global {
 
 @Component({
   selector: 'app-praezisionstermostat',
-  imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent],
+  imports: [TranslateModule, CommonModule, RouterLink, SlideshowComponent, KarriereSectionComponent],
   templateUrl: './praezisionstermostat.component.html',
   styleUrl: './praezisionstermostat.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

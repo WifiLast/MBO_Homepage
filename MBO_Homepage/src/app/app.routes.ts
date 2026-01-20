@@ -8,6 +8,7 @@ import { PraezisionsklimageraetComponent } from './Produkt/praezisionsklimagerae
 import { PraezisionstermostatComponent } from './Produkt/praezisionstermostat/praezisionstermostat.component';
 import { ReinraumloesungComponent } from './Produkt/reinraumloesung/reinraumloesung.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { CT20Component } from './Produkt/praezisionstermostat/ct2-0/ct2-0.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -18,5 +19,6 @@ export const routes: Routes = [
     { path: 'Produkt/anlagenintegration', component: AnlagenintegrationComponent },
     { path: 'Produkt/praezisionsklimageraet', component: PraezisionsklimageraetComponent },
     { path: 'Produkt/praezisionstermostat', component: PraezisionstermostatComponent },
+    { path: 'Produkt/praezisionstermostat/ct2-0', component: CT20Component },
     { path: 'Produkt/reinraumloesung', component: ReinraumloesungComponent }
 ];
