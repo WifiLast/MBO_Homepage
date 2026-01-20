@@ -1,16 +1,146 @@
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
-        <app-slideshow
-            [slides]="slides"
-            [showOverlay]="true"
-            [overlayTitle]="'HERO.TITLE' | translate"
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
         </app-slideshow>
     </div>
 </section>
 
 <section class="contentWrap" aria-label="Content">
-    <div class="scrollPanel scrollPanel--empty"></div>
+    <div class="content-row">
+        <div class="scrollPanel">
+            <p>
+                Die Präzisionsklimagerät A²HTC ist ein Luft-Luft-Prozessthermostat zur präzisen Regelung von
+                Prozessumgebungen mit höchsten Anforderungen an Temperatur, relative Luftfeuchtigkeit und
+                Druckintegrität. Das Präzisionsklimagerät A²HTC kann Wärmebelastungen von bis zu 30 kW aus der
+                Prozessumgebung abführen.
+            </p>
+            <p>
+                Die Präzisionsklimaanlage A²HTC gewährleistet entweder:
+            </p>
+
+            <ul>
+                <li>konstante Prozessbedingungen (Modus 1) durch präzise Regelung von Temperatur, Feuchte und Druck oder
+                </li>
+
+                <li>variable Temperatur- und/oder Feuchteprofile (Modus 2).</li>
+
+            </ul>
+
+            <p>
+                Typische Anwendungsbereiche
+            </p>
+
+            <ul>
+                <li>Fotomasken-Entwicklungssysteme</li>
+                <li>Prüfstände / Testanlagen / Klimakammern / Bioreaktoren</li>
+                <li>Rasterelektronenmikroskope</li>
+                <li>Klimatisierung von Reinräumen bis zu einem Raumvolumen von 90 m³</li>
+            </ul>
+        </div>
+        <div class="ct_image">
+            <img src="/A2HTC.png" alt="Cooling Tower CT 2.0">
+        </div>
+    </div>
 </section>
+
+
+<section class="contentWrap" aria-label="Content">
+    <div class="content-row">
+        <div class="scrollPanel performance_data">
+            <h3>P E R F O R M A N C E D A T A</h3>
+            <div class="performance_data_container">
+                <div class="performance_data_labels">
+                    <p>
+                        Cooling performance
+                    </p>
+                    <p>
+                        Air Rate
+                    </p>
+                    <p>
+                        Mode 1: Stable temperature and relative humidity
+                    </p>
+                    <p>
+                        Mode 2: Temperature and humidity ramping (up & down)
+                    </p>
+                    <p>
+                        Cooling water inlet temperature range
+                    </p>
+                    <p>
+                        Dimension
+                    </p>
+                    <p>
+                        Operation voltage
+                    </p>
+                    <p>
+                        Max. power consumption
+                    </p>
+                    <p>
+                        Refrigerant
+                    </p>
+                    <p>
+                        Real-time monitoring
+                    </p>
+                    <p>
+                        Connection to controller
+                    </p>
+                    <p>
+                        Approvals
+                    </p>
+
+                </div>
+                <div class="performance_data_values">
+                    <p>
+                        30 kW
+                    </p>
+                    <p>
+                        up to 3.200 m³/h
+                    </p>
+                    <p style="line-height: 0.8;">
+                        ± 0,05 K<br>± 0,5 % RH
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        <!-- Empty line for layout spacing -->
+                    </p>
+                    <p>
+                        <!-- Empty line for layout spacing -->
+                    </p>
+                    <p>
+                        6 °C up to 24 °C water (+ glycol)
+                    </p>
+                    <p>
+                        L 1.200 x B 950 x H 2.1500 mm
+                    </p>
+                    <p>
+                        400 V / 480 V
+                    </p>
+                    <p>
+                        35 kW
+                    </p>
+                    <p>
+                        R513A
+                    </p>
+                    <p>
+                       OPC UA and sensor integration
+                    </p>
+                    <p>
+                        Ethernet TCP
+                    </p>
+                    <p>
+                        CE ( UL / SEMI )
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div  class="ct_image">
+            <img src="/A2HTC_open.png" alt="Cooling Tower CT 2.0">
+        </div>
+    </div>
+</section>
+
 
 <app-karriere-section></app-karriere-section>

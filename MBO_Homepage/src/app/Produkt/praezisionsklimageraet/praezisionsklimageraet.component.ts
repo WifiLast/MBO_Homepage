@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SlideshowComponent } from '../../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../../components/karriere-section/karriere-section.component';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 declare global {
   interface Window {
@@ -29,7 +30,7 @@ export class PraezisionsklimageraetComponent implements AfterViewInit, OnDestroy
     '/Bilder/ART/Bau/20240515_104609.jpg',
   ];
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private readonly router: Router) {}
 
   ngAfterViewInit(): void {
     this.typesetMath();
@@ -47,5 +48,9 @@ export class PraezisionsklimageraetComponent implements AfterViewInit, OnDestroy
     if (mathJax?.typesetPromise) {
       mathJax.typesetPromise();
     }
+  }
+
+  navigateToA2Htc(): void {
+    this.router.navigate(['/Produkt/praezisionsklimageraet/a2-htc']);
   }
 }
