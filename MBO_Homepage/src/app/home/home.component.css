@@ -614,7 +614,6 @@ app-slideshow {
         width: 120px;
         font-size: 10px;
     }
-
 }
 
 footer {
@@ -632,3 +631,125 @@ footer a {
     color: var(--accent);
     text-decoration: none;
 }
+/* ===== Intro Overlay ===== */
+.intro{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(18px) saturate(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
+
+  opacity: 1;
+  transition: opacity .65s ease;
+}
+
+.intro.out{
+  opacity: 0;
+}
+
+.introLogo{
+  width: min(980px, 86vw);   /* <<< HIER größer machen */
+  height: auto;
+  display: block;
+
+  filter: drop-shadow(0 30px 90px rgba(0,0,0,.75));
+  animation: introPop .55s ease both;
+}
+
+@keyframes introPop{
+  0%   { opacity: 0; transform: scale(.96); filter: blur(2px); }
+  100% { opacity: 1; transform: scale(1);   filter: blur(0); }
+}
+
+/* Overlay bleibt: blur background */
+.intro{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(18px) saturate(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
+
+  opacity: 1;
+  transition: opacity .65s ease;
+}
+
+.intro.out{ opacity: 0; }
+
+/* Nur Logo – ohne Glasbox */
+.introLogoOnly{
+  position: relative;
+  display: inline-block;
+  place-items: center;
+  pointer-events: auto;
+
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  transition: transform .65s ease, opacity .65s ease;
+}
+
+.intro.out .introLogoOnly{
+  opacity: 0;
+  transform: translateY(-10px) scale(.985);
+}
+
+@keyframes introPop{
+  0%   { opacity: 0; transform: scale(.96); filter: blur(2px); }
+  100% { opacity: 1; transform: scale(1);   filter: blur(0); }
+}
+
+/* Shine nur auf den sichtbaren SVG-Pixeln (Logo+Schriftzug) */
+.introLogoOnly::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+
+  /* der "Blitz" als Gradient */
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255,255,255,0) 40%,
+    rgba(255,255,255,.95) 50%,
+    rgba(140,220,255,.55) 56%,
+    transparent 70%
+  );
+
+  /* wir bewegen den Blitz über background-position (nicht transform!) */
+  background-size: 260% 100%;
+  background-position: -130% 50%;
+
+  /* 👉 WICHTIG: Maske = dein SVG -> Effekt nur auf Logo+Schrift */
+  -webkit-mask-image: url("/logo-white.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: url("/logo-white.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  /* nur "aufhellen", nicht die Fläche */
+  mix-blend-mode: screen;
+  opacity: .95;
+
+  /* minimal langsamer als vorher */
+  animation: shineSweep 1.15s ease .25s 1 both;
+}
+
+@keyframes shineSweep{
+  0%   { background-position: -130% 50%; opacity: 0; }
+  10%  { opacity: .95; }
+  100% { background-position: 130% 50%; opacity: 0; }
+}
+

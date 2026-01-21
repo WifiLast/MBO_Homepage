@@ -1,3 +1,17 @@
+<!-- INTRO OVERLAY (nur beim ersten Besuch) -->
+<div
+  class="intro"
+  *ngIf="showIntro"
+  [class.out]="introOut"
+  (transitionend)="onIntroTransitionEnd($event)"
+  (click)="skipIntro()"
+  aria-label="Intro"
+>
+  <div class="introLogoOnly" (click)="$event.stopPropagation(); skipIntro()">
+    <img class="introLogo" src="/logo-white.svg" alt="MBO Logo" />
+  </div>
+</div>
+
 <section class="hero" aria-label="Hero">
     <div class="heroRow">
         <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
