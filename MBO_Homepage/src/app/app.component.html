@@ -19,8 +19,18 @@
                 </a>
                 <div class="dropdown-menu" role="menu" aria-label="Produkte">
                     <a routerLink="/Produkt/anlagenintegration" role="menuitem">Anlagenintegration</a>
-                    <a routerLink="/Produkt/praezisionsklimageraet" role="menuitem">Praezisionsklimagerät</a>
-                    <a routerLink="/Produkt/praezisionstermostat" role="menuitem">Praezisionsthermostat</a>
+                    <div class="submenu-item">
+                        <a routerLink="/Produkt/praezisionsklimageraet" role="menuitem">Präzisionsklimagerät</a>
+                        <div class="submenu-nested">
+                            <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" role="menuitem">A2 HTC</a>
+                        </div>
+                    </div>
+                    <div class="submenu-item">
+                        <a routerLink="/Produkt/praezisionstermostat" role="menuitem">Präzisionsthermostat</a>
+                        <div class="submenu-nested">
+                            <a routerLink="/Produkt/praezisionstermostat/ct-2-0" role="menuitem">CT 2.0</a>
+                        </div>
+                    </div>
                     <a routerLink="/Produkt/reinraumloesung" role="menuitem">Reinraumlösung</a>
                 </div>
             </div>
@@ -57,9 +67,17 @@
                 <span class="mobile-submenu-label">{{ 'HEADER.NAV.PRODUCTS' | translate }}</span>
                 <a routerLink="/produkte" (click)="closeMobileMenu()">Produkte</a>
                 <a routerLink="/Produkt/anlagenintegration" (click)="closeMobileMenu()">Anlagenintegration</a>
-                <a routerLink="/Produkt/praezisionsklimageraet" (click)="closeMobileMenu()">Praezisionsklimageraet</a>
-                <a routerLink="/Produkt/praezisionstermostat" (click)="closeMobileMenu()">Praezisionsthermostat</a>
-                <a routerLink="/Produkt/reinraumloesung" (click)="closeMobileMenu()">Reinraumloesung</a>
+                <div class="mobile-nested">
+                    <a routerLink="/Produkt/praezisionsklimageraet" (click)="closeMobileMenu()">Präzisionsklimagerät</a>
+                    <a routerLink="/Produkt/praezisionsklimageraet/ct-2-0" (click)="closeMobileMenu()" class="mobile-sub-item">→ CT 2.0</a>
+                    <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" (click)="closeMobileMenu()" class="mobile-sub-item">→ A2 HTC</a>
+                </div>
+                <div class="mobile-nested">
+                    <a routerLink="/Produkt/praezisionstermostat" (click)="closeMobileMenu()">Präzisionsthermostat</a>
+                    <a routerLink="/Produkt/praezisionstermostat/ct-2-0" (click)="closeMobileMenu()" class="mobile-sub-item">→ CT 2.0</a>
+                    <a routerLink="/Produkt/praezisionstermostat/a2-htc" (click)="closeMobileMenu()" class="mobile-sub-item">→ A2 HTC</a>
+                </div>
+                <a routerLink="/Produkt/reinraumloesung" (click)="closeMobileMenu()">Reinraumlösung</a>
             </div>
             <a routerLink="/karriere" (click)="closeMobileMenu()">{{ 'HEADER.NAV.CAREER' | translate }}</a>
             <a routerLink="/kontakt" (click)="closeMobileMenu()">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
