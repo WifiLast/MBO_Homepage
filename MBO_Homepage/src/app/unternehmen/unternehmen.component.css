@@ -796,8 +796,6 @@
   max-width: 520px;
   margin-left: auto;
 }
-
-}
 /* ===== Einheitlicher Textblock (Einzug + Blockbreite + Typo) ===== */
 :host .leftText,
 :host #unternehmen .uLeft{
