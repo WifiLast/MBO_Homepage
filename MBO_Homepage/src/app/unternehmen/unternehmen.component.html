@@ -4,24 +4,11 @@
 
   <main>
     <!-- HERO (Bild 1) -->
-    <section class="screen hero" aria-label="Hero">
-      <div class="heroCenter">
-        <div class="heroLogoWrap">
-          <img class="heroLogo" src="assets/logo_gross.png"
-            alt="MBO Trinity GmbH" />
-        </div>
-
-        <!-- Links (Textserie) -->
-        <div class="heroLeftNote" aria-hidden="true">
-          Textserie 2.0
-        </div>
-
-        <!-- Rechts (Bildbereich) -->
-        <div class="heroRightNote" aria-hidden="true">
-          Bildbereich / Fotoserie 2.0
-        </div>
-      </div>
-    </section>
+    <div class="heroRow">
+        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
+            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
+        </app-slideshow>
+    </div>
 
         <!-- Unternehmen Teil -->
     <section class="screen uSection" id="unternehmen">
@@ -184,43 +171,7 @@
     
     </section>
 
-    <!-- QR + SLOGAN (Bild 5) -->
-    <section class="screen qr" id="karriere" aria-label="Karriere / QR">
-      <div class="wrap qrGrid">
-        <div class="photoCard">
-          <img src="assets/ar_handy.jpg" alt="AR Handy" />
-        </div>
-
-        <div class="qrText">
-          <h2>Steigen Sie ein in die Welt der MBO</h2>
-          <ol>
-            <li>Scannen des QR-Codes</li>
-            <li>Browser (Chrome oder Safari)</li>
-            <li>Menüführung am Handy folgen</li>
-          </ol>
-        </div>
-
-        <div class="qrRight">
-          <div class="qrCard">
-            <img src="assets/qr_code.png" alt="QR Code" />
-          </div>
-
-          <div class="scanBtn" role="button" aria-label="Scan Me">
-            <span class="phoneIcon" aria-hidden="true">⌁</span>
-            Scan Me
-          </div>
-        </div>
-      </div>
-
-      <div class="slogan">limits are a mindset</div>
-
-      
-    </section>
-
-    <!-- Dummy anchors -->
-    <section class="screen mini" id="produkte" aria-label="Produkte"></section>
-    <section class="screen mini" id="kontakt" aria-label="Kontakt"></section>
-    <section class="screen mini" id="download" aria-label="Download"></section>
+    <app-karriere-section></app-karriere-section>
   </main>
 </div>
 

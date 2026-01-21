@@ -156,7 +156,7 @@ app-slideshow {
 .contentWrap {
     max-width: 1220px;
     margin: 0 auto;
-    height: 100dvh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;

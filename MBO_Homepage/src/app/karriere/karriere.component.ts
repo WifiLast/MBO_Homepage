@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 import { SlideshowComponent } from '../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../components/karriere-section/karriere-section.component';
 
 @Component({
   selector: 'app-karriere',
-  imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent],
+  imports: [TranslateModule, CommonModule, MatIconModule, SlideshowComponent, KarriereSectionComponent],
   templateUrl: './karriere.component.html',
   styleUrl: './karriere.component.css'
 })
