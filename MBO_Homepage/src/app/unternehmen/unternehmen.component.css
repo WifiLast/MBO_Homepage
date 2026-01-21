@@ -1,9 +1,52 @@
 :host{
-  --content-max: 1500px;
-  --gutter: 18px; /* oder clamp(18px, 4vw, 60px) wenn du willst */
+  --content-max: 95%;
+  --edge-pad: 26px;     /* gleiche Innenkante wie scrollPanel */
+}
+/* FIX: contentWrap aus styles.css hat kein margin -> sonst klebt es links */
+.wrap.contentWrap{
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+  box-sizing: border-box;
+
 }
 
-:host { display:block; }
+.wrap{ width: 100%; }     /* nur Layout, keine Breite regeln */
+.heroCenter{ width: 100%; }
+
+/* Header/Footer sollen NICHT bündig an der 95%-Kante kleben */
+.topbarInner,
+.footerLine{
+  max-width: var(--content-max);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: var(--edge-pad);
+}
+
+.scrollPanel{
+  padding: 26px 26px 28px;
+}
+
+.scrollPanel ul,
+.scrollPanel ol{
+  margin: 0 0 26px;
+  padding-left: 20px;   /* kontrolliert */
+}
+
+.scrollPanel li{
+  margin: 0 0 10px;
+}
+
+/* Mobile wie im Beispiel */
+@media (max-width: 860px){
+  :host{ --edge-pad: 10px; }
+  .scrollPanel{ padding: 18px; }  /* wie Beispiel */
+}
+@media (max-width: 640px){
+  :host{ --edge-pad: 5px; }
+  .scrollPanel{ padding: 16px; }  /* wie Beispiel */
+}
 
 .page{
   min-height:100vh;
@@ -13,17 +56,8 @@
   position:relative;
 }
 
-
-
 /* ensure content above overlays */
 .topbar, main, .footerLine { position:relative; z-index:1; }
-
-.wrap{
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-}
-
 
 /* TOP NAV */
 .topbar{
@@ -36,15 +70,13 @@
 }
 
 .topbarInner{
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 18px var(--gutter);
+  padding-top: 18px;
+  padding-bottom: 18px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:18px;
 }
-
 
 .brand{
   display:flex;
@@ -121,19 +153,16 @@
 .mini{ min-height: 220px; }
 
 .footerLine{
-  max-width: var(--content-max);
   margin: 10px auto 0;
-  padding: 0 var(--gutter) 10px;
+  padding-bottom: 10px; /* nur vertikal */
 }
+
 
 
 /* HERO */
 .hero{ min-height: 520px; }
 .heroCenter{
   width:100%;
-  max-width: var(--content-max); /* statt 12500px */
-  margin: 0 auto;
-  padding: 0 var(--gutter);
 }
 
 .heroLogoWrap{
@@ -740,73 +769,26 @@
   padding-right: var(--gutter);
 }
 
-/* ===== Unternehmen: flex statt grid ===== */
-/* ===== Unternehmen: flex ===== */
-#unternehmen .uGrid{
-  display:flex;
-  gap: 32px;                 /* gleicher Abstand wie Timeline */
-  align-items:flex-start;
-
-  justify-content: space-between;   /* <<< wichtig */
-  width:100%;
-  margin:0;                         /* <<< kein auto */
-}
-
-#unternehmen .uLeft{
-  flex: 1 1 auto;            /* <<< nimmt den rest */
-  min-width: 0;
-}
-
-#unternehmen .uRight{
-  flex: 0 0 520px;            /* <<< fix */
-  max-width: 520px;
-  margin-left: auto;          /* <<< klebt rechts */
-}
-
 /* responsive */
 @media (max-width: 980px){
-  #unternehmen .uGrid{
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  #unternehmen .uLeft,
-  #unternehmen .uRight{
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-  }
-
-  #unternehmen .uRight{
-    flex: 0 1 auto;           /* <<< nicht fix auf 520 am handy */
-  }
+ /* Unternehmen: zwei Spalten OHNE Zwischenraum */
+#unternehmen .uGrid{
+  display: flex;
+  align-items: flex-start;
+  gap: 0;                 /* <- kein Abstand */
+  justify-content: flex-start;  /* <- KEIN space-between */
 }
 
-
-/* links soll den restlichen platz nehmen */
 #unternehmen .uLeft{
-  flex: 1 1 auto;
+  flex: 1 1 0;
   min-width: 0;
+  max-width: none;        /* <- falls irgendwo 760px reinfunkt */
 }
 
-/* rechts fix, klebt rechts */
 #unternehmen .uRight{
   flex: 0 0 520px;
   max-width: 520px;
-  margin-left: auto;
-}
-/* ===== Einheitlicher Textblock (Einzug + Blockbreite + Typo) ===== */
-:host .leftText,
-:host #unternehmen .uLeft{
-  max-width: 760px;          /* gleiche Blockbreite */
-  padding-inline: 0;         /* gleicher “Einzug” innerhalb */
-  margin: 0;                 /* kein extra Verschieben */
-  font-size: 1.4rem;         /* gleiche Schriftgröße */
-  font-weight: 500;
-  line-height: 2;          /* als Verhältnis -> überall gleich */
-  letter-spacing: .01em;
-  opacity: .95;
+  margin-left: 0;         /* <- KEIN auto */
 }
 
 /* Absätze: identische Abstände + Blocksatz */
@@ -820,3 +802,4 @@
 }
 :host .leftText p:last-child,
 :host #unternehmen .uLeft p:last-child{ margin-bottom: 0; }
+}
