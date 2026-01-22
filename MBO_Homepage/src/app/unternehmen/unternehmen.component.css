@@ -8,7 +8,6 @@
   max-width: 1120px;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .wrap{ width: 100%; }     /* nur Layout, keine Breite regeln */
@@ -147,6 +146,24 @@
 .screen > .wrap,
 .screen > .heroCenter{
   width:100%;            /* WICHTIG: Content bekommt Breite */
+}
+
+/* Unternehmen: Höhe nur so groß wie Inhalt */
+#unternehmen.screen{
+  min-height: auto;
+  align-items: flex-start;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#unternehmen .wrap.contentWrap{
+  height: auto;
+  min-height: 0;
+}
+#unternehmen .scrollPanel{
+  height: auto;
+  min-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 
@@ -591,6 +608,22 @@
 }
 .uBullets div{ margin: 2px 0; }
 
+/* Unternehmen: Text + Grafik nebeneinander */
+#unternehmen .uGrid{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 520px;
+  gap: 26px;
+  align-items: flex-start;
+  margin-top: 14px;
+}
+#unternehmen .uLeft{
+  min-width: 0;
+}
+#unternehmen .uRight{
+  width: 520px;
+  max-width: 520px;
+}
+
 /* responsive */
 @media (max-width: 980px){
   .uPanel{ width: 100%; }
@@ -702,14 +735,20 @@
 /* TwoCol: nicht vertikal zentrieren -> verhindert "Luftloch" */
 .screen.twoCol{
   align-items: flex-start;
-  padding-top: 44px;          /* Platz wegen sticky nav */
-  padding-bottom: 44px;
+  padding-top: 0;          /* kein Abstand zur vorherigen Section */
+  padding-bottom: 0;
   min-height: auto;           /* wichtig: kein 520px Zwang */
 }
 
 /* falls du tight-top/bottom verwendest */
 .screen.twoCol.tight-top{ padding-top: 24px; }
 .screen.twoCol.tight-bottom{ padding-bottom: 24px; }
+
+/* Direkt nach Unternehmen: keinen vertikalen Spalt */
+#unternehmen + .screen.twoCol{
+  padding-top: 0;
+  margin-top: 0;
+}
 /* Links: bessere Lesbarkeit + "premium" */
 .leftText{
   max-width: none;  /* <<< wichtig */
