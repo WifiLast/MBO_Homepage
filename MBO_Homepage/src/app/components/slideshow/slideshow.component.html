@@ -2,8 +2,8 @@
     <div class="slideshow-container" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
         <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide"
             [class.zoom-out]="i === currentSlide">
-            <img [src]="slide" [alt]="'Slide ' + (i + 1)" [attr.loading]="i === 0 ? 'eager' : 'lazy'"
-                [attr.fetchpriority]="i === 0 ? 'high' : 'auto'">
+            <img *ngIf="i === 0 || loadOthers" [src]="slide" [alt]="'Slide ' + (i + 1)"
+                [attr.loading]="i === 0 ? 'eager' : 'lazy'" [attr.fetchpriority]="i === 0 ? 'high' : 'auto'">
         </div>
 
         <div class="slideshow-text-overlay" *ngIf="showOverlay">

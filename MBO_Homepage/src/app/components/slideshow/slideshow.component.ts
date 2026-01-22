@@ -31,20 +31,31 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   @Input() cardsPerRow: number = 2; // Default: 2 cards per row
 
   currentSlide = 0;
+  loadOthers = false;
   private intervalId: any;
   private touchStartX = 0;
   private touchEndX = 0;
 
   ngOnInit(): void {
+    console.log('Slideshow Init. Slides:', this.slides);
+    console.log('Slideshow Init. ImagePath:', this.imagePath);
+
     // If imagePath is provided, use it as a single slide
     if (this.imagePath && this.slides.length === 0) {
       this.slides = [this.imagePath];
+      this.loadOthers = true;
+    } else {
+      setTimeout(() => {
+        this.loadOthers = true;
+      }, 300);
     }
 
     // Set initial slide index
     if (this.initialSlide >= 0 && this.initialSlide < this.slides.length) {
       this.currentSlide = this.initialSlide;
     }
+
+    console.log('Slideshow Active Slide:', this.currentSlide);
 
     this.startSlideshow();
   }

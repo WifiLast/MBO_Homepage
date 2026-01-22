@@ -6,59 +6,15 @@
     </div>
 </div>
 
-<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
-    <app-slideshow
-        [slides]="slides"
-        [showOverlay]="true"
-        [overlayTitle]="'HERO.TITLE' | translate"
-        [overlaySubtitle]="'HERO.SUBTITLE' | translate"
-        [cards]="cards"
-        [showCards]="true">
-    </app-slideshow>
-</section>
-
-<!-- <section class="hero" style="height: calc(100vh - 92px);" aria-label="Hero">
-    <div class="heroRow">
-        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
-            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
-        </app-slideshow>
-    </div>
-
-    <div class="cards">
-        <article class="card" id="unternehmen">
-            <h3>{{ 'HERO.COMPANY.TITLE' | translate }}</h3>
-            <p>
-                {{ 'HERO.COMPANY.DESCRIPTION' | translate }}
-            </p>
-        </article>
-
-        <article class="card" id="produkte">
-            <h3>{{ 'HERO.PRODUCTS.TITLE' | translate }}</h3>
-            <p>
-                {{ 'HERO.PRODUCTS.DESCRIPTION' | translate }}
-            </p>
-        </article>
-    </div>
-</section> -->
-
 <!-- Scrollbarer Inhalt aus dem zweiten Bild (Header ignoriert) -->
 <section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
-        <p class="para">
-            {{ 'CONTENT.PARA1_PART1' | translate }}<span class="hl">MBO</span>{{ 'CONTENT.PARA1_PART2' | translate
-            }}<span class="hl">{{ 'CONTENT.CLEANROOMS' | translate }}</span>{{ 'CONTENT.PARA1_PART3' | translate }}
+        <p>
+            {{ 'HOME_NEW.PARA1' | translate }}
         </p>
-
-        <p class="para">
-            {{ 'CONTENT.PARA2_PRE' | translate }}<span class="hl">MBO</span>{{ 'CONTENT.PARA2_ACTION' | translate
-            }}<span class="hl">{{ 'CONTENT.ITEM_MBMW' | translate }}</span>, <span class="hl">{{
-                'CONTENT.ITEM_PHOTOMASK' | translate }}</span>, <span class="hl">{{ 'CONTENT.ITEM_SEM' | translate
-                }}</span>, <span class="hl">{{ 'CONTENT.ITEM_TESTBENCHES' | translate }}</span>, <span class="hl">{{
-                'CONTENT.ITEM_CLIMATE' | translate }}</span>{{ 'CONTENT.PARA2_POST' | translate }}<span
-                class="hl">MBO</span>{{ 'CONTENT.PARA2_END' | translate }}
+        <p>
+            {{ 'HOME_NEW.PARA2' | translate }}
         </p>
-        <!-- filler spacing to make scrolling feel like the reference -->
-        <!-- <div style="height:140px;"></div> -->
 
 
 
@@ -68,7 +24,8 @@
             </p>
         </ul>
 
-        <div class="timeline" style="max-width: 95%;" role="group" [attr.aria-label]="'ARIA.PROJECT_PHASES' | translate">
+        <div class="timeline" style="max-width: 95%;" role="group"
+            [attr.aria-label]="'ARIA.PROJECT_PHASES' | translate">
             <!-- Row 1 -->
             <!-- Gate 0 -->
             <div class="gate" style="left: 0%; top: 0;"><span>{{ 'TIMELINE.GATE' | translate }}0</span></div>

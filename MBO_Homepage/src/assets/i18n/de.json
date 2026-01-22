@@ -330,5 +330,85 @@
       "SPECS_ITEM6": "Laminar flow downwarded",
       "SPECS_ITEM7": "Floor vibration criteria ≤ VC-E"
     }
+  },
+  "A2_HTC": {
+    "INTRO_PARA": "Die Präzisionsklimagerät A²HTC ist ein Luft-Luft-Prozessthermostat zur präzisen Regelung von Prozessumgebungen mit höchsten Anforderungen an Temperatur, relative Luftfeuchtigkeit und Druckintegrität. Das Präzisionsklimagerät A²HTC kann Wärmebelastungen von bis zu 30 kW aus der Prozessumgebung abführen.",
+    "MODES_INTRO": "Die Präzisionsklimaanlage A²HTC gewährleistet entweder:",
+    "MODE1": "konstante Prozessbedingungen (Modus 1) durch präzise Regelung von Temperatur, Feuchte und Druck oder",
+    "MODE2": "variable Temperatur- und/oder Feuchteprofile (Modus 2).",
+    "APPLICATIONS_TITLE": "Typische Anwendungsbereiche",
+    "APP1": "Fotomasken-Entwicklungssysteme",
+    "APP2": "Prüfstände / Testanlagen / Klimakammern / Bioreaktoren",
+    "APP3": "Rasterelektronenmikroskope",
+    "APP4": "Klimatisierung von Reinräumen bis zu einem Raumvolumen von 90 m³",
+    "PERFORMANCE": {
+      "TITLE": "P E R F O R M A N C E  D A T A",
+      "COOLING_PERF": "Cooling performance",
+      "AIR_RATE": "Air Rate",
+      "MODE1_LABEL": "Mode 1: Stable temperature and relative humidity",
+      "MODE2_LABEL": "Mode 2: Temperature and humidity ramping (up & down)",
+      "INLET_TEMP": "Cooling water inlet temperature range",
+      "DIMENSION": "Dimension",
+      "VOLTAGE": "Operation voltage",
+      "POWER_CONSUMPTION": "Max. power consumption",
+      "REFRIGERANT": "Refrigerant",
+      "MONITORING": "Real-time monitoring",
+      "CONNECTION": "Connection to controller",
+      "APPROVALS": "Approvals"
+    }
+  },
+  "CT_2_0": {
+    "INTRO": "Der Cooling Tower CT 2.0 als Liquid-to-Liquid-Prozessthermostat dient als Prozesskühlung für Anlagen mit höchster Anforderung an Temperaturstabilität, definierten Volumenstrom, stabilen Druck und Versorgungssicherheit mit einer abgeführten Wärmemenge von bis zu 800 kW.",
+    "MODES_INTRO": "Der Cooling Tower CT 2.0 kann mit 2 Betriebsmodi betrieben werden:",
+    "MODE1": "Modus 1: Konstante Vorlauftemperatur mit einer Temperaturstabilität von ± 0,2 K",
+    "MODE2": "Modus 2: Up- & Downramping der Vorlauftemperatur",
+    "APPLICATIONS_TITLE": "Klassische Anwendungsbereiche sind:",
+    "APP1": "Multi-Beam-Mask-Writer",
+    "APP2": "Rasterelektronenmikroskope",
+    "APP3": "Prüfstände",
+    "APP4": "Rechenzentren - Cluster Cooling",
+    "APP5": "Bioreaktoren",
+    "APP6": "Usw.",
+    "UTILITIES_PARA1": "Am Cooling Tower CT 2.0 können bis zu 4 Utilities angeschlossen werden.",
+    "UTILITIES_PARA2": "Der Cooling Tower CT 2.0 versorgt alle Utilities mit derselben Vorlauftemperatur und führt die Wärmelasten über den Wärmetauscher an die Gebäudekälteversorgung ab.",
+    "UTILITIES_PARA3": "Für jedes Utility ist der Volumenstrom separat regelbar, wobei der Systemdruck für alle Utilities am gewünschten Druckpunkt konstant gehalten wird."
+  },
+  "COMPANY_PAGE": {
+    "INTRO_PARA1": "Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von Reinräumen, Prüfständen, der Anlagenintegration und den Sonderanlagenbau.",
+    "INTRO_PARA2": "Aus der Halbleiterindustrie kommend, mit einem starken Fokus auf Spitzentechnologie und Innovation entwickeln wir zukunftsweisende Lösungen, die den höchsten Ansprüchen an Präzision, Zuverlässigkeit und Effizienz gerecht werden.",
+    "INTRO_PARA3": "Unsere Geschäftsfelder umfassen Projekt Management, Engineering, Mess-, Steuerungs- und Regelungstechnik, Softwareentwicklung sowie die Fertigung und Montage.",
+    "INTRO_PARA4": "Unsre Leistungen erbringen wir entweder direkt beim Kunden oder auf 600 m² Produktionsfläche an unserem Standort in Brunn am Gebirge.",
+    "GROUP": {
+      "HEADQUARTER": "Headquarter",
+      "CRM": "Customer Relationship",
+      "ACCOUNTING": "Accounting",
+      "ADMIN": "Administration",
+      "PM": "Project Management",
+      "ENGINEERING": "Engineering",
+      "SOFTWARE": "Software Development",
+      "SITE_COORD": "Site coordination",
+      "WORK_PREP": "Work preparation",
+      "CONSTRUCTION": "Construction",
+      "MAINTENANCE": "Maintenance and Servicing"
+    },
+    "TIMELINE_TEXT": {
+      "PARA1": "In unserer Funktion als ausführendes Unternehmen oder als Generalunternehmer übernehmen wir die volle Verantwortung für die Einhaltung der Sicherheits- und Qualitätsstandards sowie für die zielgerichtete und termintreue Projektumsetzung in komplexesten Prozessumgebungen.",
+      "PARA2": "Dank unserer umfassenden Expertise und Innovationskraft unterstützen wir internationale Konzerne und Technologieführer bei der Umsetzung von Projekten, die neue Maßstäbe in der Branche setzen.",
+      "PARA3": "Zu den Kernkompetenzen der MBO gehört es, strengste Spezifikationen, wie z.B. Stabilität für Temperatur ±2 mK, Druck ±1 Pa, rel. Feuchte ±0,2 %, Magnetfeld AC ≤ 0.03 µT, DC < 0.03 µT, etc., einzuhalten.",
+      "PARA4": "Dabei errichtet die MBO Prozessumgebungen wie Reinräume, Prüf-, Mess- und Klimakammern mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.",
+      "PARA5": "Die MBO integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B. MBMW-Tools, Photomask development systems, Scanning Electron Microscopes, Test benches, Climate Chambers, Cluster, usw., in Prozessumgebungen. Die Leistungen der MBO umfassen dabei den vollen Projektzyklus."
+    },
+    "TIMELINE_EVENTS": {
+      "2024": "Firmenreorganisation<br>Gründung der MBO Trinity GmbH<br>Gründung der MBO Engineering GmbH",
+      "2022": "Übersiedlung Engineering-Büro HALLEIN<br>nach PUCH bei HALLEIN",
+      "2021": "Übersiedlung Produktionsstandort Traiskirchen<br>nach Brunn am Gebirge;<br>Erweiterung der Produktionsfläche auf 600 m²",
+      "2019": "Eröffnung Produktionsstandort Traiskirchen;<br>Start mit Montagen für Industrieanlagen",
+      "2018": "Eröffnung Engineering-Büro HALLEIN",
+      "2016": "Gründung MBO services GmbH"
+    }
+  },
+  "HOME_NEW": {
+    "PARA1": "Die MBO plant und errichtet Prozessumgebungen wie Reinräume, Prüf-, Mess- und Klimakammern mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.",
+    "PARA2": "Die MBO integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B. MBMW-Tools, Photomask development systems, Scanning Electron Microscopes, Test benches, Climate Chambers, Cluster, usw., in Prozessumgebungen. Die Leistungen der MBO umfassen dabei den vollen Projektzyklus."
   }
 }

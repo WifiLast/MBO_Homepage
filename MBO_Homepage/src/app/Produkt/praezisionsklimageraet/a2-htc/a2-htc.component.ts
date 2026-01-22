@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { SlideshowComponent } from '../../../components/slideshow/slideshow.component';
+import { SlideshowComponent, CardData } from '../../../components/slideshow/slideshow.component';
+
 import { KarriereSectionComponent } from '../../../components/karriere-section/karriere-section.component';
 
 @Component({
@@ -18,5 +19,9 @@ export class A2HTCComponent {
     '/Bilder/ART/Bau/20240514_134951.jpg',
     '/Bilder/ART/Bau/20240514_135011.jpg',
     '/Bilder/ART/Bau/20240515_104609.jpg',
+  ];
+
+  cards: CardData[] = [
+
   ];
 }

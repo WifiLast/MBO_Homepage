@@ -127,7 +127,7 @@ nav .submenu-item {
     position: relative;
 }
 
-nav .submenu-item > a::after {
+nav .submenu-item>a::after {
     content: "▸";
     font-size: 0.7em;
     opacity: 0.8;
@@ -459,4 +459,28 @@ nav a.active {
         padding: 3px 6px !important;
         font-size: 12px;
     }
+}
+
+/* Hero Container for Slideshow */
+.hero-container {
+    position: relative;
+    width: 100%;
+    /* Match the original hero height */
+    height: calc(100dvh - var(--header-height));
+    min-height: 600px;
+    /* Ensure minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media (max-width: 860px) {
+    .hero-container {
+        height: auto;
+        min-height: auto;
+    }
+}
+
+.hero-container[hidden] {
+    display: none !important;
 }

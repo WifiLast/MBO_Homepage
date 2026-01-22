@@ -1,41 +1,37 @@
-<section class="hero" aria-label="Hero">
-    <div class="heroRow">
-        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
-            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
-        </app-slideshow>
-    </div>
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
+    <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
+        [overlaySubtitle]="'HERO.SUBTITLE' | translate" [cards]="cards" [showCards]="true" [cardsPerRow]="2">
+    </app-slideshow>
 </section>
+
 
 <section class="contentWrap" aria-label="Content">
     <div class="content-row">
         <div class="scrollPanel">
             <p>
-                Die Präzisionsklimagerät A²HTC ist ein Luft-Luft-Prozessthermostat zur präzisen Regelung von
-                Prozessumgebungen mit höchsten Anforderungen an Temperatur, relative Luftfeuchtigkeit und
-                Druckintegrität. Das Präzisionsklimagerät A²HTC kann Wärmebelastungen von bis zu 30 kW aus der
-                Prozessumgebung abführen.
+                {{ 'A2_HTC.INTRO_PARA' | translate }}
             </p>
             <p>
-                Die Präzisionsklimaanlage A²HTC gewährleistet entweder:
+                {{ 'A2_HTC.MODES_INTRO' | translate }}
             </p>
 
             <ul>
-                <li>konstante Prozessbedingungen (Modus 1) durch präzise Regelung von Temperatur, Feuchte und Druck oder
+                <li>{{ 'A2_HTC.MODE1' | translate }}
                 </li>
 
-                <li>variable Temperatur- und/oder Feuchteprofile (Modus 2).</li>
+                <li>{{ 'A2_HTC.MODE2' | translate }}</li>
 
             </ul>
 
             <p>
-                Typische Anwendungsbereiche
+                {{ 'A2_HTC.APPLICATIONS_TITLE' | translate }}
             </p>
 
             <ul>
-                <li>Fotomasken-Entwicklungssysteme</li>
-                <li>Prüfstände / Testanlagen / Klimakammern / Bioreaktoren</li>
-                <li>Rasterelektronenmikroskope</li>
-                <li>Klimatisierung von Reinräumen bis zu einem Raumvolumen von 90 m³</li>
+                <li>{{ 'A2_HTC.APP1' | translate }}</li>
+                <li>{{ 'A2_HTC.APP2' | translate }}</li>
+                <li>{{ 'A2_HTC.APP3' | translate }}</li>
+                <li>{{ 'A2_HTC.APP4' | translate }}</li>
             </ul>
         </div>
         <div class="ct_image">
@@ -48,44 +44,46 @@
 <section class="contentWrap" aria-label="Content">
     <div class="content-row">
         <div class="scrollPanel performance_data">
-            <h3><pre>P E R F O R M A N C E  D A T A</pre></h3>
+            <h3>
+                <pre>{{ 'A2_HTC.PERFORMANCE.TITLE' | translate }}</pre>
+            </h3>
             <div class="performance_data_container">
                 <div class="performance_data_labels">
                     <p>
-                        Cooling performance
+                        {{ 'A2_HTC.PERFORMANCE.COOLING_PERF' | translate }}
                     </p>
                     <p>
-                        Air Rate
+                        {{ 'A2_HTC.PERFORMANCE.AIR_RATE' | translate }}
                     </p>
                     <p>
-                        Mode 1: Stable temperature and relative humidity
+                        {{ 'A2_HTC.PERFORMANCE.MODE1_LABEL' | translate }}
                     </p>
                     <p>
-                        Mode 2: Temperature and humidity ramping (up & down)
+                        {{ 'A2_HTC.PERFORMANCE.MODE2_LABEL' | translate }}
                     </p>
                     <p>
-                        Cooling water inlet temperature range
+                        {{ 'A2_HTC.PERFORMANCE.INLET_TEMP' | translate }}
                     </p>
                     <p>
-                        Dimension
+                        {{ 'A2_HTC.PERFORMANCE.DIMENSION' | translate }}
                     </p>
                     <p>
-                        Operation voltage
+                        {{ 'A2_HTC.PERFORMANCE.VOLTAGE' | translate }}
                     </p>
                     <p>
-                        Max. power consumption
+                        {{ 'A2_HTC.PERFORMANCE.POWER_CONSUMPTION' | translate }}
                     </p>
                     <p>
-                        Refrigerant
+                        {{ 'A2_HTC.PERFORMANCE.REFRIGERANT' | translate }}
                     </p>
                     <p>
-                        Real-time monitoring
+                        {{ 'A2_HTC.PERFORMANCE.MONITORING' | translate }}
                     </p>
                     <p>
-                        Connection to controller
+                        {{ 'A2_HTC.PERFORMANCE.CONNECTION' | translate }}
                     </p>
                     <p>
-                        Approvals
+                        {{ 'A2_HTC.PERFORMANCE.APPROVALS' | translate }}
                     </p>
 
                 </div>
@@ -124,7 +122,7 @@
                         R513A
                     </p>
                     <p>
-                       OPC UA and sensor integration
+                        OPC UA and sensor integration
                     </p>
                     <p>
                         Ethernet TCP
@@ -136,11 +134,14 @@
                 </div>
             </div>
         </div>
-        <div  class="ct_image">
+        <div class="ct_image">
             <img src="/A2HTC_open.png" alt="Cooling Tower CT 2.0">
         </div>
     </div>
 </section>
 
+<br>
+<br>
+<br>
 
 <app-karriere-section></app-karriere-section>

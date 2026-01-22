@@ -330,5 +330,85 @@
       "SPECS_ITEM6": "Laminar flow downwarded",
       "SPECS_ITEM7": "Floor vibration criteria ≤ VC-E"
     }
+  },
+  "A2_HTC": {
+    "INTRO_PARA": "The A²HTC precision air conditioning unit is an air-to-air process thermostat for precise control of process environments with the highest requirements for temperature, relative humidity and pressure integrity. The A²HTC precision air conditioning unit can remove heat loads of up to 30 kW from the process environment.",
+    "MODES_INTRO": "The A²HTC precision air conditioning unit ensures either:",
+    "MODE1": "constant process conditions (Mode 1) through precise control of temperature, humidity and pressure or",
+    "MODE2": "variable temperature and/or humidity profiles (Mode 2).",
+    "APPLICATIONS_TITLE": "Typical areas of application",
+    "APP1": "Photomask development systems",
+    "APP2": "Test benches / test facilities / climatic chambers / bioreactors",
+    "APP3": "Scanning electron microscopes",
+    "APP4": "Air conditioning of cleanrooms up to a room volume of 90 m³",
+    "PERFORMANCE": {
+      "TITLE": "P E R F O R M A N C E  D A T A",
+      "COOLING_PERF": "Cooling performance",
+      "AIR_RATE": "Air Rate",
+      "MODE1_LABEL": "Mode 1: Stable temperature and relative humidity",
+      "MODE2_LABEL": "Mode 2: Temperature and humidity ramping (up & down)",
+      "INLET_TEMP": "Cooling water inlet temperature range",
+      "DIMENSION": "Dimension",
+      "VOLTAGE": "Operation voltage",
+      "POWER_CONSUMPTION": "Max. power consumption",
+      "REFRIGERANT": "Refrigerant",
+      "MONITORING": "Real-time monitoring",
+      "CONNECTION": "Connection to controller",
+      "APPROVALS": "Approvals"
+    }
+  },
+  "CT_2_0": {
+    "INTRO": "The Cooling Tower CT 2.0 as a liquid-to-liquid process thermostat serves as process cooling for systems with the highest demands on temperature stability, defined volume flow, stable pressure and supply security with a dissipated heat quantity of up to 800 kW.",
+    "MODES_INTRO": "The Cooling Tower CT 2.0 can be operated with 2 operating modes:",
+    "MODE1": "Mode 1: Constant flow temperature with a temperature stability of ± 0.2 K",
+    "MODE2": "Mode 2: Up- & Downramping of flow temperature",
+    "APPLICATIONS_TITLE": "Classic areas of application are:",
+    "APP1": "Multi-Beam-Mask-Writer",
+    "APP2": "Scanning Electron Microscopes",
+    "APP3": "Test benches",
+    "APP4": "Data centers - Cluster Cooling",
+    "APP5": "Bioreactors",
+    "APP6": "Etc.",
+    "UTILITIES_PARA1": "Up to 4 utilities can be connected to the Cooling Tower CT 2.0.",
+    "UTILITIES_PARA2": "The Cooling Tower CT 2.0 supplies all utilities with the same flow temperature and dissipates heat loads via the heat exchanger to the building cooling supply.",
+    "UTILITIES_PARA3": "The volume flow can be regulated separately for each utility, whereby the system pressure for all utilities is kept constant at the desired pressure point."
+  },
+  "COMPANY_PAGE": {
+    "INTRO_PARA1": "MBO Trinity GmbH is a leading provider of high-precision engineering services and innovative solutions for the construction of cleanrooms, test benches, plant integration and special plant construction.",
+    "INTRO_PARA2": "Coming from the semiconductor industry, with a strong focus on cutting-edge technology and innovation, we develop forward-looking solutions that meet the highest standards of precision, reliability and efficiency.",
+    "INTRO_PARA3": "Our business areas include Project Management, Engineering, Measurement, Control and Regulation Technology, Software Development as well as Manufacturing and Assembly.",
+    "INTRO_PARA4": "We provide our services either directly at the customer's site or on 600 m² of production space at our location in Brunn am Gebirge.",
+    "GROUP": {
+      "HEADQUARTER": "Headquarter",
+      "CRM": "Customer Relationship",
+      "ACCOUNTING": "Accounting",
+      "ADMIN": "Administration",
+      "PM": "Project Management",
+      "ENGINEERING": "Engineering",
+      "SOFTWARE": "Software Development",
+      "SITE_COORD": "Site coordination",
+      "WORK_PREP": "Work preparation",
+      "CONSTRUCTION": "Construction",
+      "MAINTENANCE": "Maintenance and Servicing"
+    },
+    "TIMELINE_TEXT": {
+      "PARA1": "In our function as an executing company or as a general contractor, we take full responsibility for compliance with safety and quality standards as well as for targeted and on-time project implementation in the most complex process environments.",
+      "PARA2": "Thanks to our extensive expertise and innovation, we support international corporations and technology leaders in implementing projects that set new standards in the industry.",
+      "PARA3": "One of MBO's core competencies includes meeting the strictest specifications, such as temperature stability ±2 mK, pressure ±1 Pa, relative humidity ±0.2%, magnetic field AC ≤ 0.03 µT, DC < 0.03 µT, etc.",
+      "PARA4": "MBO constructs process environments such as cleanrooms, test, measurement and climate chambers with the necessary systems and aggregates ensuring that strict specifications are met and work processes can be carried out safely and efficiently.",
+      "PARA5": "MBO integrates capital-intensive systems worth double-digit millions of euros, such as MBMW tools, photomask development systems, scanning electron microscopes, test benches, climate chambers, clusters, etc., in process environments. MBO's services encompass the full project cycle."
+    },
+    "TIMELINE_EVENTS": {
+      "2024": "Company reorganization<br>Founding of MBO Trinity GmbH<br>Founding of MBO Engineering GmbH",
+      "2022": "Relocation of Engineering Office HALLEIN<br>to PUCH near HALLEIN",
+      "2021": "Relocation of production site Traiskirchen<br>to Brunn am Gebirge;<br>Expansion of production area to 600 m²",
+      "2019": "Opening of production site Traiskirchen;<br>Start of assembly for industrial plants",
+      "2018": "Opening of Engineering Office HALLEIN",
+      "2016": "Founding of MBO services GmbH"
+    }
+  },
+  "HOME_NEW": {
+    "PARA1": "MBO plans and constructs process environments such as cleanrooms, test, measurement and climate chambers with the necessary systems and aggregates to ensure that the strictest specifications are met and that work processes in these process environments can be carried out safely and efficiently.",
+    "PARA2": "MBO integrates capital-intensive systems worth double-digit millions of euros, such as MBMW tools, photomask development systems, scanning electron microscopes, test benches, climate chambers, clusters, etc., in process environments. MBO's services encompass the full project cycle."
   }
 }
