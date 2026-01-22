@@ -1,12 +1,9 @@
 <div class="slideshow-wrapper">
-    <div class="slideshow-container"
-         (touchstart)="onTouchStart($event)"
-         (touchend)="onTouchEnd($event)">
-        <div class="slide"
-             *ngFor="let slide of slides; let i = index"
-             [class.active]="i === currentSlide"
-             [class.zoom-out]="i === currentSlide">
-            <img [src]="slide" [alt]="'Slide ' + (i + 1)">
+    <div class="slideshow-container" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
+        <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide"
+            [class.zoom-out]="i === currentSlide">
+            <img [src]="slide" [alt]="'Slide ' + (i + 1)" [attr.loading]="i === 0 ? 'eager' : 'lazy'"
+                [attr.fetchpriority]="i === 0 ? 'high' : 'auto'">
         </div>
 
         <div class="slideshow-text-overlay" *ngIf="showOverlay">
@@ -15,15 +12,10 @@
         </div>
     </div>
 
-    <div class="slideshow-cards"
-         *ngIf="showCards && cards.length > 0"
-         [attr.data-alignment]="cardAlignment"
-         [attr.data-cards-per-row]="cardsPerRow">
-        <article class="slideshow-card"
-                 *ngFor="let card of cards"
-                 [id]="card.id || ''"
-                 [routerLink]="card.routerLink || null"
-                 [class]="card.cssClass || ''">
+    <div class="slideshow-cards" *ngIf="showCards && cards.length > 0" [attr.data-alignment]="cardAlignment"
+        [attr.data-cards-per-row]="cardsPerRow">
+        <article class="slideshow-card" *ngFor="let card of cards" [id]="card.id || ''"
+            [routerLink]="card.routerLink || null" [class]="card.cssClass || ''">
             <h3>{{ card.title | translate }}</h3>
             <p>{{ card.description | translate }}</p>
         </article>

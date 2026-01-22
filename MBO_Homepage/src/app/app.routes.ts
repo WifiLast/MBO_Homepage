@@ -1,26 +1,49 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { UnternehmenComponent } from './unternehmen/unternehmen.component';
-import { ProdukteComponent } from './produkte/produkte.component';
-import { KarriereComponent } from './karriere/karriere.component';
-import { AnlagenintegrationComponent } from './Produkt/anlagenintegration/anlagenintegration.component';
-import { PraezisionsklimageraetComponent } from './Produkt/praezisionsklimageraet/praezisionsklimageraet.component';
-import { PraezisionstermostatComponent } from './Produkt/praezisionstermostat/praezisionstermostat.component';
-import { ReinraumloesungComponent } from './Produkt/reinraumloesung/reinraumloesung.component';
-import { KontaktComponent } from './kontakt/kontakt.component';
-import { CT20Component } from './Produkt/praezisionstermostat/ct2-0/ct2-0.component';
-import { A2HTCComponent } from './Produkt/praezisionsklimageraet/a2-htc/a2-htc.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'unternehmen', component: UnternehmenComponent },
-    { path: 'produkte', component: ProdukteComponent },
-    { path: 'karriere', component: KarriereComponent },
-    { path: 'kontakt', component: KontaktComponent },
-    { path: 'Produkt/anlagenintegration', component: AnlagenintegrationComponent },
-    { path: 'Produkt/praezisionsklimageraet', component: PraezisionsklimageraetComponent },
-    { path: 'Produkt/praezisionsklimageraet/a2-htc', component: A2HTCComponent },
-    { path: 'Produkt/praezisionstermostat', component: PraezisionstermostatComponent },
-    { path: 'Produkt/praezisionstermostat/ct2-0', component: CT20Component },
-    { path: 'Produkt/reinraumloesung', component: ReinraumloesungComponent }
+    {
+        path: '',
+        loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
+        data: { preload: true }
+    },
+    {
+        path: 'unternehmen',
+        loadComponent: () => import('./unternehmen/unternehmen.component').then(m => m.UnternehmenComponent)
+    },
+    {
+        path: 'produkte',
+        loadComponent: () => import('./produkte/produkte.component').then(m => m.ProdukteComponent)
+    },
+    {
+        path: 'karriere',
+        loadComponent: () => import('./karriere/karriere.component').then(m => m.KarriereComponent)
+    },
+    {
+        path: 'kontakt',
+        loadComponent: () => import('./kontakt/kontakt.component').then(m => m.KontaktComponent)
+    },
+    {
+        path: 'Produkt/anlagenintegration',
+        loadComponent: () => import('./Produkt/anlagenintegration/anlagenintegration.component').then(m => m.AnlagenintegrationComponent)
+    },
+    {
+        path: 'Produkt/praezisionsklimageraet',
+        loadComponent: () => import('./Produkt/praezisionsklimageraet/praezisionsklimageraet.component').then(m => m.PraezisionsklimageraetComponent)
+    },
+    {
+        path: 'Produkt/praezisionsklimageraet/a2-htc',
+        loadComponent: () => import('./Produkt/praezisionsklimageraet/a2-htc/a2-htc.component').then(m => m.A2HTCComponent)
+    },
+    {
+        path: 'Produkt/praezisionstermostat',
+        loadComponent: () => import('./Produkt/praezisionstermostat/praezisionstermostat.component').then(m => m.PraezisionstermostatComponent)
+    },
+    {
+        path: 'Produkt/praezisionstermostat/ct2-0',
+        loadComponent: () => import('./Produkt/praezisionstermostat/ct2-0/ct2-0.component').then(m => m.CT20Component)
+    },
+    {
+        path: 'Produkt/reinraumloesung',
+        loadComponent: () => import('./Produkt/reinraumloesung/reinraumloesung.component').then(m => m.ReinraumloesungComponent)
+    }
 ];
