@@ -1,9 +1,18 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+export interface CardData {
+  title: string;
+  description: string;
+  id?: string;
+  routerLink?: string;
+  cssClass?: string;
+}
 
 @Component({
   selector: 'app-slideshow',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './slideshow.component.html',
   styleUrl: './slideshow.component.css'
 })
@@ -15,6 +24,10 @@ export class SlideshowComponent implements OnInit, OnDestroy {
   @Input() overlaySubtitle: string = '';
   @Input() initialSlide: number = 0;
   @Input() imagePath: string = '';
+  @Input() cards: CardData[] = [];
+  @Input() showCards: boolean = false;
+  @Input() cardAlignment: 'left' | 'right' | 'center' = 'right';
+  @Input() cardsPerRow: number = 2; // Default: 2 cards per row
 
   currentSlide = 0;
   private intervalId: any;

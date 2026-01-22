@@ -1,8 +1,14 @@
+/* Slideshow Wrapper */
+.slideshow-wrapper {
+    position: relative;
+    width: 100%;
+}
+
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 60vh;
     max-height: 100%;
     overflow: hidden;
     border-radius: 0;
@@ -147,7 +153,7 @@
 
 @media (max-width: 1100px) {
     .slideshow-container {
-        height: 500px;
+        height: 60vh;
     }
 
     .slideshow-text-overlay h1 {
@@ -161,7 +167,7 @@
 
 @media (max-width: 860px) {
     .slideshow-container {
-        height: 550px;
+        height: 60vh;
     }
 
     .slideshow-text-overlay {
@@ -187,7 +193,7 @@
 
 @media (max-width: 640px) {
     .slideshow-container {
-        height: 380px;
+        height: 60vh;
         border-radius: 0;
     }
 
@@ -233,7 +239,7 @@
 
 @media (max-width: 480px) {
     .slideshow-container {
-        height: 320px;
+        height: 60vh;
     }
 
     .slideshow-text-overlay {
@@ -254,4 +260,94 @@
         font-size: 16px;
         padding: 5px 8px;
     }
+}
+
+/* Slideshow Cards */
+.slideshow-cards {
+    max-width: 100%;
+    margin: -30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    align-items: stretch;
+    position: relative;
+    z-index: 100;
+    padding: 0 clamp(16px, 4vw, 40px) clamp(24px, 5vw, 48px);
+}
+
+/* Card alignment: left */
+.slideshow-cards[data-alignment="left"] {
+    justify-content: flex-start;
+}
+
+/* Card alignment: right */
+.slideshow-cards[data-alignment="right"] {
+    justify-content: flex-end;
+}
+
+/* Card alignment: center (default) */
+.slideshow-cards[data-alignment="center"] {
+    justify-content: center;
+}
+
+/* Cards per row: 1 */
+.slideshow-cards[data-cards-per-row="1"] {
+    grid-template-columns: 1fr;
+}
+
+/* Cards per row: 2 */
+.slideshow-cards[data-cards-per-row="2"] {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+}
+
+/* When there's only 1 card in a 2-column grid with right alignment, place it in the right column */
+.slideshow-cards[data-cards-per-row="2"][data-alignment="right"] .slideshow-card:first-child:last-child {
+    grid-column: 2;
+}
+
+/* Cards per row: 3 */
+.slideshow-cards[data-cards-per-row="3"] {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Cards per row: 4 */
+.slideshow-cards[data-cards-per-row="4"] {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.slideshow-card {
+    padding: 48px 36px;
+    border-radius: 18px;
+    background: #1A1F30;
+    border: 1px solid rgba(123, 210, 255, .25);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .40);
+    position: relative;
+    z-index: 100;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    min-height: 250px;
+    min-width: 380px;
+    justify-content: center;
+}
+
+.slideshow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, .50);
+}
+
+.slideshow-card h3 {
+    margin: 0 0 20px;
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 800;
+}
+
+.slideshow-card p {
+    margin: 0;
+    font-size: clamp(12px, 1.2vw, 16px);
+    line-height: 1.6;
+    color: rgba(235, 246, 255, .92);
 }
