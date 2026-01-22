@@ -1,15 +1,31 @@
-<div class="slideshow-container"
-     (touchstart)="onTouchStart($event)"
-     (touchend)="onTouchEnd($event)">
-    <div class="slide"
-         *ngFor="let slide of slides; let i = index"
-         [class.active]="i === currentSlide"
-         [class.zoom-out]="i === currentSlide">
-        <img [src]="slide" [alt]="'Slide ' + (i + 1)">
+<div class="slideshow-wrapper">
+    <div class="slideshow-container"
+         (touchstart)="onTouchStart($event)"
+         (touchend)="onTouchEnd($event)">
+        <div class="slide"
+             *ngFor="let slide of slides; let i = index"
+             [class.active]="i === currentSlide"
+             [class.zoom-out]="i === currentSlide">
+            <img [src]="slide" [alt]="'Slide ' + (i + 1)">
+        </div>
+
+        <div class="slideshow-text-overlay" *ngIf="showOverlay">
+            <h1>{{ overlayTitle }}</h1>
+            <p>{{ overlaySubtitle }}</p>
+        </div>
     </div>
 
-    <div class="slideshow-text-overlay" *ngIf="showOverlay">
-        <h1>{{ overlayTitle }}</h1>
-        <p>{{ overlaySubtitle }}</p>
+    <div class="slideshow-cards"
+         *ngIf="showCards && cards.length > 0"
+         [attr.data-alignment]="cardAlignment"
+         [attr.data-cards-per-row]="cardsPerRow">
+        <article class="slideshow-card"
+                 *ngFor="let card of cards"
+                 [id]="card.id || ''"
+                 [routerLink]="card.routerLink || null"
+                 [class]="card.cssClass || ''">
+            <h3>{{ card.title }}</h3>
+            <p>{{ card.description }}</p>
+        </article>
     </div>
 </div>
