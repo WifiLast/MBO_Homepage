@@ -264,11 +264,11 @@
 
 /* Slideshow Cards */
 .slideshow-cards {
-    max-width: 100%;
+    max-width: min(1600px, 100%);
     margin: -30px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
+    gap: 48px;
     align-items: stretch;
     position: relative;
     z-index: 100;
@@ -297,13 +297,20 @@
 
 /* Cards per row: 2 */
 .slideshow-cards[data-cards-per-row="2"] {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-items: center;
 }
 
 /* When there's only 1 card in a 2-column grid with right alignment, place it in the right column */
 .slideshow-cards[data-cards-per-row="2"][data-alignment="right"] .slideshow-card:first-child:last-child {
     grid-column: 2;
+    justify-self: end;
+}
+
+/* When using 2 cards per row setting but need to ensure proper 2-column behavior for 1-2 cards */
+.slideshow-cards[data-cards-per-row="2"]:has(.slideshow-card:nth-child(1):nth-last-child(1)),
+.slideshow-cards[data-cards-per-row="2"]:has(.slideshow-card:nth-child(2):nth-last-child(1)) {
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Cards per row: 3 */
@@ -330,7 +337,7 @@
     flex-direction: column;
     height: 20vh;
     min-height: 250px;
-    min-width: 380px;
+    min-width: 350px;
     justify-content: center;
 }
 
