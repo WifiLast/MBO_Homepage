@@ -10,7 +10,6 @@ main {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: calc(100dvh - var(--header-height));
     overflow: hidden;
 }
 
