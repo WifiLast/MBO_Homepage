@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 export interface CardData {
   title: string;
@@ -12,7 +13,7 @@ export interface CardData {
 
 @Component({
   selector: 'app-slideshow',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './slideshow.component.html',
   styleUrl: './slideshow.component.css'
 })

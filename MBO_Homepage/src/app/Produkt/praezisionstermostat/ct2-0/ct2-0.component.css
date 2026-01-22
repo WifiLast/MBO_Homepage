@@ -185,6 +185,10 @@ app-slideshow {
     font-size: 12px;
 }
 
+.contentWrap:first-of-type {
+   /*  margin-top: 40px; */
+}
+
 .scrollPanel {
     /* height removed to allow natural flow */
     /* overflow removed */

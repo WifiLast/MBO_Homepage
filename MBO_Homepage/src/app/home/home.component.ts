@@ -1,12 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { SlideshowComponent } from '../components/slideshow/slideshow.component';
+import { SlideshowComponent, CardData } from '../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../components/karriere-section/karriere-section.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent],
+  imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -18,6 +19,21 @@ export class HomeComponent implements OnInit, OnDestroy {
     '/Bilder/ART/Bau/20240514_134951.jpg',
     '/Bilder/ART/Bau/20240514_135011.jpg',
     '/Bilder/ART/Bau/20240515_104609.jpg'
+  ];
+
+  cards: CardData[] = [
+    {
+      title: 'HERO.COMPANY.TITLE',
+      description: 'HERO.COMPANY.DESCRIPTION',
+      id: 'unternehmen',
+      cssClass: 'company'
+    },
+    {
+      title: 'HERO.PRODUCTS.TITLE',
+      description: 'HERO.PRODUCTS.DESCRIPTION',
+      id: 'produkte',
+      cssClass: 'products'
+    }
   ];
   showIntro = false;
 introOut = false;
