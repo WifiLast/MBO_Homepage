@@ -1,42 +1,12 @@
 <section class="hero" aria-label="Hero">
-    <div class="heroRow">
-        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
-            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
-        </app-slideshow>
-    </div>
-    <div class="cards">
-        <article class="card reinraum" id="reinraum" routerLink="/Produkt/reinraumloesung">
-            <h3>Reinraumtechnologie</h3>
-            <p>
-                Mit entscheidendem Know-How und Erfahrung auf dem Gebiet der Reinraumtechnik mit besonderer Sorgfalt und
-                dem Antrieb zu den Besten zählen zu wollen.
-            </p>
-        </article>
-
-        <article class="card anlagenintegration" id="anlagenintegration" routerLink="/Produkt/anlagenintegration">
-            <h3>Anlagenintegration</h3>
-            <p>
-                Die MBO integriert als Single-Point-of-Accountability Anlagen und Technologien in die Fertigungsprozesse
-                der Auftraggeber.
-            </p>
-        </article>
-
-        <article class="card praezisionsklimageraet" id="praezisionsklimageraet" routerLink="/Produkt/praezisionsklimageraet">
-            <h3>Präzissionsklimageräte</h3>
-            <p>
-                Hochpräzise Temperatur- und Feuchteregelung für sensible Prozesse in Produktion, Test-, Labor- und
-                Prozessumfeld.
-            </p>
-        </article>
-
-        <article class="card praezisionstermostat" id="produkte" routerLink="/Produkt/praezisionstermostat">
-            <h3>Präzisionsthermostate</h3>
-            <p>
-                Hochpräzise Temperaturregelung für flüssigkeitsführende sensible Prozesse in Produktion, Test-, Labor-
-                und Prozessumfeld.
-            </p>
-        </article>
-    </div>
+    <app-slideshow
+        [slides]="slides"
+        [showOverlay]="true"
+        [overlayTitle]="'HERO.TITLE' | translate"
+        [overlaySubtitle]="'HERO.SUBTITLE' | translate"
+        [cards]="cards"
+        [showCards]="true">
+    </app-slideshow>
 </section>
 
 <app-karriere-section></app-karriere-section>

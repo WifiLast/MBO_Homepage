@@ -1,27 +1,13 @@
 <section class="hero" aria-label="Hero">
-    <div class="heroRow">
-        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
-            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
-        </app-slideshow>
-    </div>
-
-    <div class="cards">
-        <article class="card invisible-card">
-            <h3>Placeholder</h3>
-            <p>
-                This card is invisible
-            </p>
-        </article>
-
-        <article class="card" id="reinraumloesung">
-            <h3>Reinraumtechnologie</h3>
-            <p>
-                Mit entscheidendem Know-How und Erfahrung auf dem Gebiet der Reinraumtechnik entwickelt und errichtet
-                die MBO Trinity GmbH komplexe Reinraumlösungen für höchste Anforderungen in der Halbleiterindustrie und
-                Forschung.
-            </p>
-        </article>
-    </div>
+    <app-slideshow
+        [slides]="slides"
+        [showOverlay]="true"
+        [overlayTitle]="'HERO.TITLE' | translate"
+        [overlaySubtitle]="'HERO.SUBTITLE' | translate"
+        [cards]="cards"
+        [showCards]="true"
+        [cardsPerRow]="2">
+    </app-slideshow>
 </section>
 
 

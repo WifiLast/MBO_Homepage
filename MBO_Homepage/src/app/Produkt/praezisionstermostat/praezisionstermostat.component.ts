@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@an
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { SlideshowComponent } from '../../components/slideshow/slideshow.component';
+import { SlideshowComponent, CardData } from '../../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../../components/karriere-section/karriere-section.component';
 import { Subscription } from 'rxjs';
 
@@ -29,6 +29,15 @@ export class PraezisionstermostatComponent implements AfterViewInit, OnDestroy {
     '/Bilder/ART/Bau/20240514_134951.jpg',
     '/Bilder/ART/Bau/20240514_135011.jpg',
     '/Bilder/ART/Bau/20240515_104609.jpg',
+  ];
+
+  cards: CardData[] = [
+    {
+      title: 'Cooling Tower 2.0',
+      description: 'Der Cooling Tower CT 2.0 als Liquid-to-Liquid-Prozessthermostat dient als Prozesskühlung für Anlagen mit höchster Anforderung an Temper-aturstabilität, definierten Volumenstrom, stabilen Druck und Versorgungssicherheit mit einer abgeführten Wärmemenge von bis zu 800 kW.',
+      id: 'praezisionstermostat',
+      routerLink: '/Produkt/praezisionstermostat/ct2-0'
+    }
   ];
 
   constructor(private translate: TranslateService) { }

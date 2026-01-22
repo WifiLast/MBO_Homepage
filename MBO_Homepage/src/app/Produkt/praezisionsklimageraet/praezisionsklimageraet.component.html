@@ -1,25 +1,14 @@
 <section class="hero" aria-label="Hero">
-    <div class="heroRow">
-        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
-            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
-        </app-slideshow>
-    </div>
-
-    <div class="cards">
-        <article class="card invisible-card">
-            <h3>Placeholder</h3>
-            <p>
-                This card is invisible
-            </p>
-        </article>
-
-        <article class="card" id="praezisionsklimageraet" (click)="navigateToA2Htc()">
-            <h3>A²HTC - Präzissionsklimagerät</h3>
-            <p>
-                Die Präzisionsklimagerät A²HTC ist ein Luft-Luft-Prozessthermostat zur präzisen Regelung von Prozessumgebungen mit höchsten Anforderungen an Temperatur, relative Luftfeuchtigkeit und Druckintegrität.
-            </p>
-        </article>
-    </div>
+    <app-slideshow
+        [slides]="slides"
+        [showOverlay]="true"
+        [overlayTitle]="'HERO.TITLE' | translate"
+        [overlaySubtitle]="'HERO.SUBTITLE' | translate"
+        [cards]="cards"
+        [showCards]="true"
+        [cardsPerRow]="2"
+        [cardAlignment]="'right'">
+    </app-slideshow>
 </section>
 
 

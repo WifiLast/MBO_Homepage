@@ -1,26 +1,14 @@
 <section class="hero" aria-label="Hero">
-    <div class="heroRow">
-        <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
-            [overlaySubtitle]="'HERO.SUBTITLE' | translate">
-        </app-slideshow>
-    </div>
-
-    <div class="cards">
-        <article class="card invisible-card">
-            <h3>Placeholder</h3>
-            <p>
-                This card is invisible
-            </p>
-        </article>
-
-        <article class="card" id="praezisionstermostat" routerLink="/Produkt/praezisionstermostat/ct2-0">
-            <h3>Cooling Tower 2.0</h3>
-            <p>
-                Der Cooling Tower CT 2.0 als Liquid-to-Liquid-Prozessthermostat dient als Prozesskühlung für Anlagen mit
-                höchster Anforderung an Temper-aturstabilität, definierten Volumenstrom, stabilen Druck und
-                Versorgungssicherheit mit einer abgeführten Wärmemenge von bis zu 800 kW. </p>
-        </article>
-    </div>
+    <app-slideshow
+        [slides]="slides"
+        [showOverlay]="true"
+        [overlayTitle]="'HERO.TITLE' | translate"
+        [overlaySubtitle]="'HERO.SUBTITLE' | translate"
+        [cards]="cards"
+        [showCards]="true"
+        [cardsPerRow]="2"
+        [cardAlignment]="'right'">
+    </app-slideshow>
 </section>
 
 <section class="contentWrap" aria-label="Content">

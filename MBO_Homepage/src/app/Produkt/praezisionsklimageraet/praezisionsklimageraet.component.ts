@@ -1,10 +1,9 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { SlideshowComponent } from '../../components/slideshow/slideshow.component';
+import { SlideshowComponent, CardData } from '../../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../../components/karriere-section/karriere-section.component';
 import { Subscription } from 'rxjs';
-import { Router } from '@angular/router';
 
 declare global {
   interface Window {
@@ -30,7 +29,16 @@ export class PraezisionsklimageraetComponent implements AfterViewInit, OnDestroy
     '/Bilder/ART/Bau/20240515_104609.jpg',
   ];
 
-  constructor(private translate: TranslateService, private readonly router: Router) {}
+  cards: CardData[] = [
+    {
+      title: 'A²HTC - Präzissionsklimagerät',
+      description: 'Die Präzisionsklimagerät A²HTC ist ein Luft-Luft-Prozessthermostat zur präzisen Regelung von Prozessumgebungen mit höchsten Anforderungen an Temperatur, relative Luftfeuchtigkeit und Druckintegrität.',
+      id: 'praezisionsklimageraet',
+      routerLink: '/Produkt/praezisionsklimageraet/a2-htc'
+    }
+  ];
+
+  constructor(private translate: TranslateService) {}
 
   ngAfterViewInit(): void {
     this.typesetMath();
@@ -50,7 +58,4 @@ export class PraezisionsklimageraetComponent implements AfterViewInit, OnDestroy
     }
   }
 
-  navigateToA2Htc(): void {
-    this.router.navigate(['/Produkt/praezisionsklimageraet/a2-htc']);
-  }
 }
