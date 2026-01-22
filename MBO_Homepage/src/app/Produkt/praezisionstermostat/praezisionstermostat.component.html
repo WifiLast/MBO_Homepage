@@ -1,4 +1,4 @@
-<section class="hero" aria-label="Hero">
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
     <app-slideshow
         [slides]="slides"
         [showOverlay]="true"
@@ -11,34 +11,28 @@
     </app-slideshow>
 </section>
 
-<section class="contentWrap" aria-label="Content">
+<section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="content-row">
         <div class="scrollPanel">
-                    <p>
-            Die MBO Trinity GmbH baut und integriert hochpräzise Liquid-to-Liquid-Prozessthermostate und Kühlsysteme zur
-            Kühlung von hochsensiblen Anlagen wie z.B.: MBMW-Tools, Photomask Development Systems, Sputtering Tools,
-            Scanning Electron Microscopes, Test Benches, usw.
-        </p>
-        <p>
-            Die Kühlsysteme und Prozessthermostate sind für höchste Versorgungssicherheit und für die Einhaltung engster
-            Spezifikationen konzipiert.
-        </p>
+            <p>
+                {{ 'PRODUCT_PAGES.PRAEZISIONSTERMOSTAT.PARA1' | translate }}
+            </p>
+            <p>
+                {{ 'PRODUCT_PAGES.PRAEZISIONSTERMOSTAT.PARA2' | translate }}
+            </p>
 
-        <p>
-            Die Liquid-to-Liquid-Prozessthermostate und Kühlsysteme dienen als Prozesskühlung für Anlagen mit höchster
-            Anforderung an Temperaturstabilität, regelbaren Volumenstrom und stabilen Druck.
-        </p>
-        <p>
-            Die Kühlsysteme sind für die Einhaltung einer konstanten Vorlauftemperatur mit einer Temperaturstabilität
-            von ± 0,2 K konzipiert.
-        </p>
-        <p>
-            Planung und Errichtung von individuell auf Ihre Anforderung abgestimmte Liquid-to-Liquid-Prozessthermostaten
-            und Kühlsysteme.
-        </p>
+            <p>
+                {{ 'PRODUCT_PAGES.PRAEZISIONSTERMOSTAT.PARA3' | translate }}
+            </p>
+            <p>
+                {{ 'PRODUCT_PAGES.PRAEZISIONSTERMOSTAT.PARA4' | translate }}
+            </p>
+            <p>
+                {{ 'PRODUCT_PAGES.PRAEZISIONSTERMOSTAT.PARA5' | translate }}
+            </p>
         </div>
         <div class="model-wrapper">
-            <model-viewer src="/CT2_0.glb" alt="CT2 Model" auto-rotate camera-controls disable-zoom
+            <model-viewer src="/CT2_0.glb" [attr.alt]="'PRODUCT_PAGES.PRAEZISIONSTERMOSTAT.MODEL_ALT' | translate" auto-rotate camera-controls disable-zoom
                 disable-pan></model-viewer>
         </div>
     </div>

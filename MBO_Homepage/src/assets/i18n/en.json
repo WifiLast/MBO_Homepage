@@ -15,7 +15,9 @@
     "PRODUCTS": {
       "TITLE": "Products",
       "DESCRIPTION": "Coming from the semiconductor industry, with a strong focus on cutting-edge technology and innovation, our products and services fulfill forward-looking solutions that meet the highest standards of precision, reliability and efficiency."
-    }
+    },
+    "TITLE": "Lorem Ipsum",
+    "SUBTITLE": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   },
   "CONTENT": {
     "PARA1_PART1": "",
@@ -84,7 +86,9 @@
   "COMMON": {
     "LOGO_ALT": "MBO Trinity Logo",
     "COMPANY_NAME": "MBO Trinity GmbH",
-    "SLOGAN": "limits are a mindset"
+    "SLOGAN": "limits are a mindset",
+    "LANGUAGE_DE": "German",
+    "LANGUAGE_EN": "English"
   },
   "ANLAGENINTEGRATION": {
     "PARA1": "<span class=\"hl\">MBO Trinity GmbH</span> plans and constructs cleanrooms in compliance with ISO 14644-1 cleanroom standards.",
@@ -161,5 +165,170 @@
     "SECTION4_SUBTITLE": "Join MBO now",
     "SECTION4_PARA_LINE1": "Want to work on high-end technology projects and looking for an environment where expertise matters?",
     "SECTION4_PARA_LINE2": "Send us your application or get in touch informally — also on your own initiative."
+  },
+  "ARIA": {
+    "INTRO": "Intro",
+    "HERO": "Hero",
+    "CONTENT": "Content",
+    "PROJECT_PHASES": "Project phases",
+    "MAIN_NAV": "Main navigation",
+    "PRODUCTS_MENU": "Products",
+    "MOBILE_NAV": "Mobile navigation",
+    "CLOSE_MENU": "Close menu",
+    "MENU": "Menu",
+    "HOME": "Home"
+  },
+  "CONTACT": {
+    "BRANCH_LABEL": "Branch",
+    "PHONE": "Phone:",
+    "EMAIL": "E-mail:",
+    "ROUTE_PLANNER": "Detail & Route planner »",
+    "PUCH": {
+      "TITLE": "Puch bei Hallein / Salzburg",
+      "ADDRESS_LINE1": "Urstein Nord 17",
+      "ADDRESS_LINE2": "A-5412 Puch bei Hallein",
+      "MAP_TITLE": "Map of MBO Puch bei Hallein location"
+    },
+    "BRUNN": {
+      "TITLE": "Brunn am Gebirge / Lower Austria",
+      "ADDRESS_LINE1": "Industriestraße B16, Top B4/01",
+      "ADDRESS_LINE2": "A-2345 Brunn am Gebirge",
+      "MAP_TITLE": "Map of MBO Brunn am Gebirge location"
+    }
+  },
+  "PRODUCTS": {
+    "ITEMS": {
+      "ANLAGENINTEGRATION": "Plant integration",
+      "PRAEZISIONSKLIMAGERAET": "Precision climate device",
+      "A2_HTC": "A2 HTC",
+      "PRAEZISIONSTERMOSTAT": "Precision thermostat",
+      "CT_2_0": "CT 2.0",
+      "REINRAUMLOESUNG": "Cleanroom solution"
+    },
+    "CARDS": {
+      "REINRAUM": {
+        "TITLE": "Cleanroom technology",
+        "DESCRIPTION": "With decisive know-how and experience in cleanroom technology, with special care and the drive to be among the best."
+      },
+      "ANLAGENINTEGRATION": {
+        "TITLE": "Plant integration",
+        "DESCRIPTION": "MBO integrates systems and technologies into clients' manufacturing processes as a single point of accountability."
+      },
+      "PRAEZISIONSKLIMAGERAET": {
+        "TITLE": "Precision climate devices",
+        "DESCRIPTION": "High-precision temperature and humidity control for sensitive processes in production, test, lab and process environments."
+      },
+      "PRAEZISIONSTERMOSTAT": {
+        "TITLE": "Precision thermostats",
+        "DESCRIPTION": "High-precision temperature control for liquid-based sensitive processes in production, test, lab and process environments."
+      }
+    }
+  },
+  "KARRIERE_PAGE": {
+    "SECTION1_TITLE": "Working at MBO means:",
+    "SECTION1_PARA1": "At MBO Trinity we design, plan and realize highly engineered process and cleanroom environments where precision, responsibility and innovation are not buzzwords but daily practice.",
+    "SECTION1_PARA2": "Our projects operate at the technical limits in the semiconductor, pharma and high-tech industries. We are looking for people who think ahead, take responsibility and create solutions where others only see requirements.",
+    "SECTION2_TITLE": "Why MBO?",
+    "SECTION2_LEAD": "Demanding projects",
+    "SECTION2_INTRO": "You work on real high-tech facilities, not theoretical projects:",
+    "SECTION2_ITEM1": "Cleanrooms to ISO 14644",
+    "SECTION2_ITEM2": "Interfaces to highly sensitive production tools",
+    "SECTION2_ITEM3": "Projects with internationally leading industrial and technology companies",
+    "SECTION3_TITLE": "Responsibility & trust",
+    "SECTION3_ITEM1": "Short decision paths",
+    "SECTION3_ITEM2": "Direct contact with project management and executive leadership",
+    "SECTION3_ITEM3": "Ownership from day one",
+    "SECTION3_ITEM4": "Trust instead of micromanagement",
+    "SECTION4_TITLE": "Engineering with substance",
+    "SECTION4_LEAD": "We stand for:",
+    "SECTION4_ITEM1": "clean planning",
+    "SECTION4_ITEM2": "traceable solutions",
+    "SECTION4_ITEM3": "technical excellence instead of compromise",
+    "SECTION4_OUTRO": "Facts, standards and function matter to us — not buzzwords.",
+    "SECTION5_TITLE": "Who we are looking for",
+    "SECTION5_LEAD": "We are looking for technicians, engineers and project professionals who:",
+    "SECTION5_ITEM1": "work in a structured way",
+    "SECTION5_ITEM2": "take responsibility",
+    "SECTION5_ITEM3": "understand technical relationships",
+    "SECTION5_ITEM4": "enjoy solving complex tasks as a team",
+    "SECTION6_TITLE": "Typical profiles at MBO:",
+    "SECTION6_ITEM1": "Project managers (TGA / cleanroom / plant engineering)",
+    "SECTION6_ITEM2": "HVAC engineers",
+    "SECTION6_ITEM3": "Automation & controls technicians",
+    "SECTION6_ITEM4": "Designers / planners",
+    "SECTION6_ITEM5": "Service & commissioning technicians",
+    "SECTION6_OUTRO": "(motivated juniors and experienced specialists welcome)",
+    "SECTION7_TITLE": "What we offer",
+    "SECTION7_ITEM1": "Technically challenging tasks with real relevance",
+    "SECTION7_ITEM2": "Modern tools & professional project structures",
+    "SECTION7_ITEM3": "Fair, performance-based compensation",
+    "SECTION7_ITEM4": "Flexible working models depending on role & project",
+    "SECTION7_ITEM5": "Training in a high-tech environment",
+    "SECTION7_ITEM6": "A collegial, competent team that sticks together",
+    "SECTION8_TITLE": "Join MBO now",
+    "SECTION8_PARA1": "Want to work on high-end technology projects and are looking for an environment where expertise matters?",
+    "SECTION8_PARA2": "Send us your application or get in touch informally — also on your own initiative."
+  },
+  "PRODUCT_PAGES": {
+    "PRAEZISIONSTERMOSTAT": {
+      "PARA1": "MBO Trinity GmbH builds and integrates high-precision liquid-to-liquid process thermostats and cooling systems for cooling highly sensitive equipment such as MBMW tools, photomask development systems, sputtering tools, scanning electron microscopes, test benches, and more.",
+      "PARA2": "The cooling systems and process thermostats are designed for maximum supply reliability and for meeting the strictest specifications.",
+      "PARA3": "The liquid-to-liquid process thermostats and cooling systems serve as process cooling for equipment with the highest demands on temperature stability, controllable flow rates and stable pressure.",
+      "PARA4": "The cooling systems are designed to maintain a constant supply temperature with stability of ± 0.2 K.",
+      "PARA5": "Planning and construction of custom liquid-to-liquid process thermostats and cooling systems tailored to your requirements.",
+      "MODEL_ALT": "CT2 model"
+    },
+    "PRAEZISIONSKLIMAGERAET": {
+      "INTRO": "MBO Trinity GmbH builds and integrates high-precision, highly complex solutions for climate control of:",
+      "LIST_ITEM1": "Cleanrooms",
+      "LIST_ITEM2": "Labs",
+      "LIST_ITEM3": "Test benches, test stands, climate chambers",
+      "LIST_ITEM4": "Separated process environments",
+      "LIST_ITEM5": "Protected areas with laminar flow or turbulent mixed flow",
+      "PARA2": "Planning and construction of customized climate control solutions for process environments or delivery of in-house developed precision climate device skids, such as the A²HTC.",
+      "PARA3": "Our climate technology is designed for maximum supply reliability and for meeting the strictest specifications, e.g.:",
+      "SPECS_ITEM1": "Temperature: 21°C – 23 °C; stability ±0.02 K",
+      "SPECS_ITEM2": "Relative humidity: 35% – 50%; stability ±1%",
+      "SPECS_ITEM3": "Pressure: stability ±1 Pa"
+    },
+    "ANLAGENINTEGRATION": {
+      "PARA1": "MBO Trinity GmbH plans and integrates highly sensitive equipment such as MBMW tools, photomask development systems, sputtering tools, scanning electron microscopes, test benches, and climate chambers in cleanrooms and gray rooms.",
+      "PARA2": "As a rule, we act as general contractor for project implementation and coordinate the entire project execution.",
+      "PARA3": "We are accustomed to integrating highly complex equipment into existing cleanroom environments during ongoing production. Even foundation work with demolition, excavation and concreting has been carried out multiple times in existing cleanroom environments while production continued.",
+      "PARA4": "The services of MBO Trinity GmbH cover the entire project cycle:",
+      "LIST_ITEM1": "We carry out layout and detailed planning for plant integration, including media and energy supply as well as sub-components",
+      "LIST_ITEM2": "Plan and adapt existing process environments or build new process environments for accommodating the system and meeting specifications",
+      "LIST_ITEM3": "We coordinate installation by the equipment supplier or subcontractors or perform it ourselves",
+      "LIST_ITEM4": "Support FAT with the equipment supplier or perform it ourselves and create the project documentation",
+      "LIST_ITEM5": "We coordinate installation by the equipment supplier or subcontractors or perform it ourselves",
+      "LIST_ITEM6": "We coordinate installation by the equipment supplier or subcontractors or perform it ourselves",
+      "LIST_ITEM7": "Support FAT with the equipment supplier or perform it ourselves and create the project documentation",
+      "LIST_TEXT": "We ensure that the strictest specifications are met and that the implementation of your system is carried out at the highest quality level.",
+      "LIST_ITEM8": "Create the project documentation",
+      "OUTRO": "We ensure that the strictest specifications are met and that the implementation of your system is carried out at the highest quality level."
+    },
+    "REINRAUMLOESUNG": {
+      "PARA1": "MBO Trinity GmbH plans and builds cleanrooms in compliance with ISO 14644-1 cleanroom standards.",
+      "PARA2": "We integrate cleanrooms into existing buildings or plan and build new cleanroom systems.",
+      "PARA3": "We realize highly complex high-tech cleanroom systems, e.g., full-surface laminar flow with negative-pressure plenum, CG distributors, raised floors and return air ducts with integrated mu-metal chamber, etc.",
+      "PARA4": "Our services also include complete cleanroom outfitting such as media supply, machine foundations, exhaust systems, vibration isolation systems, electrical systems, fire protection, explosion protection measures, gas warning systems, crane systems, air conditioning, etc.",
+      "PARA5": "Comprehensive planning is a key focus in all projects. For detailed planning we use flow visualization software, FEM software and BIM systems for 3D planning.",
+      "PARA6": "Construction is carried out as required by our qualified installers or our subcontractors.",
+      "PARA7": "We place particular emphasis on:",
+      "LIST_ITEM1": "Compliance with safety and operating standards for personnel and machines",
+      "LIST_ITEM2": "Coordination, site inspection, PPE, workplace preparation",
+      "LIST_ITEM3": "Compliance with budget and installation requirements as well as schedules",
+      "LIST_ITEM4": "Validation of functionality through all required tests and acceptance (FAT)",
+      "LIST_ITEM5": "Handover of systems, documentation and training",
+      "LIST_ITEM6": "Ensuring flawless function and high-quality execution",
+      "SPECS_INTRO": "Specifications our cleanrooms are required to meet include, for example:",
+      "SPECS_ITEM1": "Standard for main body installation area: ISO 3 (14644-1)",
+      "SPECS_ITEM2": "Magnetic field fluctuation tolerances: AC ≤ 0.03 µT, DC < 0.03 µT",
+      "SPECS_ITEM3": "Temperature stability of ambient air: ±20 mK",
+      "SPECS_ITEM4": "Pressure stability: ±1 Pa",
+      "SPECS_ITEM5": "Humidity stability: ±0.2 %",
+      "SPECS_ITEM6": "Laminar flow downwarded",
+      "SPECS_ITEM7": "Floor vibration criteria ≤ VC-E"
+    }
   }
 }

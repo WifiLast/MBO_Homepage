@@ -23,29 +23,29 @@ export class ProdukteComponent {
 
   cards: CardData[] = [
     {
-      title: 'Reinraumtechnologie',
-      description: 'Mit entscheidendem Know-How und Erfahrung auf dem Gebiet der Reinraumtechnik mit besonderer Sorgfalt und dem Antrieb zu den Besten zählen zu wollen.',
+      title: 'PRODUCTS.CARDS.REINRAUM.TITLE',
+      description: 'PRODUCTS.CARDS.REINRAUM.DESCRIPTION',
       id: 'reinraum',
       routerLink: '/Produkt/reinraumloesung',
       cssClass: 'reinraum'
     },
     {
-      title: 'Anlagenintegration',
-      description: 'Die MBO integriert als Single-Point-of-Accountability Anlagen und Technologien in die Fertigungsprozesse der Auftraggeber.',
+      title: 'PRODUCTS.CARDS.ANLAGENINTEGRATION.TITLE',
+      description: 'PRODUCTS.CARDS.ANLAGENINTEGRATION.DESCRIPTION',
       id: 'anlagenintegration',
       routerLink: '/Produkt/anlagenintegration',
       cssClass: 'anlagenintegration'
     },
     {
-      title: 'Präzissionsklimageräte',
-      description: 'Hochpräzise Temperatur- und Feuchteregelung für sensible Prozesse in Produktion, Test-, Labor- und Prozessumfeld.',
+      title: 'PRODUCTS.CARDS.PRAEZISIONSKLIMAGERAET.TITLE',
+      description: 'PRODUCTS.CARDS.PRAEZISIONSKLIMAGERAET.DESCRIPTION',
       id: 'praezisionsklimageraet',
       routerLink: '/Produkt/praezisionsklimageraet',
       cssClass: 'praezisionsklimageraet'
     },
     {
-      title: 'Präzisionsthermostate',
-      description: 'Hochpräzise Temperaturregelung für flüssigkeitsführende sensible Prozesse in Produktion, Test-, Labor- und Prozessumfeld.',
+      title: 'PRODUCTS.CARDS.PRAEZISIONSTERMOSTAT.TITLE',
+      description: 'PRODUCTS.CARDS.PRAEZISIONSTERMOSTAT.DESCRIPTION',
       id: 'produkte',
       routerLink: '/Produkt/praezisionstermostat',
       cssClass: 'praezisionstermostat'

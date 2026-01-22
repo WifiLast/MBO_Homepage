@@ -3,35 +3,35 @@
 <div class="wrap">
     <header>
         <div class="brand">
-            <a routerLink="/" aria-label="Home">
+            <a routerLink="/" [attr.aria-label]="'ARIA.HOME' | translate">
                 <img src="/logo_small.png"
                     [attr.alt]="'COMMON.LOGO_ALT' | translate"
                     style="width:170px;height:60px;filter:drop-shadow(0 22px 35px rgba(0,0,0,.55));">
             </a>
         </div>
 
-        <nav style="position: relative;left:10%" aria-label="Hauptnavigation">
+        <nav style="position: relative;left:10%" [attr.aria-label]="'ARIA.MAIN_NAV' | translate">
             <a routerLink="/unternehmen" routerLinkActive="active">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
             <div class="nav-item dropdown">
                 <a class="dropdown-toggle" routerLink="/produkte" aria-haspopup="true"
                     aria-expanded="false">
                     {{ 'HEADER.NAV.PRODUCTS' | translate }}
                 </a>
-                <div class="dropdown-menu" role="menu" aria-label="Produkte">
-                    <a routerLink="/Produkt/anlagenintegration" role="menuitem">Anlagenintegration</a>
+                <div class="dropdown-menu" role="menu" [attr.aria-label]="'ARIA.PRODUCTS_MENU' | translate">
+                    <a routerLink="/Produkt/anlagenintegration" role="menuitem">{{ 'PRODUCTS.ITEMS.ANLAGENINTEGRATION' | translate }}</a>
                     <div class="submenu-item">
-                        <a routerLink="/Produkt/praezisionsklimageraet" role="menuitem">Präzisionsklimagerät</a>
+                        <a routerLink="/Produkt/praezisionsklimageraet" role="menuitem">{{ 'PRODUCTS.ITEMS.PRAEZISIONSKLIMAGERAET' | translate }}</a>
                         <div class="submenu-nested">
-                            <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" role="menuitem">A2 HTC</a>
+                            <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" role="menuitem">{{ 'PRODUCTS.ITEMS.A2_HTC' | translate }}</a>
                         </div>
                     </div>
                     <div class="submenu-item">
-                        <a routerLink="/Produkt/praezisionstermostat" role="menuitem">Präzisionsthermostat</a>
+                        <a routerLink="/Produkt/praezisionstermostat" role="menuitem">{{ 'PRODUCTS.ITEMS.PRAEZISIONSTERMOSTAT' | translate }}</a>
                         <div class="submenu-nested">
-                            <a routerLink="/Produkt/praezisionstermostat/ct-2-0" role="menuitem">CT 2.0</a>
+                            <a routerLink="/Produkt/praezisionstermostat/ct-2-0" role="menuitem">{{ 'PRODUCTS.ITEMS.CT_2_0' | translate }}</a>
                         </div>
                     </div>
-                    <a routerLink="/Produkt/reinraumloesung" role="menuitem">Reinraumlösung</a>
+                    <a routerLink="/Produkt/reinraumloesung" role="menuitem">{{ 'PRODUCTS.ITEMS.REINRAUMLOESUNG' | translate }}</a>
                 </div>
             </div>
             <a routerLink="/karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
@@ -42,17 +42,17 @@
             <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
                 <button (click)="switchLanguage('de')" [class.active]="currentLanguage === 'de'"
                     style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
-                    [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" title="Deutsch">
+                    [style.font-weight]="currentLanguage === 'de' ? 'bold' : 'normal'" [attr.title]="'COMMON.LANGUAGE_DE' | translate">
                     DE
                 </button>
                 <button (click)="switchLanguage('en')" [class.active]="currentLanguage === 'en'"
                     style="cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; background: transparent; color: inherit; border-radius: 4px;"
-                    [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" title="English">
+                    [style.font-weight]="currentLanguage === 'en' ? 'bold' : 'normal'" [attr.title]="'COMMON.LANGUAGE_EN' | translate">
                     EN
                 </button>
             </div>
 
-            <button class="mobile-menu-button" (click)="toggleMobileMenu()" [attr.aria-label]="'Menu'" [attr.aria-expanded]="mobileMenuOpen">
+            <button class="mobile-menu-button" (click)="toggleMobileMenu()" [attr.aria-label]="'ARIA.MENU' | translate" [attr.aria-expanded]="mobileMenuOpen">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -61,30 +61,30 @@
     </header>
 
     <div class="mobile-menu" [class.open]="mobileMenuOpen">
-        <nav aria-label="Mobile Navigation">
+        <nav [attr.aria-label]="'ARIA.MOBILE_NAV' | translate">
             <a routerLink="/unternehmen" routerLinkActive="active" (click)="closeMobileMenu()">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
             <div class="mobile-submenu">
                 <span class="mobile-submenu-label">{{ 'HEADER.NAV.PRODUCTS' | translate }}</span>
-                <a routerLink="/produkte" (click)="closeMobileMenu()">Produkte</a>
-                <a routerLink="/Produkt/anlagenintegration" (click)="closeMobileMenu()">Anlagenintegration</a>
+                <a routerLink="/produkte" (click)="closeMobileMenu()">{{ 'HEADER.NAV.PRODUCTS' | translate }}</a>
+                <a routerLink="/Produkt/anlagenintegration" (click)="closeMobileMenu()">{{ 'PRODUCTS.ITEMS.ANLAGENINTEGRATION' | translate }}</a>
                 <div class="mobile-nested">
-                    <a routerLink="/Produkt/praezisionsklimageraet" (click)="closeMobileMenu()">Präzisionsklimagerät</a>
-                    <a routerLink="/Produkt/praezisionsklimageraet/ct-2-0" (click)="closeMobileMenu()" class="mobile-sub-item">→ CT 2.0</a>
-                    <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" (click)="closeMobileMenu()" class="mobile-sub-item">→ A2 HTC</a>
+                    <a routerLink="/Produkt/praezisionsklimageraet" (click)="closeMobileMenu()">{{ 'PRODUCTS.ITEMS.PRAEZISIONSKLIMAGERAET' | translate }}</a>
+                    <a routerLink="/Produkt/praezisionsklimageraet/ct-2-0" (click)="closeMobileMenu()" class="mobile-sub-item">→ {{ 'PRODUCTS.ITEMS.CT_2_0' | translate }}</a>
+                    <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" (click)="closeMobileMenu()" class="mobile-sub-item">→ {{ 'PRODUCTS.ITEMS.A2_HTC' | translate }}</a>
                 </div>
                 <div class="mobile-nested">
-                    <a routerLink="/Produkt/praezisionstermostat" (click)="closeMobileMenu()">Präzisionsthermostat</a>
-                    <a routerLink="/Produkt/praezisionstermostat/ct-2-0" (click)="closeMobileMenu()" class="mobile-sub-item">→ CT 2.0</a>
-                    <a routerLink="/Produkt/praezisionstermostat/a2-htc" (click)="closeMobileMenu()" class="mobile-sub-item">→ A2 HTC</a>
+                    <a routerLink="/Produkt/praezisionstermostat" (click)="closeMobileMenu()">{{ 'PRODUCTS.ITEMS.PRAEZISIONSTERMOSTAT' | translate }}</a>
+                    <a routerLink="/Produkt/praezisionstermostat/ct-2-0" (click)="closeMobileMenu()" class="mobile-sub-item">→ {{ 'PRODUCTS.ITEMS.CT_2_0' | translate }}</a>
+                    <a routerLink="/Produkt/praezisionstermostat/a2-htc" (click)="closeMobileMenu()" class="mobile-sub-item">→ {{ 'PRODUCTS.ITEMS.A2_HTC' | translate }}</a>
                 </div>
-                <a routerLink="/Produkt/reinraumloesung" (click)="closeMobileMenu()">Reinraumlösung</a>
+                <a routerLink="/Produkt/reinraumloesung" (click)="closeMobileMenu()">{{ 'PRODUCTS.ITEMS.REINRAUMLOESUNG' | translate }}</a>
             </div>
             <a routerLink="/karriere" (click)="closeMobileMenu()">{{ 'HEADER.NAV.CAREER' | translate }}</a>
             <a routerLink="/kontakt" (click)="closeMobileMenu()">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
         </nav>
     </div>
 
-    <div class="mobile-menu-overlay" [class.open]="mobileMenuOpen" (click)="closeMobileMenu()" (keydown.enter)="closeMobileMenu()" (keydown.space)="closeMobileMenu()" tabindex="0" role="button" [attr.aria-label]="'Close menu'"></div>
+    <div class="mobile-menu-overlay" [class.open]="mobileMenuOpen" (click)="closeMobileMenu()" (keydown.enter)="closeMobileMenu()" (keydown.space)="closeMobileMenu()" tabindex="0" role="button" [attr.aria-label]="'ARIA.CLOSE_MENU' | translate"></div>
 
     <router-outlet></router-outlet>
 </div>

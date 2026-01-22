@@ -1,4 +1,4 @@
-<section class="hero" aria-label="Hero">
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
     <app-slideshow
         [slides]="slides"
         [showOverlay]="true"
@@ -11,79 +11,74 @@
 </section>
 
 
-<section class="contentWrap" aria-label="Content">
+<section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
         <p>
-            Die MBO Trinity GmbH plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA1' | translate }}
         </p>
         <p>
-            Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumumsysteme.
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA2' | translate }}
         </p>
         <p>
-            Dabei realisieren wir hoch komplexeste Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit
-            Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Matallkammer, etc.
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA3' | translate }}
         </p>
         <p>
-            Unsre Leistungen umspannen dabei auch die komplette Reinraumausstattung wie z.B.: die Medienversorgung,
-            Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Systeme
-            für den Brandschutz, Maßnahmen des Explosionsschutzes, Gaswarnanlagen, Krananlagen, Klimatisierung, etc.
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA4' | translate }}
         </p>
         <p>
-            Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen
-            wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA5' | translate }}
         </p>
         <p>
-            Die Errichtung erfolgt je nach Erfordernis mit unsren qualifizierten Monteuren oder mit unsren
-            Sub-Contractoren.
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA6' | translate }}
         </p>
         <p>
-            Dabei legen wir insbesondere Wert auf:
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.PARA7' | translate }}
         </p>
         <ul>
             <p>
-                <li>Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.LIST_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.LIST_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.LIST_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.LIST_ITEM4' | translate }}</li>
             </p>
             <p>
-                <li>Übergabe der Anlagen, Dokumentation und Schulung</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.LIST_ITEM5' | translate }}</li>
             </p>
             <p>
-                <li>Gewährleistung der einwandfreien Funktion und der Qualitativ hochwertigen Ausführung</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.LIST_ITEM6' | translate }}</li>
             </p>
 
         </ul>
         <p>
-            Spezifikationen die unsre Reinräume zu erreichen haben sind z.B.:
+            {{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_INTRO' | translate }}
         </p>
         <ul>
             <p>
-                <li>Standard for main body installation area: ISO 3 (14644-1)</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Magnetic field fluctuation tolerances: AC ≤ 0.03 µT, DC < 0.03 µT</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Temperature stability of ambient air: ±20 mK</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>Pressure stability: ±1 Pa</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM4' | translate }}</li>
             </p>
             <p>
-                <li>Humidity stability: ±0.2 %</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM5' | translate }}</li>
             </p>
             <p>
-                <li>Laminar flow downwarded</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM6' | translate }}</li>
             </p>
                     <p>
-                <li>Floor vibration criteria ≤ VC-E</li>
+                <li>{{ 'PRODUCT_PAGES.REINRAUMLOESUNG.SPECS_ITEM7' | translate }}</li>
             </p>
 
         </ul>

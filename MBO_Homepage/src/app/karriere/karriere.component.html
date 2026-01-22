@@ -1,4 +1,4 @@
-<section class="hero" aria-label="Hero">
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
     <div class="heroRow">
         <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
             [overlaySubtitle]="'HERO.SUBTITLE' | translate">
@@ -6,129 +6,127 @@
     </div>
 </section>
 
-<section class="contentWrap" aria-label="Content">
+<section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
-        <h3>Arbeiten bei MBO bedeutet:</h3>
+        <h3>{{ 'KARRIERE_PAGE.SECTION1_TITLE' | translate }}</h3>
         <p>
-            Bei MBO Trinity entwickeln, planen und realisieren wir hochtechnisierte Prozess- und Reinraumumgebungen, in
-            denen Präzision, Verantwortung und Innovation keine Schlagworte, sondern tägliche Praxis sind.
+            {{ 'KARRIERE_PAGE.SECTION1_PARA1' | translate }}
         </p>
         <p>
-            Unsere Projekte bewegen sich an der technischen Grenze des Machbaren – in der Halbleiter-, Pharma- und
-            High-Tech-Industrie. Dafür suchen wir Menschen, die mitdenken, Verantwortung übernehmen und Lösungen
-            schaffen, wo andere nur Anforderungen sehen. </p>
-        <h3>Warum MBO?</h3>
+            {{ 'KARRIERE_PAGE.SECTION1_PARA2' | translate }}
+        </p>
+        <h3>{{ 'KARRIERE_PAGE.SECTION2_TITLE' | translate }}</h3>
         <ul>
-            Anspruchsvolle Projekte
+            {{ 'KARRIERE_PAGE.SECTION2_LEAD' | translate }}
             <p>
-                Du arbeitest an realen High-Tech-Anlagen, nicht an theoretischen Projekten:
+                {{ 'KARRIERE_PAGE.SECTION2_INTRO' | translate }}
             </p>
             <p>
-                <li>Reinräume nach ISO 14644</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION2_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Schnittstellen zu hoch­sensiblen Produktions-Tools</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION2_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Projekte mit international führenden Industrie- und Technologieunternehmen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION2_ITEM3' | translate }}</li>
             </p>
 
         </ul>
-        <h3>Verantwortung & Vertrauen</h3>
+        <h3>{{ 'KARRIERE_PAGE.SECTION3_TITLE' | translate }}</h3>
         <ul>
 
             <p>
-                <li>Kurze Entscheidungswege</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION3_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Direkter Kontakt zu Projektleitung und Geschäftsführung</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION3_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Eigenverantwortung ab dem ersten Tag</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION3_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>Vertrauen statt Mikromanagement</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION3_ITEM4' | translate }}</li>
             </p>
 
         </ul>
-        <h3>Technik mit Substanz</h3>
-        Wir stehen für:
+        <h3>{{ 'KARRIERE_PAGE.SECTION4_TITLE' | translate }}</h3>
+        {{ 'KARRIERE_PAGE.SECTION4_LEAD' | translate }}
         <ul>
             <p>
-                <li>saubere Planung</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION4_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>nachvollziehbare Lösungen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION4_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>technische Exzellenz statt Kompromisse</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION4_ITEM3' | translate }}</li>
             </p>
         </ul>
-        Bei uns zählen Fakten, Normen und Funktion – nicht Buzzwords.
+        {{ 'KARRIERE_PAGE.SECTION4_OUTRO' | translate }}
 
-        <h3>Wen wir suchen</h3>
+        <h3>{{ 'KARRIERE_PAGE.SECTION5_TITLE' | translate }}</h3>
         <ul>
-            Wir suchen Techniker:innen, Ingenieur:innen und Projektprofis, die:
+            {{ 'KARRIERE_PAGE.SECTION5_LEAD' | translate }}
             <p>
-                <li>strukturiert arbeiten</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION5_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Verantwortung übernehmen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION5_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>technische Zusammenhänge verstehen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION5_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>gerne im Team komplexe Aufgaben lösen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION5_ITEM4' | translate }}</li>
             </p>
         </ul>
 
-        <h3>Typische Profile bei MBO:</h3>
+        <h3>{{ 'KARRIERE_PAGE.SECTION6_TITLE' | translate }}</h3>
         <ul>
             <p>
-                <li>Projektleiter:innen (TGA / Reinraum / Anlagenbau)</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION6_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>HKLS- / HVAC-Ingenieur:innen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION6_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Automatisierungs- & Regelungstechniker:innen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION6_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>Konstrukteur:innen / Planer:innen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION6_ITEM4' | translate }}</li>
             </p>
             <p>
-                <li>Service- & Inbetriebnahme-Techniker:innen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION6_ITEM5' | translate }}</li>
             </p>
         </ul>
-        (auch engagierte Einsteiger:innen und erfahrene Spezialisten willkommen)
+        {{ 'KARRIERE_PAGE.SECTION6_OUTRO' | translate }}
 
         
-        <h3>Was wir bieten</h3>
+        <h3>{{ 'KARRIERE_PAGE.SECTION7_TITLE' | translate }}</h3>
         <ul>
             <p>
-                <li>Technisch anspruchsvolle Aufgaben mit echter Relevanz</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION7_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Moderne Arbeitsmittel & professionelle Projektstrukturen</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION7_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Faire, leistungsgerechte Vergütung</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION7_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>Flexible Arbeitsmodelle je nach Rolle & Projekt</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION7_ITEM4' | translate }}</li>
             </p>
             <p>
-                <li>Weiterbildung im High-Tech-Umfeld</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION7_ITEM5' | translate }}</li>
             </p>
                         <p>
-                <li>Ein kollegiales, kompetentes Team, das zusammenhält</li>
+                <li>{{ 'KARRIERE_PAGE.SECTION7_ITEM6' | translate }}</li>
             </p>
         </ul>
                 
-        <h3>Jetzt Teil der MBO werden</h3>
-        <p>Du möchtest an High-End-Technologieprojekten mitarbeiten und suchst ein Umfeld, in dem Know-how zählt?</p>
-        <p><mat-icon>email</mat-icon> Sende uns deine Bewerbung oder nimm unkompliziert Kontakt auf - Gerne auch initiativ.</p>
+        <h3>{{ 'KARRIERE_PAGE.SECTION8_TITLE' | translate }}</h3>
+        <p>{{ 'KARRIERE_PAGE.SECTION8_PARA1' | translate }}</p>
+        <p><mat-icon>email</mat-icon> {{ 'KARRIERE_PAGE.SECTION8_PARA2' | translate }}</p>
     </div>
 </section>
 

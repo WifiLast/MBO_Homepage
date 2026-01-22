@@ -1,12 +1,12 @@
 <!-- INTRO OVERLAY (nur beim ersten Besuch) -->
 <div class="intro" *ngIf="showIntro" [class.out]="introOut" (transitionend)="onIntroTransitionEnd($event)"
-    (click)="skipIntro()" aria-label="Intro">
+    (click)="skipIntro()" [attr.aria-label]="'ARIA.INTRO' | translate">
     <div class="introLogoOnly" (click)="$event.stopPropagation(); skipIntro()">
-        <img class="introLogo" src="/logo-white.svg" alt="MBO Logo" />
+        <img class="introLogo" src="/logo-white.svg" [attr.alt]="'COMMON.LOGO_ALT' | translate" />
     </div>
 </div>
 
-<section class="hero" aria-label="Hero">
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
     <app-slideshow
         [slides]="slides"
         [showOverlay]="true"
@@ -42,24 +42,20 @@
 </section> -->
 
 <!-- Scrollbarer Inhalt aus dem zweiten Bild (Header ignoriert) -->
-<section class="contentWrap" aria-label="Content">
+<section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
-
-
-        <p>
-            Die MBO plant und errichtet Prozessumgebungen wie Reinräume, Prüf-, Mess- und Klimakammern mit den
-            zum
-            Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und
-            die
-            Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.
+        <p class="para">
+            {{ 'CONTENT.PARA1_PART1' | translate }}<span class="hl">MBO</span>{{ 'CONTENT.PARA1_PART2' | translate
+            }}<span class="hl">{{ 'CONTENT.CLEANROOMS' | translate }}</span>{{ 'CONTENT.PARA1_PART3' | translate }}
         </p>
 
-        <p>
-            Die MBO integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen,
-            wie z.B.
-            MBMW-Tools, Photomask development systems, Scanning Electron Microscopes, Test benches, Climate
-            Chambers,
-            Cluster, usw., in Prozessumgebungen. Die Leistungen der MBO umfassen dabei den vollen Projektzyklus.
+        <p class="para">
+            {{ 'CONTENT.PARA2_PRE' | translate }}<span class="hl">MBO</span>{{ 'CONTENT.PARA2_ACTION' | translate
+            }}<span class="hl">{{ 'CONTENT.ITEM_MBMW' | translate }}</span>, <span class="hl">{{
+                'CONTENT.ITEM_PHOTOMASK' | translate }}</span>, <span class="hl">{{ 'CONTENT.ITEM_SEM' | translate
+                }}</span>, <span class="hl">{{ 'CONTENT.ITEM_TESTBENCHES' | translate }}</span>, <span class="hl">{{
+                'CONTENT.ITEM_CLIMATE' | translate }}</span>{{ 'CONTENT.PARA2_POST' | translate }}<span
+                class="hl">MBO</span>{{ 'CONTENT.PARA2_END' | translate }}
         </p>
         <!-- filler spacing to make scrolling feel like the reference -->
         <!-- <div style="height:140px;"></div> -->
@@ -68,11 +64,11 @@
 
         <ul style="margin-bottom: 40px;">
             <p>
-                <li>Single‑Point‑of‑Accountability:</li>
+                <li>{{ 'CONTENT.SECTION_TITLE' | translate }}</li>
             </p>
         </ul>
 
-        <div class="timeline" style="max-width: 95%;" role="group" aria-label="Projektphasen">
+        <div class="timeline" style="max-width: 95%;" role="group" [attr.aria-label]="'ARIA.PROJECT_PHASES' | translate">
             <!-- Row 1 -->
             <!-- Gate 0 -->
             <div class="gate" style="left: 0%; top: 0;"><span>{{ 'TIMELINE.GATE' | translate }}0</span></div>

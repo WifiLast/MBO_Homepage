@@ -1,4 +1,4 @@
-<section class="hero" aria-label="Hero">
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
     <app-slideshow
         [slides]="slides"
         [showOverlay]="true"
@@ -12,45 +12,45 @@
 </section>
 
 
-<section class="contentWrap" aria-label="Content">
+<section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
         <p>
-            Die MBO Trinity GmbH baut und integriert hochpräzise und hochkomplexe Lösungen zur Klimatisierung von:
+            {{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.INTRO' | translate }}
         </p>
         <ul>
         <p>
-            <li>Reinräumen</li>
+            <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.LIST_ITEM1' | translate }}</li>
         </p>
         <p>
-            <li>WLabore</li>
+            <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.LIST_ITEM2' | translate }}</li>
         </p>
         <p>
-            <li>Test Benches, Prüfständen, Klimakammern</li>
+            <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.LIST_ITEM3' | translate }}</li>
         </p>
         <p>
-            <li>Abgegrenzte Prozessumgebungen</li>
+            <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.LIST_ITEM4' | translate }}</li>
         </p>
         <p>
-            <li>Schutzbereiche mit Laminarflow oder turbulenter Mischströmung</li>
+            <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.LIST_ITEM5' | translate }}</li>
         </p>
 
         </ul>
         <p>
-            Planung und Errichtung von individuellen Klimatisierungslösungen für Prozessumgebungen oder Lieferung
-            von eigenentwickelten Skids von Präzisionsklimageräten, wie z.B. den A²HTC. </p>
+            {{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.PARA2' | translate }}
+        </p>
         <p>
-            Unsre Klimatechnik ist auf höchste Versorgungssicherheit und für die Einhaltung engster Spezifikationen
-            konzipiert – z.B.:</p>
+            {{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.PARA3' | translate }}
+        </p>
 
         <ul>
             <p>
-                <li>Temperatur: 21°C – 23 °C; Stabilität ±0,02 K</li>
+                <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.SPECS_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Rel. Luftfeuchte: 35 % – 50 %; Stabilität ±1%</li>
+                <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.SPECS_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li>Druck: Stabilität ±1 Pa</li>
+                <li>{{ 'PRODUCT_PAGES.PRAEZISIONSKLIMAGERAET.SPECS_ITEM3' | translate }}</li>
             </p>
 
         </ul>

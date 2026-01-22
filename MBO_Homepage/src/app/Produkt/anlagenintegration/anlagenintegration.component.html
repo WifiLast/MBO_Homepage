@@ -1,4 +1,4 @@
-<section class="hero" aria-label="Hero">
+<section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
     <app-slideshow
         [slides]="slides"
         [showOverlay]="true"
@@ -10,67 +10,48 @@
     </app-slideshow>
 </section>
 
-<section class="contentWrap" aria-label="Content">
+<section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
         <p>
-            Die MBO Trinity GmbH plant und integriert hochsensible Anlagen wie z.B.: MBMW-Tools, Photomask development
-            systems, Sputtering tools, Scanning Electron Microscopes, Test benches, Climate Chambers in Reinräumen und
-            Grauräumen.
+            {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.PARA1' | translate }}
         </p>
         <p>
-            In der Regel treten wir bei der Projektumsetzung als Generalunternehmer auf und Koordinieren die gesamte
-            Projektabwicklung.
+            {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.PARA2' | translate }}
         </p>
         <p>
-            Wir sind es gewohnt Integrationen von komplexesten Anlagen in bestehende Reinraumumgebungen bei laufender
-            Produktion durchzuführen. Selbst Fundamentarbeiten mit Abbruch, Aushub und Betonage wurden schon mehrmals in
-            bestehenden Reinraumumgebungen bei aufrechter Produktion umgesetzt.
+            {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.PARA3' | translate }}
         </p>
         <p>
-            Die Leistungen der MBO Trinity GmbH umfassen dabei den gesamten Projektzyklus:
+            {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.PARA4' | translate }}
         </p>
         <ul>
             <p>
-                <li>Wir führen die Layout- und Detailplanung hinsichtlich der Anlagenintegration, inklusive der Medien-
-                    und
-                    Energieversorgung sowie der Sub-Componenten durch</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM1' | translate }}</li>
             </p>
             <p>
-                <li>Planen und adaptieren bestehende Prozessumgebungen oder errichten neue Prozessumgebungen zur
-                    Aufnahme
-                    der
-                    Anlage
-                    und zur Einhaltung der Spezifikationen</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM2' | translate }}</li>
             </p>
             <p>
-                <li> Wir Koordinieren die Installation durch den Anlagenlieferanten bzw. der Sub-Kontraktoren oder
-                    führen
-                    diese
-                    selbstständig durch</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM3' | translate }}</li>
             </p>
             <p>
-                <li>Unterstützen bei der FAT durch den Anlagenlieferanten bzw. führen diese selbstständig durch
-                    Erstellen die Projekt-Dokumentation</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM4' | translate }}</li>
             </p>
             <p>
-                <li>Wir Koordinieren die Installation durch den Anlagenlieferanten bzw. der Sub-Kontraktoren oder führen
-                    diese selbstständig durch</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM5' | translate }}</li>
             </p>
             <p>
-                <li>Wir Koordinieren die Installation durch den Anlagenlieferanten bzw. der Sub-Kontraktoren oder führen
-                    diese selbstständig durch</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM6' | translate }}</li>
             </p>
             <p>
-                <li>Unterstützen bei der FAT durch den Anlagenlieferanten bzw. führen diese selbstständig durch
-                    Erstellen die Projekt-Dokumentation</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM7' | translate }}</li>
             </p>
-            Wir stellen sicher, dass strengste Spezifikationen eingehalten werden und das die Implementierung
-            Ihrer Anlage qualitativ auf höchstem Niveau umgesetzt wird.
+            {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_TEXT' | translate }}
             <p>
-                <li>Erstellen die Projekt-Dokumentation</li>
+                <li>{{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.LIST_ITEM8' | translate }}</li>
             </p>
         </ul>
-        Wir stellen sicher, dass strengste Spezifikationen eingehalten werden und das die Implementierung Ihrer Anlage qualitativ auf höchstem Niveau umgesetzt wird.
+        {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.OUTRO' | translate }}
 
     </div>
 </section>
