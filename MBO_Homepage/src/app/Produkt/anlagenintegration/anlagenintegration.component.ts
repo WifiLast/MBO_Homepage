@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, CUSTOM_ELEMENTS_SCHEMA, ElementRef } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { SlideshowComponent, CardData } from '../../components/slideshow/slideshow.component';
@@ -14,11 +14,13 @@ declare global {
 @Component({
   selector: 'app-anlagenintegration',
   imports: [TranslateModule, CommonModule, SlideshowComponent, KarriereSectionComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './anlagenintegration.component.html',
   styleUrl: './anlagenintegration.component.css'
 })
 export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
   private langChangeSub?: Subscription;
+  private resizeObserver?: ResizeObserver;
 
   slides = [
     '/Bilder/ART/Bau/20240415_115933.jpg',
@@ -32,21 +34,28 @@ export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
   cards: CardData[] = [
     {
       title: 'Anlagenintegration',
-      description: 'Die MBO Trinity GmbH plant und integriert hochsensible Anlagen wie z.B.: MBMW-Tools, Photomask development systems, Sputtering tools, Scanning Electron Microscopes, Test benches, Climate Chambers in Reinräumen und Grauräumen.'
+      description: 'Die MBO Trinity GmbH plant und integriert hochsensible Anlagen wie z.B.: MBMW-Tools, Photomask development systems, Sputtering tools, Scanning Electron Microscopes, Test benches, Climate Chambers in ReinrÃ¤umen und GraurÃ¤umen.'
     }
   ];
 
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private hostRef: ElementRef<HTMLElement>
+  ) {}
 
   ngAfterViewInit(): void {
     this.typesetMath();
+    this.updateCardMetrics();
+    this.observeCardMetrics();
     this.langChangeSub = this.translate.onLangChange.subscribe(() => {
       this.typesetMath();
+      this.updateCardMetrics();
     });
   }
 
   ngOnDestroy(): void {
     this.langChangeSub?.unsubscribe();
+    this.resizeObserver?.disconnect();
   }
 
   private typesetMath(): void {
@@ -55,4 +64,27 @@ export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
       mathJax.typesetPromise();
     }
   }
+
+  private updateCardMetrics(): void {
+    const host = this.hostRef.nativeElement;
+    const card = host.querySelector<HTMLElement>('.slideshow-card');
+    if (!card) return;
+
+    const rect = card.getBoundingClientRect();
+    host.style.setProperty('--card-space', `${rect.width}px`);
+    host.style.setProperty('--card-height', `${rect.height}px`);
+  }
+
+  private observeCardMetrics(): void {
+    const host = this.hostRef.nativeElement;
+    const card = host.querySelector<HTMLElement>('.slideshow-card');
+    if (!card || typeof ResizeObserver === 'undefined') return;
+
+    this.resizeObserver = new ResizeObserver(() => {
+      this.updateCardMetrics();
+    });
+    this.resizeObserver.observe(card);
+  }
 }
+
+
