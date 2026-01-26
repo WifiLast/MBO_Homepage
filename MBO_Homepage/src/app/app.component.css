@@ -21,9 +21,9 @@
 
 /* Header (kept from previous mock) */
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: relative;
+    /* position: sticky; */
+    /* top: 0; */
     z-index: 1000;
     height: var(--header-height);
     display: flex;
