@@ -18,34 +18,23 @@ export class AppComponent implements OnInit {
   isHomePage = false;
 
   slides = [
-    '/Bilder/ART/Bau/20240415_115933.webp',
-    '/Bilder/ART/Bau/20240418_071549.jpg',
-    '/Bilder/ART/Bau/20240514_134945.jpg',
-    '/Bilder/ART/Bau/20240514_134951.jpg',
-    '/Bilder/ART/Bau/20240514_135011.jpg',
-    '/Bilder/ART/Bau/20240515_104609.jpg'
+    '/slideshow/1.jpg',
+    '/slideshow/2.jpg',
+    '/slideshow/3.jpg',
+    '/slideshow/4.jpg',
+    '/slideshow/5.jpg',
+    '/slideshow/6.jpg',
+    '/slideshow/8.jpg',
+    '/slideshow/9.jpeg',
+    '/slideshow/10.jpg',
+    '/slideshow/11.JPG'
   ];
 
-  cards: CardData[] = [
-    {
-      title: 'HERO.COMPANY.TITLE',
-      description: 'HERO.COMPANY.DESCRIPTION',
-      id: 'unternehmen',
-      cssClass: 'company',
-      routerLink: '/unternehmen'
-    },
-    {
-      title: 'HERO.PRODUCTS.TITLE',
-      description: 'HERO.PRODUCTS.DESCRIPTION',
-      id: 'produkte',
-      cssClass: 'products',
-      routerLink: '/produkte'
-    }
-  ];
+  cards: CardData[] = [];
 
   constructor(private readonly translate: TranslateService, private router: Router) {
-    this.translate.setDefaultLang('de');
-    this.currentLanguage = 'de';
+    this.translate.setDefaultLang('en');
+    this.currentLanguage = 'en';
   }
 
   ngOnInit() {

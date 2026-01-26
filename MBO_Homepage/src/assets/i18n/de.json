@@ -8,8 +8,8 @@
     }
   },
   "HERO": {
-    "TITLE": "Lorem Ipsum",
-    "SUBTITLE": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "TITLE": "under construction",
+    "SUBTITLE": "",
     "COMPANY": {
       "TITLE": "Unternehmen",
       "DESCRIPTION": "Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von Reinräumen, Prüfständen, die Anlagenintegration und den Sonderanlagenbau."
@@ -33,28 +33,28 @@
     "ITEM_CLIMATE": "Climate Chambers",
     "PARA2_POST": ", Cluster, usw., in Prozessumgebungen. Die Leistungen der ",
     "PARA2_END": " umfassen dabei den vollen Projektzyklus.",
-    "SECTION_TITLE": "Single-Point-of-Accountability:"
+    "SECTION_TITLE": "Gesamtverantwortung:"
   },
   "TIMELINE": {
     "GATE": "G",
     "STEPS": {
-      "INITIALIZATION": "Initialization",
+      "INITIALIZATION": "Initialisierung",
       "BASIC_ENGINEERING": "Basic Engineering",
-      "OFFER": "Offer",
+      "OFFER": "Angebot",
       "DETAIL_ENGINEERING": "Detail Engineering",
-      "CONSTRUCTION": "Construction",
-      "COMMISSIONING": "Commissioning",
-      "HANDOVER": "Handover",
-      "PROJECT_END": "Project End"
+      "CONSTRUCTION": "Ausführung",
+      "COMMISSIONING": "Inbetriebnahme",
+      "HANDOVER": "Übergabe",
+      "PROJECT_END": "Projektende"
     },
     "NOTES": {
-      "CUSTOMER_REQUEST": "Customer Request",
-      "PROJECT_RELEASE": "Project Release",
-      "OFFER_PLANNING_RELEASE": "Offer Planning Release",
-      "PURCHASE_RELEASE": "Purchase Release",
-      "APPROVAL_CONSTRUCTION": "Approval for Construction",
-      "INSPECTION_RELEASE": "Inspection Release",
-      "STARTUP_RELEASE": "Startup Release"
+      "CUSTOMER_REQUEST": "Kundenanfrage",
+      "PROJECT_RELEASE": "Projektfreigabe",
+      "OFFER_PLANNING_RELEASE": "Angebotsfreigabe",
+      "PURCHASE_RELEASE": "Bestellfreigabe",
+      "APPROVAL_CONSTRUCTION": "Ausführungsfreigabe",
+      "INSPECTION_RELEASE": "Abnahmefreigabe",
+      "STARTUP_RELEASE": "Inbetriebnahmefreigabe"
     }
   },
   "CAREER": {

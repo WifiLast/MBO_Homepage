@@ -1,0 +1,23 @@
+.scrollPanel {
+    text-align: left !important;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+.intro-header {
+    text-align: left !important;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+    max-width: 800px;
+}

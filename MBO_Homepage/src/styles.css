@@ -66,6 +66,7 @@ app-root {
 .contentWrap {
     max-width: 95% !important;
     font-size: 30px !important;
+    margin: 0 auto;
     /* height: 100dvh; */
     overflow: hidden;
 }

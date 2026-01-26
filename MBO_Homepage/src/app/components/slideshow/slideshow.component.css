@@ -52,7 +52,7 @@
 }
 
 .slideshow-text-overlay h1 {
-    font-size: 48px;
+    font-size: 90px;
     font-weight: 800;
     margin: 0 0 12px;
     letter-spacing: 2px;
@@ -60,7 +60,7 @@
 }
 
 .slideshow-text-overlay p {
-    font-size: 22px;
+    font-size: 50px;
     font-weight: 600;
     margin: 0;
     opacity: 0.95;
@@ -179,11 +179,11 @@
     }
 
     .slideshow-text-overlay h1 {
-        font-size: 42px;
+        font-size: 120px !important;
     }
 
     .slideshow-text-overlay p {
-        font-size: 20px;
+        font-size: 120px !important;
     }
 }
 
@@ -199,12 +199,12 @@
     }
 
     .slideshow-text-overlay h1 {
-        font-size: 32px;
+        font-size: 60px !important;
         margin-bottom: 8px;
     }
 
     .slideshow-text-overlay p {
-        font-size: 16px;
+        font-size: 30px !important;
     }
 
     .slide-nav {

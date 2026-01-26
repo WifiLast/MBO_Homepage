@@ -6,13 +6,14 @@
         </div>
 
         <div class="centerText">
-            <h1>{{ 'QR_SECTION.TITLE_PRE' | translate }} <u>MBO</u></h1>
+            <h1 style="white-space: nowrap;">{{ 'QR_SECTION.TITLE_PRE' | translate }} <u>MBO</u></h1>
             <ol>
                 <li>{{ 'QR_SECTION.STEP1_PRE' | translate }} <span class="hl">{{ 'QR_SECTION.QR_CODE' | translate
                         }}</span></li>
                 <li>{{ 'QR_SECTION.STEP2' | translate }}</li>
                 <li>{{ 'QR_SECTION.STEP3' | translate }}</li>
             </ol>
+            <div class="slogan">{{ 'COMMON.SLOGAN' | translate }}</div>
         </div>
 
         <div class="qrWrap">
@@ -20,28 +21,37 @@
                 <img src="/qr_code.png" alt="QR Code" style="width: 100%; height: auto;">
             </div>
 
-            <!--  <div class="scanBtn" role="button" [attr.aria-label]="'QR_SECTION.SCAN_ME' | translate"></div> -->
+            <a href="https://virtuellemodelle.pages.dev/projekte" target="_blank" class="scanBtn" role="button"
+                [attr.aria-label]="'QR_SECTION.SCAN_ME' | translate"></a>
         </div>
     </section>
 
-    <div class="slogan">{{ 'COMMON.SLOGAN' | translate }}</div>
+
     <footer class="impressum" aria-label="Impressum">
-        <!-- <div class="impressum-content">
-            <div class="contact-info">
-                <p>+43 502044-0</p>
-                <p>office&#64;mbo-services.at</p>
+        <div class="impressum-content">
+            <!-- Col 1: Logo -->
+            <div class="impressum-col logo-col">
+                <img src="/logo_small.webp" alt="MBO Trinity Logo">
             </div>
-            <div></div>
-            <div class="map-container">
-                <img src="/map.svg" alt="Map Location">
+
+            <!-- Col 2: Addresses -->
+            <div class="impressum-col address-col">
+                <strong>MBO TRINITY GmbH</strong>
+                <p><strong>Hauptfirmensitz:Urstein Nord 17, A-5412 Puch bei Hallein</strong></p>
+                <p>Filialgeschäftsstelle Industriestraße B16 Top B4/01 A-2345 Brunn am Gebirge</p>
             </div>
-        </div> -->
-        <div class="copyright-row">
-            © MBO services GmbH 2026
-            <div class="legal-links">
-                <span>Privacy Policy</span>
-                <span>Imprint</span>
+
+            <!-- Col 3: Contact & Legal -->
+            <div class="impressum-col contact-col">
+                <p>t: +43 502044-0 </p>
+                <p>e: <a href="mailto:office&#64;mbo-trinity.com">office&#64;mbo-trinity.com</a></p>
+                <p>FN 640401t, LG Salzburg, UID: ATU81328145</p>
             </div>
+        </div>
+        <div style="justify-content: center; align-items: center;" class="copyright-row">
+            <a routerLink="/privacy-policy" style="color: inherit; text-decoration: none; cursor: pointer;">Privacy
+                Policy</a> |
+            <a routerLink="/imprint" style="color: inherit; text-decoration: none; cursor: pointer;">Imprint</a>
         </div>
     </footer>
 </section>

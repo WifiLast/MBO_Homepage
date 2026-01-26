@@ -45,5 +45,13 @@ export const routes: Routes = [
     {
         path: 'Produkt/reinraumloesung',
         loadComponent: () => import('./Produkt/reinraumloesung/reinraumloesung.component').then(m => m.ReinraumloesungComponent)
+    },
+    {
+        path: 'privacy-policy',
+        loadComponent: () => import('./privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent)
+    },
+    {
+        path: 'imprint',
+        loadComponent: () => import('./imprint/imprint.component').then(m => m.ImprintComponent)
     }
 ];

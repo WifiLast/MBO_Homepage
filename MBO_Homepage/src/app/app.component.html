@@ -9,38 +9,7 @@
             </a>
         </div>
 
-        <nav style="position: relative;left:10%" [attr.aria-label]="'ARIA.MAIN_NAV' | translate">
-            <a routerLink="/unternehmen" routerLinkActive="active">{{ 'HEADER.NAV.COMPANY' | translate }}</a>
-            <div class="nav-item dropdown">
-                <a class="dropdown-toggle" routerLink="/produkte" aria-haspopup="true" aria-expanded="false">
-                    {{ 'HEADER.NAV.PRODUCTS' | translate }}
-                </a>
-                <div class="dropdown-menu" role="menu" [attr.aria-label]="'ARIA.PRODUCTS_MENU' | translate">
-                    <a routerLink="/Produkt/anlagenintegration" role="menuitem">{{ 'PRODUCTS.ITEMS.ANLAGENINTEGRATION' |
-                        translate }}</a>
-                    <div class="submenu-item">
-                        <a routerLink="/Produkt/praezisionsklimageraet" role="menuitem">{{
-                            'PRODUCTS.ITEMS.PRAEZISIONSKLIMAGERAET' | translate }}</a>
-                        <div class="submenu-nested">
-                            <a routerLink="/Produkt/praezisionsklimageraet/a2-htc" role="menuitem">{{
-                                'PRODUCTS.ITEMS.A2_HTC' | translate }}</a>
-                        </div>
-                    </div>
-                    <div class="submenu-item">
-                        <a routerLink="/Produkt/praezisionstermostat" role="menuitem">{{
-                            'PRODUCTS.ITEMS.PRAEZISIONSTERMOSTAT' | translate }}</a>
-                        <div class="submenu-nested">
-                            <a routerLink="Produkt/praezisionstermostat/ct2-0" role="menuitem">{{
-                                'PRODUCTS.ITEMS.CT_2_0' | translate }}</a>
-                        </div>
-                    </div>
-                    <a routerLink="/Produkt/reinraumloesung" role="menuitem">{{ 'PRODUCTS.ITEMS.REINRAUMLOESUNG' |
-                        translate }}</a>
-                </div>
-            </div>
-            <a routerLink="/karriere">{{ 'HEADER.NAV.CAREER' | translate }}</a>
-            <a routerLink="/kontakt">{{ 'HEADER.NAV.CONTACT' | translate }}</a>
-        </nav>
+
 
         <div class="header-right">
             <div class="language-switcher" style="display: flex; gap: 10px; align-items: center;">
