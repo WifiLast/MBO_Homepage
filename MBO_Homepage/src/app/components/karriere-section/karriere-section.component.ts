@@ -9,5 +9,5 @@ import { SlideshowComponent } from '../slideshow/slideshow.component';
   styleUrl: './karriere-section.component.css'
 })
 export class KarriereSectionComponent {
-  slides = ['/Bilder/ART/Bau/20240415_115933.jpg'];
+  slides = ['/Bilder/ART/Bau/20240415_115933.webp'];
 }

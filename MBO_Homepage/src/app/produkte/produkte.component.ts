@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { SlideshowComponent, CardData } from '../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../components/karriere-section/karriere-section.component';
 import { RouterModule } from '@angular/router';
+import { ScriptLoaderService } from '../services/script-loader.service';
 
 @Component({
   selector: 'app-produkte',
@@ -11,9 +12,9 @@ import { RouterModule } from '@angular/router';
   templateUrl: './produkte.component.html',
   styleUrl: './produkte.component.css'
 })
-export class ProdukteComponent {
+export class ProdukteComponent implements OnInit {
   slides = [
-    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240415_115933.webp',
     '/Bilder/ART/Bau/20240418_071549.jpg',
     '/Bilder/ART/Bau/20240514_134945.jpg',
     '/Bilder/ART/Bau/20240514_134951.jpg',
@@ -51,4 +52,10 @@ export class ProdukteComponent {
       cssClass: 'praezisionstermostat'
     }
   ];
+
+  constructor(private scriptLoader: ScriptLoaderService) { }
+
+  ngOnInit(): void {
+    this.scriptLoader.loadScript('https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js', 'module');
+  }
 }

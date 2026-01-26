@@ -1,0 +1,15 @@
+@echo off
+echo. >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo .model-wrapper { >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo     position: relative; >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo     top: 100px; >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo     margin-top: 50px; >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo } >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo. >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo @media (max-width: 768px) { >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo     .model-wrapper { >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo         top: 50px; >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo         margin-top: 30px; >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo     } >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo } >> "src\app\Produkt\anlagenintegration\anlagenintegration.component.css"
+echo CSS appended successfully!

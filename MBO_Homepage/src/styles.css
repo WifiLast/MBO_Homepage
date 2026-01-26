@@ -50,7 +50,7 @@ body {
     font-family: var(--mono);
     font-size: 1.4rem !important;
     color: #ffffff;
-    background: url('../public/background.png') center center / cover fixed;
+    background: url('../public/background.webp') center center / cover fixed;
     overflow-y: scroll;
 }
 
@@ -64,7 +64,7 @@ app-root {
 }
 
 .contentWrap {
-        max-width: 95% !important; 
+    max-width: 95% !important;
     font-size: 30px !important;
     /* height: 100dvh; */
     overflow: hidden;

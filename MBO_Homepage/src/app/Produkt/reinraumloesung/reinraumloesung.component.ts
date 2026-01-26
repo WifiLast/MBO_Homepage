@@ -21,7 +21,7 @@ export class ReinraumloesungComponent implements AfterViewInit, OnDestroy {
   private langChangeSub?: Subscription;
 
   slides = [
-    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240415_115933.webp',
     '/Bilder/ART/Bau/20240418_071549.jpg',
     '/Bilder/ART/Bau/20240514_134945.jpg',
     '/Bilder/ART/Bau/20240514_134951.jpg',
@@ -33,7 +33,7 @@ export class ReinraumloesungComponent implements AfterViewInit, OnDestroy {
 
   ];
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService) { }
 
   ngAfterViewInit(): void {
     this.typesetMath();

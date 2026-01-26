@@ -1,0 +1,13 @@
+
+.model-wrapper {
+    position: relative;
+    top: 100px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .model-wrapper {
+        top: 50px;
+        margin-top: 30px;
+    }
+}

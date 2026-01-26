@@ -12,7 +12,7 @@ import { KarriereSectionComponent } from '../../components/karriere-section/karr
 })
 export class DatenschutzComponent {
   slides = [
-    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240415_115933.webp',
     '/Bilder/ART/Bau/20240418_071549.jpg',
     '/Bilder/ART/Bau/20240514_134945.jpg',
     '/Bilder/ART/Bau/20240514_134951.jpg',

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { SlideshowComponent } from '../components/slideshow/slideshow.component';
-import { KarriereSectionComponent } from '../components/karriere-section/karriere-section.component'; 
+import { KarriereSectionComponent } from '../components/karriere-section/karriere-section.component';
 import { Subscription } from 'rxjs';
 
 
@@ -25,9 +25,9 @@ export class UnternehmenComponent {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  
+
   slides = [
-    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240415_115933.webp',
     '/Bilder/ART/Bau/20240418_071549.jpg',
     '/Bilder/ART/Bau/20240514_134945.jpg',
     '/Bilder/ART/Bau/20240514_134951.jpg',

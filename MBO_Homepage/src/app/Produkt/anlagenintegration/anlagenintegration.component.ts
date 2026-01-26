@@ -23,7 +23,7 @@ export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
   private resizeObserver?: ResizeObserver;
 
   slides = [
-    '/Bilder/ART/Bau/20240415_115933.jpg',
+    '/Bilder/ART/Bau/20240415_115933.webp',
     '/Bilder/ART/Bau/20240418_071549.jpg',
     '/Bilder/ART/Bau/20240514_134945.jpg',
     '/Bilder/ART/Bau/20240514_134951.jpg',
@@ -41,7 +41,7 @@ export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
   constructor(
     private translate: TranslateService,
     private hostRef: ElementRef<HTMLElement>
-  ) {}
+  ) { }
 
   ngAfterViewInit(): void {
     this.typesetMath();
