@@ -15,7 +15,7 @@ export function createTranslateLoader(http: HttpClient) {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'enabled' }), withPreloading(FlagPreloadingStrategy)),
+    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'top' }), withPreloading(FlagPreloadingStrategy)),
     provideHttpClient(),
     provideAnimationsAsync(),
     importProvidersFrom(
