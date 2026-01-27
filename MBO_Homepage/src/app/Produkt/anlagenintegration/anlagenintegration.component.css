@@ -714,7 +714,7 @@ footer a {
     position: absolute;
     transform: none;
     right: 120px;
-        top: calc(var(--card-height) + var(--card-stack-gap));
+    top: calc(var(--card-height) + var(--card-stack-gap));
     width: 750px;
     height: var(--viewer-height);
     /* Increased height to accommodate the translateY offset */
@@ -767,4 +767,11 @@ model-viewer {
     }
 }
 
-
+/* Extra section for PARA1 */
+p.intro-text {
+    margin-bottom: 26px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    max-width: 48%;
+}

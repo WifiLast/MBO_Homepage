@@ -1,18 +1,12 @@
 <section class="hero" [attr.aria-label]="'ARIA.HERO' | translate">
-    <app-slideshow
-        [slides]="slides"
-        [showOverlay]="true"
-        [overlayTitle]="'HERO.TITLE' | translate"
-        [overlaySubtitle]="'HERO.SUBTITLE' | translate"
-        [cards]="cards"
-        [showCards]="true"
-        [cardsPerRow]="2">
+    <app-slideshow [slides]="slides" [showOverlay]="true" [overlayTitle]="'HERO.TITLE' | translate"
+        [overlaySubtitle]="'HERO.SUBTITLE' | translate" [cards]="cards" [showCards]="true" [cardsPerRow]="2">
     </app-slideshow>
 </section>
 
 <section class="contentWrap" [attr.aria-label]="'ARIA.CONTENT' | translate">
     <div class="scrollPanel">
-        <p>
+        <p class="intro-text">
             {{ 'PRODUCT_PAGES.ANLAGENINTEGRATION.PARA1' | translate }}
         </p>
         <p>
@@ -55,17 +49,8 @@
 
     </div>
     <div class="model-wrapper" aria-hidden="true">
-        <model-viewer
-            src="/CT2_0.glb"
-            alt="CT 2.0 model"
-            camera-controls
-            auto-rotate
-            disable-zoom
-            disable-pan
-            interaction-prompt="none"
-            camera-orbit="0deg 75deg 5m"
-            camera-target="0m 1.3m 0m"
-            field-of-view="30deg">
+        <model-viewer src="/CT2_0.glb" alt="CT 2.0 model" camera-controls auto-rotate disable-zoom disable-pan
+            interaction-prompt="none" camera-orbit="0deg 75deg 5m" camera-target="0m 1.3m 0m" field-of-view="30deg">
         </model-viewer>
     </div>
 </section>
