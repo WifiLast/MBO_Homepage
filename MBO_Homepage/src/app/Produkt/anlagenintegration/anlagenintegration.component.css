@@ -1,4 +1,4 @@
-:host {
+﻿:host {
     /* wieviel Platz rechts für die Card reserviert wird */
     --card-space: clamp(280px, 38vw, 540px);
     --card-gap: clamp(16px, 2vw, 28px);
@@ -698,7 +698,7 @@ footer a {
 .scrollPanel::before {
     content: "";
     float: right;
-    width: var(--card-space);
+    width: 800px;
     height: calc(var(--card-height) + var(--card-stack-gap) + var(--viewer-height));
     margin-left: var(--card-gap);
 }
@@ -712,12 +712,11 @@ footer a {
 /* Model-Viewer unter der Card platzieren */
 .model-wrapper {
     position: absolute;
-    transform: translateY(100px);
-    right: 0;
-    min-height: 500px;
-    top: calc(var(--card-height) + var(--card-stack-gap) + (var(--card-height) - var(--viewer-height)) / 2);
-    width: var(--card-space);
-    height: 60%;
+    transform: none;
+    right: 120px;
+        top: calc(var(--card-height) + var(--card-stack-gap));
+    width: 750px;
+    height: var(--viewer-height);
     /* Increased height to accommodate the translateY offset */
     background: transparent;
     pointer-events: auto;
@@ -767,3 +766,5 @@ model-viewer {
         pointer-events: auto;
     }
 }
+
+
