@@ -638,3 +638,11 @@ footer a {
     color: var(--accent);
     text-decoration: none;
 }
+/* Extra section for PARA1 */
+p.intro-text {
+    margin-bottom: 26px;
+    display: block;
+    position: relative;
+    z-index: 10;
+    max-width: 48%;
+}
