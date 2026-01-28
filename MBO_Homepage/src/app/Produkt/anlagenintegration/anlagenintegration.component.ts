@@ -1,9 +1,10 @@
-import { AfterViewInit, Component, OnDestroy, CUSTOM_ELEMENTS_SCHEMA, ElementRef } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit, CUSTOM_ELEMENTS_SCHEMA, ElementRef } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { SlideshowComponent, CardData } from '../../components/slideshow/slideshow.component';
 import { KarriereSectionComponent } from '../../components/karriere-section/karriere-section.component';
 import { Subscription } from 'rxjs';
+import { ScriptLoaderService } from '../../services/script-loader.service';
 
 declare global {
   interface Window {
@@ -18,10 +19,13 @@ declare global {
   templateUrl: './anlagenintegration.component.html',
   styleUrl: './anlagenintegration.component.css'
 })
-export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
+export class AnlagenintegrationComponent implements OnInit, AfterViewInit, OnDestroy {
   private langChangeSub?: Subscription;
   private resizeObserver?: ResizeObserver;
 
+  ngOnInit(): void {
+    this.scriptLoader.loadScript('https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js', 'module');
+  }
   slides = [
     '/Bilder/ART/Bau/20240415_115933.webp',
     '/Bilder/ART/Bau/20240418_071549.jpg',
@@ -40,7 +44,8 @@ export class AnlagenintegrationComponent implements AfterViewInit, OnDestroy {
 
   constructor(
     private translate: TranslateService,
-    private hostRef: ElementRef<HTMLElement>
+    private hostRef: ElementRef<HTMLElement>,
+    private scriptLoader: ScriptLoaderService
   ) { }
 
   ngAfterViewInit(): void {

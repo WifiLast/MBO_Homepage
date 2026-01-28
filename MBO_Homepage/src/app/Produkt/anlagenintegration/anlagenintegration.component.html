@@ -49,9 +49,43 @@
 
     </div>
     <div class="model-wrapper" aria-hidden="true">
-        <model-viewer src="/CT2_0.glb" alt="CT 2.0 model" camera-controls auto-rotate disable-zoom disable-pan
-            interaction-prompt="none" camera-orbit="0deg 75deg 5m" camera-target="0m 1.3m 0m" field-of-view="30deg">
-        </model-viewer>
+        <model-viewer src="CT 2.0 + Serverracks.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.06" shadow-softness="0.85" exposure="0.97">
+
+    <button class="Hotspot" slot="hotspot-1" data-position="2.2163294344262576m 1.1121100536276907m -2.7394120185515085m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+
+        <div class="HotspotAnnotation">CT 2.0</div>
+
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-1.957366668458242m 1.2796641772552046m -2.7062060721583556m" data-normal="0.07669631236867146m 0m 0.9970544998489537m" data-visibility-attribute="visible">
+
+        <div class="HotspotAnnotation">Serverracks</div>
+
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-1.983891496837721m 3.2728939914796324m -3.2588535547592876m" data-normal="-0.00003006629028278397m 3.029462791921337e-7m 0.9999999995479634m" data-visibility-attribute="visible">
+
+        <div class="HotspotAnnotation">Stahlbühne</div>
+
+    </button><button class="Hotspot" slot="hotspot-5" data-position="2.258018244757956m 2.7465758804218137m -3.503891905429075m" data-normal="0.00009753956643527388m 0.8373260639829287m 0.5467038074322232m" data-visibility-attribute="visible">
+
+        <div class="HotspotAnnotation">Kühlkreisläufe</div>
+
+    </button><button class="Hotspot" slot="hotspot-8" data-position="-3.229217368484818m 0.9806486484014916m -4.894493663782928m" data-normal="-0.6807064451055411m -2.2192520608827442e-7m -0.7325563019944118m" data-visibility-attribute="visible">
+
+        <div class="HotspotAnnotation">Rackeinhausung</div>
+
+    </button>
+
+    <div class="progress-bar hide" slot="progress-bar">
+
+        <div class="update-bar"></div>
+
+    </div>
+
+    <button slot="ar-button" id="ar-button">
+
+        View in your space
+
+    </button>
+
+</model-viewer>
     </div>
 </section>
 
