@@ -638,6 +638,43 @@ footer a {
     color: var(--accent);
     text-decoration: none;
 }
+
+/* Content direkt unter dem Hero nach oben ziehen */
+.contentWrap {
+    max-width: 95%;
+    margin: calc(-1 * var(--hero-overlap)) auto 0;
+    /* <- wichtig */
+    position: relative;
+    z-index: 5;
+
+    /* wichtig für "Word-Flow": nicht clippen */
+    height: auto;
+    overflow: visible;
+
+    display: block;
+}
+
+/* Text fließt bis zur Slideshow-Card und danach voll weiter */
+.scrollPanel {
+    width: 100%;
+    max-width: 100%;
+    padding: 26px 26px 28px;
+}
+
+.scrollPanel::before {
+    content: "";
+    float: right;
+    width: 800px;
+    height: calc(var(--card-height) + var(--card-stack-gap) + var(--viewer-height));
+    margin-left: var(--card-gap);
+}
+
+.scrollPanel::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* Extra section for PARA1 */
 p.intro-text {
     margin-bottom: 26px;
@@ -645,4 +682,15 @@ p.intro-text {
     position: relative;
     z-index: 10;
     max-width: 48%;
+}
+:host {
+    /* wieviel Platz rechts für die Card reserviert wird */
+    --card-space: clamp(280px, 38vw, 540px);
+    --card-gap: clamp(16px, 2vw, 28px);
+    --card-height: clamp(250px, 22vh, 340px);
+    --card-stack-gap: clamp(24px, 4vh, 48px);
+    --viewer-height: clamp(380px, 65vh, 760px);
+
+    /* wie weit der Content nach oben in den Hero gezogen wird */
+    --hero-overlap: clamp(280px, 18vh, 260px);
 }
