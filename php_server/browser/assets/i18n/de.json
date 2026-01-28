@@ -1,0 +1,414 @@
+{
+  "HEADER": {
+    "NAV": {
+      "COMPANY": "Unternehmen",
+      "PRODUCTS": "Produkte",
+      "CAREER": "Karriere",
+      "CONTACT": "Kontakt"
+    }
+  },
+  "HERO": {
+    "TITLE": "Lorem Ipsum",
+    "SUBTITLE": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "COMPANY": {
+      "TITLE": "Unternehmen",
+      "DESCRIPTION": "Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von Reinräumen, Prüfständen, die Anlagenintegration und den Sonderanlagenbau."
+    },
+    "PRODUCTS": {
+      "TITLE": "Produkte",
+      "DESCRIPTION": "Aus der Halbleiterindustrie kommend, mit einem starken Fokus auf Spitzentechnologie und Innovation, erfüllen unsere Produkte und Dienstleistungen zukunftsweisende Lösungen, die den höchsten Ansprüchen an Präzision, Zuverlässigkeit und Effizienz gerecht werden."
+    }
+  },
+  "CONTENT": {
+    "PARA1_PART1": "Die ",
+    "PARA1_PART2": " plant und errichtet Prozessumgebungen wie ",
+    "CLEANROOMS": "Reinräume",
+    "PARA1_PART3": ", Prüf-, Mess- und Klimakammern mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.",
+    "PARA2_PRE": "Die ",
+    "PARA2_ACTION": " integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B. ",
+    "ITEM_MBMW": "MBMW-Tools",
+    "ITEM_PHOTOMASK": "Photomask development systems",
+    "ITEM_SEM": "Scanning Electron Microscopes",
+    "ITEM_TESTBENCHES": "Test benches",
+    "ITEM_CLIMATE": "Climate Chambers",
+    "PARA2_POST": ", Cluster, usw., in Prozessumgebungen. Die Leistungen der ",
+    "PARA2_END": " umfassen dabei den vollen Projektzyklus.",
+    "SECTION_TITLE": "Single-Point-of-Accountability:"
+  },
+  "TIMELINE": {
+    "GATE": "G",
+    "STEPS": {
+      "INITIALIZATION": "Initialization",
+      "BASIC_ENGINEERING": "Basic Engineering",
+      "OFFER": "Offer",
+      "DETAIL_ENGINEERING": "Detail Engineering",
+      "CONSTRUCTION": "Construction",
+      "COMMISSIONING": "Commissioning",
+      "HANDOVER": "Handover",
+      "PROJECT_END": "Project End"
+    },
+    "NOTES": {
+      "CUSTOMER_REQUEST": "Customer Request",
+      "PROJECT_RELEASE": "Project Release",
+      "OFFER_PLANNING_RELEASE": "Offer Planning Release",
+      "PURCHASE_RELEASE": "Purchase Release",
+      "APPROVAL_CONSTRUCTION": "Approval for Construction",
+      "INSPECTION_RELEASE": "Inspection Release",
+      "STARTUP_RELEASE": "Startup Release"
+    }
+  },
+  "CAREER": {
+    "TITLE": "Karriere",
+    "PARA1": "Werden Sie Teil unseres Teams! Wir suchen ständig nach talentierten und motivierten Mitarbeitern, die mit uns gemeinsam die Zukunft gestalten wollen.",
+    "PARA2": "Bei <span class=\"hl\">MBO Trinity</span> erwarten Sie spannende Projekte, ein innovatives Umfeld und vielfältige Entwicklungsmöglichkeiten.",
+    "OPEN_POSITIONS": "Offene Stellen:",
+    "POSITIONS": {
+      "PROJECT_MANAGER": "Projektleiter (m/w/d) Anlagenbau",
+      "DESIGNER": "Konstrukteur (m/w/d) Reinraumtechnik",
+      "SERVICE_TECHNICIAN": "Servicetechniker (m/w/d)"
+    }
+  },
+  "QR_SECTION": {
+    "TITLE_PRE": "Steigen Sie ein in die Welt der ",
+    "STEP1_PRE": "Scannen des ",
+    "QR_CODE": "QR-Codes",
+    "STEP2": "Browser (Chrome oder Safari)",
+    "STEP3": "Menüführung am Handy folgen",
+    "SCAN_ME": "Scan Me"
+  },
+  "FOOTER": {
+    "CONTACT": "<strong>MBO Trinity GmbH</strong> | mail: <a href=\"mailto:office@mbo-trinity.com\">office@mbo-trinity.com</a> | tel: +43 502044-0",
+    "COPYRIGHT": "© mbo trinity gmbh",
+    "PRIVACY": "Privacy Policy",
+    "IMPRINT": "Imprint",
+    "TERMS": "Allgemeine Geschäftsbedingungen"
+  },
+  "COMMON": {
+    "LOGO_ALT": "MBO Trinity Logo",
+    "COMPANY_NAME": "MBO Trinity GmbH",
+    "SLOGAN": "limits are a mindset",
+    "LANGUAGE_DE": "Deutsch",
+    "LANGUAGE_EN": "Englisch"
+  },
+  "ANLAGENINTEGRATION": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.",
+    "PARA2": "Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumumsysteme. Dabei realisieren wir hoch komplexe Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Metallkammer, etc. Unsere Leistungen umspannen die komplette Reinraumausstattung wie z.B.: Medienversorgung, Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Brandschutz, Explosionsschutz, Gaswarnanlagen, Krananlagen, Klimatisierung u.v.m. Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.",
+    "SECTION_TITLE": "Errichtung und Abnahme",
+    "PARA3": "Die Errichtung erfolgt je nach Erfordernis mit unseren qualifizierten Monteuren oder mit unseren Sub-Contractoren.<br>Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen<br>Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung<br>Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne<br>Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)<br>Übergabe der Anlagen, Dokumentation und Schulung<br>Gewährleistung der einwandfreien Funktion und der qualitativ hochwertigen Ausführung",
+    "SPECS_TITLE": "Spezifikationen",
+    "SPECS": "Spezifikationen die unsere Reinräume erreichen, sind z.B.:<br>Standard for main body installation area: ISO 3 (14644-1)<br>Magnetic field fluctuation tolerances: \\(AC \\le 0.03\\,\\mu\\text{T}\\), \\(DC < 0.03\\,\\mu\\text{T}\\)<br>Temperature stability of ambient air: \\(\\pm 20\\,\\text{mK}\\)<br>Pressure stability: \\(\\pm 1\\,\\text{Pa}\\)<br>Humidity stability: \\(\\pm 0.2\\,\\%\\)<br>Laminar flow downwarded<br>Floor vibration criteria \\(\\le \\mathrm{VC{-}E}\\)"
+  },
+  "PRAEZISIONSKLIMAGERAET": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> baut und integriert hochpräzise und hochkomplexe Lösungen zur Klimatisierung von Prozessumgebungen sowie eigenentwickelte Skids von Präzisionsklimageräten wie z.B. den A²HTC.",
+    "SECTION_TITLE": "Einsatzbereiche",
+    "PARA2": "Reinräume<br>Labore<br>Test Benches, Prüfstände, Klimakammern<br>Abgegrenzte Prozessumgebungen<br>Schutzbereiche mit Laminarflow oder turbulenter Mischströmung",
+    "SPECS_TITLE": "Spezifikationen",
+    "SPECS": "Ausgelegt für höchste Versorgungssicherheit und engste Spezifikationen, z.B.:<br>Temperatur: \\(21\\,^{\\circ}\\mathrm{C}\\) - \\(23\\,^{\\circ}\\mathrm{C}\\); Stabilität \\(\\pm 0{,}02\\,\\mathrm{K}\\)<br>Rel. Luftfeuchte: \\(35\\,\\%\\) - \\(50\\,\\%\\); Stabilität \\(\\pm 1\\,\\%\\)<br>Druck: Stabilität \\(\\pm 1\\,\\mathrm{Pa}\\)"
+  },
+  "PRAEZISIONSTERMOSTAT": {
+    "PARA1_PRE": "Die ",
+    "PARA1_POST": " baut und integriert hochpräzise Liquid-to-Liquid-Prozessthermostate und Kühlsysteme zur Kühlung hochsensibler Anlagen.",
+    "SECTION_TITLE": "Anwendungsbeispiele",
+    "PARA2_LINE1": "MBMW-Tools",
+    "PARA2_LINE2": "Photomask Development Systems",
+    "PARA2_LINE3": "Sputtering Tools",
+    "PARA2_LINE4": "Scanning Electron Microscopes",
+    "PARA2_LINE5": "Test Benches",
+    "PARA2_LINE6": "u.v.m.",
+    "PARA3": "Die Liquid-to-Liquid-Prozessthermostate und Kühlsysteme dienen als Prozesskühlung für Anlagen mit höchsten Anforderungen an Temperaturstabilität, regelbaren Volumenstrom und stabilen Druck. Planung und Errichtung von individuell auf Ihre Anforderungen abgestimmten Systemen.",
+    "SPECS_TITLE": "Spezifikation",
+    "SPECS": "Konstante Vorlauftemperatur mit einer Temperaturstabilität von \\(\\pm 0{,}2\\,\\mathrm{K}\\)."
+  },
+  "REINRAUMLOESUNG": {
+    "PARA1": "Die <span class=\"hl\">MBO Trinity GmbH</span> plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.",
+    "PARA2": "Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumsysteme. Dabei realisieren wir hoch komplexe Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Metallkammer, etc. Unsere Leistungen umspannen die komplette Reinraumausstattung wie z.B.: Medienversorgung, Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Brandschutz, Explosionsschutz, Gaswarnanlagen, Krananlagen, Klimatisierung u.v.m. Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.",
+    "SECTION_TITLE": "Errichtung und Abnahme",
+    "PARA3": "Die Errichtung erfolgt je nach Erfordernis mit unseren qualifizierten Monteuren oder mit unseren Sub-Contractoren.<br>Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen<br>Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung<br>Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne<br>Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)<br>Übergabe der Anlagen, Dokumentation und Schulung<br>Gewährleistung der einwandfreien Funktion und der qualitativ hochwertigen Ausführung",
+    "SPECS_TITLE": "Spezifikationen",
+    "SPECS": "Spezifikationen die unsere Reinräume erreichen, sind z.B.:<br>Standard for main body installation area: ISO 3 (14644-1)<br>Magnetic field fluctuation tolerances: \\(AC \\le 0.03\\,\\mu\\text{T}\\), \\(DC < 0.03\\,\\mu\\text{T}\\)<br>Temperature stability of ambient air: \\(\\pm 20\\,\\text{mK}\\)<br>Pressure stability: \\(\\pm 1\\,\\text{Pa}\\)<br>Humidity stability: \\(\\pm 0.2\\,\\%\\)<br>Laminar flow downwarded<br>Floor vibration criteria \\(\\le \\mathrm{VC{-}E}\\)"
+  },
+  "KARRIERE": {
+    "SECTION1_TITLE": "Arbeiten bei MBO",
+    "SECTION1_PARA1_PRE": "Bei ",
+    "SECTION1_PARA1_POST": " entwickeln, planen und realisieren wir hochtechnisierte Prozess- und Reinraumumgebungen, in denen Präzision, Verantwortung und Innovation tägliche Praxis sind.",
+    "SECTION1_PARA2": "Unsere Projekte bewegen sich an der technischen Grenze des Machbaren – in der Halbleiter-, Pharma- und High-Tech-Industrie. Dafür suchen wir Menschen, die mitdenken, Verantwortung übernehmen und Lösungen schaffen.",
+    "SECTION1_SUBTITLE": "Warum MBO?",
+    "SECTION1_LIST_HEADER": "Anspruchsvolle Projekte",
+    "SECTION1_LIST_INTRO": " an realen High-Tech-Anlagen:",
+    "SECTION1_LIST_ITEM1": "Reinräume nach ISO 14644",
+    "SECTION1_LIST_ITEM2": "Präzisions-Klima- und Prozessstabilitätssysteme",
+    "SECTION1_LIST_ITEM3": "Schnittstellen zu hochsensiblen Produktions-Tools",
+    "SECTION1_LIST_ITEM4": "Projekte mit international führenden Industrie- und Technologieunternehmen",
+    "SECTION2_TITLE": "Verantwortung & Vertrauen",
+    "SECTION2_LIST_ITEM1": "Kurze Entscheidungswege",
+    "SECTION2_LIST_ITEM2": "Direkter Kontakt zu Projektleitung und Geschäftsführung",
+    "SECTION2_LIST_ITEM3": "Eigenverantwortung ab dem ersten Tag",
+    "SECTION2_LIST_ITEM4": "Vertrauen statt Mikromanagement",
+    "SECTION2_SUBTITLE": "Technik mit Substanz",
+    "SECTION2_PARA": "Wir stehen für saubere Planung, nachvollziehbare Lösungen und technische Exzellenz statt Kompromisse. Bei uns zählen Fakten, Normen und Funktion – nicht Buzzwords.",
+    "SECTION3_TITLE": "Wen wir suchen",
+    "SECTION3_PARA": "Wir suchen Techniker:innen, Ingenieur:innen und Projektprofis, die strukturiert arbeiten, Verantwortung übernehmen, technische Zusammenhänge verstehen und gerne im Team komplexe Aufgaben lösen.",
+    "SECTION3_SUBTITLE": "Typische Profile bei MBO",
+    "SECTION3_LIST_ITEM1": "Projektleiter:innen (TGA / Reinraum / Anlagenbau)",
+    "SECTION3_LIST_ITEM2": "HKLS- / HVAC-Ingenieur:innen",
+    "SECTION3_LIST_ITEM3": "Automatisierungs- & Regelungstechniker:innen",
+    "SECTION3_LIST_ITEM4": "Konstrukteur:innen / Planer:innen",
+    "SECTION3_LIST_ITEM5": "Service- & Inbetriebnahme-Techniker:innen",
+    "SECTION3_LIST_ITEM6": "(auch engagierte Einsteiger:innen und erfahrene Spezialisten willkommen)",
+    "SECTION4_TITLE": "Was wir bieten",
+    "SECTION4_LIST_ITEM1": "Technisch anspruchsvolle Aufgaben mit echter Relevanz",
+    "SECTION4_LIST_ITEM2": "Moderne Arbeitsmittel & professionelle Projektstrukturen",
+    "SECTION4_LIST_ITEM3": "Faire, leistungsgerechte Vergütung",
+    "SECTION4_LIST_ITEM4": "Flexible Arbeitsmodelle je nach Rolle & Projekt",
+    "SECTION4_LIST_ITEM5": "Weiterbildung im High-Tech-Umfeld",
+    "SECTION4_LIST_ITEM6": "Ein kollegiales, kompetentes Team, das zusammenhält",
+    "SECTION4_SUBTITLE": "Jetzt Teil der MBO werden",
+    "SECTION4_PARA_LINE1": "Du möchtest an High-End-Technologieprojekten mitarbeiten und suchst ein Umfeld, in dem Know-how zählt?",
+    "SECTION4_PARA_LINE2": "Sende uns deine Bewerbung oder nimm unkompliziert Kontakt auf – gerne auch initiativ."
+  },
+  "ARIA": {
+    "INTRO": "Intro",
+    "HERO": "Hero",
+    "CONTENT": "Content",
+    "PROJECT_PHASES": "Projektphasen",
+    "MAIN_NAV": "Hauptnavigation",
+    "PRODUCTS_MENU": "Produkte",
+    "MOBILE_NAV": "Mobile Navigation",
+    "CLOSE_MENU": "Menü schließen",
+    "MENU": "Menü",
+    "HOME": "Startseite"
+  },
+  "CONTACT": {
+    "BRANCH_LABEL": "Standort",
+    "PHONE": "Telefon:",
+    "EMAIL": "E-Mail:",
+    "ROUTE_PLANNER": "Detail & Routenplaner »",
+    "PUCH": {
+      "TITLE": "Puch bei Hallein / Salzburg",
+      "ADDRESS_LINE1": "Urstein Nord 17",
+      "ADDRESS_LINE2": "A-5412 Puch bei Hallein",
+      "MAP_TITLE": "Karte des MBO Standorts Puch bei Hallein"
+    },
+    "BRUNN": {
+      "TITLE": "Brunn am Gebirge / Niederösterreich",
+      "ADDRESS_LINE1": "Industriestraße B16, Top B4/01",
+      "ADDRESS_LINE2": "A-2345 Brunn am Gebirge",
+      "MAP_TITLE": "Karte des MBO Standorts Brunn am Gebirge"
+    }
+  },
+  "PRODUCTS": {
+    "ITEMS": {
+      "ANLAGENINTEGRATION": "Anlagenintegration",
+      "PRAEZISIONSKLIMAGERAET": "Präzisionsklimagerät",
+      "A2_HTC": "A2 HTC",
+      "PRAEZISIONSTERMOSTAT": "Präzisionsthermostat",
+      "CT_2_0": "CT 2.0",
+      "REINRAUMLOESUNG": "Reinraumlösung"
+    },
+    "CARDS": {
+      "REINRAUM": {
+        "TITLE": "Reinraumtechnologie",
+        "DESCRIPTION": "Mit entscheidendem Know-How und Erfahrung auf dem Gebiet der Reinraumtechnik mit besonderer Sorgfalt und dem Antrieb zu den Besten zählen zu wollen."
+      },
+      "ANLAGENINTEGRATION": {
+        "TITLE": "Anlagenintegration",
+        "DESCRIPTION": "Die MBO integriert als Single-Point-of-Accountability Anlagen und Technologien in die Fertigungsprozesse der Auftraggeber."
+      },
+      "PRAEZISIONSKLIMAGERAET": {
+        "TITLE": "Präzisionsklimageräte",
+        "DESCRIPTION": "Hochpräzise Temperatur- und Feuchteregelung für sensible Prozesse in Produktion, Test-, Labor- und Prozessumfeld."
+      },
+      "PRAEZISIONSTERMOSTAT": {
+        "TITLE": "Präzisionsthermostate",
+        "DESCRIPTION": "Hochpräzise Temperaturregelung für flüssigkeitsführende sensible Prozesse in Produktion, Test-, Labor- und Prozessumfeld."
+      }
+    }
+  },
+  "KARRIERE_PAGE": {
+    "SECTION1_TITLE": "Arbeiten bei MBO bedeutet:",
+    "SECTION1_PARA1": "Bei MBO Trinity entwickeln, planen und realisieren wir hochtechnisierte Prozess- und Reinraumumgebungen, in denen Präzision, Verantwortung und Innovation keine Schlagworte, sondern tägliche Praxis sind.",
+    "SECTION1_PARA2": "Unsere Projekte bewegen sich an der technischen Grenze des Machbaren – in der Halbleiter-, Pharma- und High-Tech-Industrie. Dafür suchen wir Menschen, die mitdenken, Verantwortung übernehmen und Lösungen schaffen, wo andere nur Anforderungen sehen.",
+    "SECTION2_TITLE": "Warum MBO?",
+    "SECTION2_LEAD": "Anspruchsvolle Projekte",
+    "SECTION2_INTRO": "Du arbeitest an realen High-Tech-Anlagen, nicht an theoretischen Projekten:",
+    "SECTION2_ITEM1": "Reinräume nach ISO 14644",
+    "SECTION2_ITEM2": "Schnittstellen zu hoch­sensiblen Produktions-Tools",
+    "SECTION2_ITEM3": "Projekte mit international führenden Industrie- und Technologieunternehmen",
+    "SECTION3_TITLE": "Verantwortung & Vertrauen",
+    "SECTION3_ITEM1": "Kurze Entscheidungswege",
+    "SECTION3_ITEM2": "Direkter Kontakt zu Projektleitung und Geschäftsführung",
+    "SECTION3_ITEM3": "Eigenverantwortung ab dem ersten Tag",
+    "SECTION3_ITEM4": "Vertrauen statt Mikromanagement",
+    "SECTION4_TITLE": "Technik mit Substanz",
+    "SECTION4_LEAD": "Wir stehen für:",
+    "SECTION4_ITEM1": "saubere Planung",
+    "SECTION4_ITEM2": "nachvollziehbare Lösungen",
+    "SECTION4_ITEM3": "technische Exzellenz statt Kompromisse",
+    "SECTION4_OUTRO": "Bei uns zählen Fakten, Normen und Funktion – nicht Buzzwords.",
+    "SECTION5_TITLE": "Wen wir suchen",
+    "SECTION5_LEAD": "Wir suchen Techniker:innen, Ingenieur:innen und Projektprofis, die:",
+    "SECTION5_ITEM1": "strukturiert arbeiten",
+    "SECTION5_ITEM2": "Verantwortung übernehmen",
+    "SECTION5_ITEM3": "technische Zusammenhänge verstehen",
+    "SECTION5_ITEM4": "gerne im Team komplexe Aufgaben lösen",
+    "SECTION6_TITLE": "Typische Profile bei MBO:",
+    "SECTION6_ITEM1": "Projektleiter:innen (TGA / Reinraum / Anlagenbau)",
+    "SECTION6_ITEM2": "HKLS- / HVAC-Ingenieur:innen",
+    "SECTION6_ITEM3": "Automatisierungs- & Regelungstechniker:innen",
+    "SECTION6_ITEM4": "Konstrukteur:innen / Planer:innen",
+    "SECTION6_ITEM5": "Service- & Inbetriebnahme-Techniker:innen",
+    "SECTION6_OUTRO": "(auch engagierte Einsteiger:innen und erfahrene Spezialisten willkommen)",
+    "SECTION7_TITLE": "Was wir bieten",
+    "SECTION7_ITEM1": "Technisch anspruchsvolle Aufgaben mit echter Relevanz",
+    "SECTION7_ITEM2": "Moderne Arbeitsmittel & professionelle Projektstrukturen",
+    "SECTION7_ITEM3": "Faire, leistungsgerechte Vergütung",
+    "SECTION7_ITEM4": "Flexible Arbeitsmodelle je nach Rolle & Projekt",
+    "SECTION7_ITEM5": "Weiterbildung im High-Tech-Umfeld",
+    "SECTION7_ITEM6": "Ein kollegiales, kompetentes Team, das zusammenhält",
+    "SECTION8_TITLE": "Jetzt Teil der MBO werden",
+    "SECTION8_PARA1": "Du möchtest an High-End-Technologieprojekten mitarbeiten und suchst ein Umfeld, in dem Know-how zählt?",
+    "SECTION8_PARA2": "Sende uns deine Bewerbung oder nimm unkompliziert Kontakt auf - Gerne auch initiativ."
+  },
+  "PRODUCT_PAGES": {
+    "PRAEZISIONSTERMOSTAT": {
+      "PARA1": "Die MBO Trinity GmbH baut und integriert hochpräzise Liquid-to-Liquid-Prozessthermostate und Kühlsysteme zur Kühlung von hochsensiblen Anlagen wie z.B.: MBMW-Tools, Photomask Development Systems, Sputtering Tools, Scanning Electron Microscopes, Test Benches, usw.",
+      "PARA2": "Die Kühlsysteme und Prozessthermostate sind für höchste Versorgungssicherheit und für die Einhaltung engster Spezifikationen konzipiert.",
+      "PARA3": "Die Liquid-to-Liquid-Prozessthermostate und Kühlsysteme dienen als Prozesskühlung für Anlagen mit höchster Anforderung an Temperaturstabilität, regelbaren Volumenstrom und stabilen Druck.",
+      "PARA4": "Die Kühlsysteme sind für die Einhaltung einer konstanten Vorlauftemperatur mit einer Temperaturstabilität von ± 0,2 K konzipiert.",
+      "PARA5": "Planung und Errichtung von individuell auf Ihre Anforderung abgestimmte Liquid-to-Liquid-Prozessthermostaten und Kühlsysteme.",
+      "MODEL_ALT": "CT2 Modell"
+    },
+    "PRAEZISIONSKLIMAGERAET": {
+      "INTRO": "Die MBO Trinity GmbH baut und integriert hochpräzise und hochkomplexe Lösungen zur Klimatisierung von:",
+      "LIST_ITEM1": "Reinräumen",
+      "LIST_ITEM2": "WLabore",
+      "LIST_ITEM3": "Test Benches, Prüfständen, Klimakammern",
+      "LIST_ITEM4": "Abgegrenzte Prozessumgebungen",
+      "LIST_ITEM5": "Schutzbereiche mit Laminarflow oder turbulenter Mischströmung",
+      "PARA2": "Planung und Errichtung von individuellen Klimatisierungslösungen für Prozessumgebungen oder Lieferung von eigenentwickelten Skids von Präzisionsklimageräten, wie z.B. den A²HTC.",
+      "PARA3": "Unsre Klimatechnik ist auf höchste Versorgungssicherheit und für die Einhaltung engster Spezifikationen konzipiert – z.B.:",
+      "SPECS_ITEM1": "Temperatur: 21°C – 23 °C; Stabilität ±0,02 K",
+      "SPECS_ITEM2": "Rel. Luftfeuchte: 35 % – 50 %; Stabilität ±1%",
+      "SPECS_ITEM3": "Druck: Stabilität ±1 Pa"
+    },
+    "ANLAGENINTEGRATION": {
+      "PARA1": "Die MBO Trinity GmbH plant und integriert hochsensible Anlagen wie z.B.: MBMW-Tools, Photomask development systems, Sputtering tools, Scanning Electron Microscopes, Test benches, Climate Chambers in Reinräumen und Grauräumen.",
+      "PARA2": "In der Regel treten wir bei der Projektumsetzung als Generalunternehmer auf und Koordinieren die gesamte Projektabwicklung.",
+      "PARA3": "Wir sind es gewohnt Integrationen von komplexesten Anlagen in bestehende Reinraumumgebungen bei laufender Produktion durchzuführen. Selbst Fundamentarbeiten mit Abbruch, Aushub und Betonage wurden schon mehrmals in bestehenden Reinraumumgebungen bei aufrechter Produktion umgesetzt.",
+      "PARA4": "Die Leistungen der MBO Trinity GmbH umfassen dabei den gesamten Projektzyklus:",
+      "LIST_ITEM1": "Wir führen die Layout- und Detailplanung hinsichtlich der Anlagenintegration, inklusive der Medien- und Energieversorgung sowie der Sub-Componenten durch",
+      "LIST_ITEM2": "Planen und adaptieren bestehende Prozessumgebungen oder errichten neue Prozessumgebungen zur Aufnahme der Anlage und zur Einhaltung der Spezifikationen",
+      "LIST_ITEM3": "Wir Koordinieren die Installation durch den Anlagenlieferanten bzw. der Sub-Kontraktoren oder führen diese selbstständig durch",
+      "LIST_ITEM4": "Unterstützen bei der FAT durch den Anlagenlieferanten bzw. führen diese selbstständig durch Erstellen die Projekt-Dokumentation",
+      "LIST_ITEM5": "Wir Koordinieren die Installation durch den Anlagenlieferanten bzw. der Sub-Kontraktoren oder führen diese selbstständig durch",
+      "LIST_ITEM6": "Wir Koordinieren die Installation durch den Anlagenlieferanten bzw. der Sub-Kontraktoren oder führen diese selbstständig durch",
+      "LIST_ITEM7": "Unterstützen bei der FAT durch den Anlagenlieferanten bzw. führen diese selbstständig durch Erstellen die Projekt-Dokumentation",
+      "LIST_TEXT": "Wir stellen sicher, dass strengste Spezifikationen eingehalten werden und das die Implementierung Ihrer Anlage qualitativ auf höchstem Niveau umgesetzt wird.",
+      "LIST_ITEM8": "Erstellen die Projekt-Dokumentation",
+      "OUTRO": "Wir stellen sicher, dass strengste Spezifikationen eingehalten werden und das die Implementierung Ihrer Anlage qualitativ auf höchstem Niveau umgesetzt wird."
+    },
+    "REINRAUMLOESUNG": {
+      "PARA1": "Die MBO Trinity GmbH plant und errichtet Reinräume unter Einhaltung der Reinraumstandards nach ISO 14644-1.",
+      "PARA2": "Wir integrieren Reinräume in Bestandsgebäude oder planen und errichten neue Reinraumumsysteme.",
+      "PARA3": "Dabei realisieren wir hoch komplexeste Hightech-Reinraumsysteme z.B. mit vollflächigem Laminarflow mit Unterdruckplenum, CG-Verteilern, Doppelboden und Rückluftschächten mit integrierter Mu-Matallkammer, etc.",
+      "PARA4": "Unsre Leistungen umspannen dabei auch die komplette Reinraumausstattung wie z.B.: die Medienversorgung, Maschinenfundamente, Exhaust-Systeme, Systeme zur Schwingungsentkopplung, die elektrische Anlage, Systeme für den Brandschutz, Maßnahmen des Explosionsschutzes, Gaswarnanlagen, Krananlagen, Klimatisierung, etc.",
+      "PARA5": "Insbesondere eine umfassende Planung steht bei allen Projekten im Fokus. Zur detaillierten Planung nutzen wir Software zur Strömungsvisualisierung, FEM-Software und BIM-Systeme zur 3D-Planung.",
+      "PARA6": "Die Errichtung erfolgt je nach Erfordernis mit unsren qualifizierten Monteuren oder mit unsren Sub-Contractoren.",
+      "PARA7": "Dabei legen wir insbesondere Wert auf:",
+      "LIST_ITEM1": "Einhaltung der Sicherheits- und Betriebsstandards für Personal und Maschinen",
+      "LIST_ITEM2": "Koordination, Standortinspektion, PSA, Arbeitsplatzvorbereitung",
+      "LIST_ITEM3": "Einhaltung der Budget- und Montagevorgaben sowie der Zeitpläne",
+      "LIST_ITEM4": "Validierung der Funktionalität durch alle erforderlichen Tests und Abnahmen (FAT)",
+      "LIST_ITEM5": "Übergabe der Anlagen, Dokumentation und Schulung",
+      "LIST_ITEM6": "Gewährleistung der einwandfreien Funktion und der Qualitativ hochwertigen Ausführung",
+      "SPECS_INTRO": "Spezifikationen die unsre Reinräume zu erreichen haben sind z.B.:",
+      "SPECS_ITEM1": "Standard for main body installation area: ISO 3 (14644-1)",
+      "SPECS_ITEM2": "Magnetic field fluctuation tolerances: AC ≤ 0.03 µT, DC < 0.03 µT",
+      "SPECS_ITEM3": "Temperature stability of ambient air: ±20 mK",
+      "SPECS_ITEM4": "Pressure stability: ±1 Pa",
+      "SPECS_ITEM5": "Humidity stability: ±0.2 %",
+      "SPECS_ITEM6": "Laminar flow downwarded",
+      "SPECS_ITEM7": "Floor vibration criteria ≤ VC-E"
+    }
+  },
+  "A2_HTC": {
+    "INTRO_PARA": "Die Präzisionsklimagerät A²HTC ist ein Luft-Luft-Prozessthermostat zur präzisen Regelung von Prozessumgebungen mit höchsten Anforderungen an Temperatur, relative Luftfeuchtigkeit und Druckintegrität. Das Präzisionsklimagerät A²HTC kann Wärmebelastungen von bis zu 30 kW aus der Prozessumgebung abführen.",
+    "MODES_INTRO": "Die Präzisionsklimaanlage A²HTC gewährleistet entweder:",
+    "MODE1": "konstante Prozessbedingungen (Modus 1) durch präzise Regelung von Temperatur, Feuchte und Druck oder",
+    "MODE2": "variable Temperatur- und/oder Feuchteprofile (Modus 2).",
+    "APPLICATIONS_TITLE": "Typische Anwendungsbereiche",
+    "APP1": "Fotomasken-Entwicklungssysteme",
+    "APP2": "Prüfstände / Testanlagen / Klimakammern / Bioreaktoren",
+    "APP3": "Rasterelektronenmikroskope",
+    "APP4": "Klimatisierung von Reinräumen bis zu einem Raumvolumen von 90 m³",
+    "PERFORMANCE": {
+      "TITLE": "P E R F O R M A N C E  D A T A",
+      "COOLING_PERF": "Cooling performance",
+      "AIR_RATE": "Air Rate",
+      "MODE1_LABEL": "Mode 1: Stable temperature and relative humidity",
+      "MODE2_LABEL": "Mode 2: Temperature and humidity ramping (up & down)",
+      "INLET_TEMP": "Cooling water inlet temperature range",
+      "DIMENSION": "Dimension",
+      "VOLTAGE": "Operation voltage",
+      "POWER_CONSUMPTION": "Max. power consumption",
+      "REFRIGERANT": "Refrigerant",
+      "MONITORING": "Real-time monitoring",
+      "CONNECTION": "Connection to controller",
+      "APPROVALS": "Approvals"
+    }
+  },
+  "CT_2_0": {
+    "INTRO": "Der Cooling Tower CT 2.0 als Liquid-to-Liquid-Prozessthermostat dient als Prozesskühlung für Anlagen mit höchster Anforderung an Temperaturstabilität, definierten Volumenstrom, stabilen Druck und Versorgungssicherheit mit einer abgeführten Wärmemenge von bis zu 800 kW.",
+    "MODES_INTRO": "Der Cooling Tower CT 2.0 kann mit 2 Betriebsmodi betrieben werden:",
+    "MODE1": "Modus 1: Konstante Vorlauftemperatur mit einer Temperaturstabilität von ± 0,2 K",
+    "MODE2": "Modus 2: Up- & Downramping der Vorlauftemperatur",
+    "APPLICATIONS_TITLE": "Klassische Anwendungsbereiche sind:",
+    "APP1": "Multi-Beam-Mask-Writer",
+    "APP2": "Rasterelektronenmikroskope",
+    "APP3": "Prüfstände",
+    "APP4": "Rechenzentren - Cluster Cooling",
+    "APP5": "Bioreaktoren",
+    "APP6": "Usw.",
+    "UTILITIES_PARA1": "Am Cooling Tower CT 2.0 können bis zu 4 Utilities angeschlossen werden.",
+    "UTILITIES_PARA2": "Der Cooling Tower CT 2.0 versorgt alle Utilities mit derselben Vorlauftemperatur und führt die Wärmelasten über den Wärmetauscher an die Gebäudekälteversorgung ab.",
+    "UTILITIES_PARA3": "Für jedes Utility ist der Volumenstrom separat regelbar, wobei der Systemdruck für alle Utilities am gewünschten Druckpunkt konstant gehalten wird."
+  },
+  "COMPANY_PAGE": {
+    "INTRO_PARA1": "Die MBO Trinity GmbH ist ein führender Anbieter von hochpräzisen Ingenieurdienstleistungen und innovativen Lösungen für die Errichtung von Reinräumen, Prüfständen, der Anlagenintegration und den Sonderanlagenbau.",
+    "INTRO_PARA2": "Aus der Halbleiterindustrie kommend, mit einem starken Fokus auf Spitzentechnologie und Innovation entwickeln wir zukunftsweisende Lösungen, die den höchsten Ansprüchen an Präzision, Zuverlässigkeit und Effizienz gerecht werden.",
+    "INTRO_PARA3": "Unsere Geschäftsfelder umfassen Projekt Management, Engineering, Mess-, Steuerungs- und Regelungstechnik, Softwareentwicklung sowie die Fertigung und Montage.",
+    "INTRO_PARA4": "Unsre Leistungen erbringen wir entweder direkt beim Kunden oder auf 600 m² Produktionsfläche an unserem Standort in Brunn am Gebirge.",
+    "GROUP": {
+      "HEADQUARTER": "Headquarter",
+      "CRM": "Customer Relationship",
+      "ACCOUNTING": "Accounting",
+      "ADMIN": "Administration",
+      "PM": "Project Management",
+      "ENGINEERING": "Engineering",
+      "SOFTWARE": "Software Development",
+      "SITE_COORD": "Site coordination",
+      "WORK_PREP": "Work preparation",
+      "CONSTRUCTION": "Construction",
+      "MAINTENANCE": "Maintenance and Servicing"
+    },
+    "TIMELINE_TEXT": {
+      "PARA1": "In unserer Funktion als ausführendes Unternehmen oder als Generalunternehmer übernehmen wir die volle Verantwortung für die Einhaltung der Sicherheits- und Qualitätsstandards sowie für die zielgerichtete und termintreue Projektumsetzung in komplexesten Prozessumgebungen.",
+      "PARA2": "Dank unserer umfassenden Expertise und Innovationskraft unterstützen wir internationale Konzerne und Technologieführer bei der Umsetzung von Projekten, die neue Maßstäbe in der Branche setzen.",
+      "PARA3": "Zu den Kernkompetenzen der MBO gehört es, strengste Spezifikationen, wie z.B. Stabilität für Temperatur ±2 mK, Druck ±1 Pa, rel. Feuchte ±0,2 %, Magnetfeld AC ≤ 0.03 µT, DC < 0.03 µT, etc., einzuhalten.",
+      "PARA4": "Dabei errichtet die MBO Prozessumgebungen wie Reinräume, Prüf-, Mess- und Klimakammern mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.",
+      "PARA5": "Die MBO integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B. MBMW-Tools, Photomask development systems, Scanning Electron Microscopes, Test benches, Climate Chambers, Cluster, usw., in Prozessumgebungen. Die Leistungen der MBO umfassen dabei den vollen Projektzyklus."
+    },
+    "TIMELINE_EVENTS": {
+      "2024": "Firmenreorganisation<br>Gründung der MBO Trinity GmbH<br>Gründung der MBO Engineering GmbH",
+      "2022": "Übersiedlung Engineering-Büro HALLEIN<br>nach PUCH bei HALLEIN",
+      "2021": "Übersiedlung Produktionsstandort Traiskirchen<br>nach Brunn am Gebirge;<br>Erweiterung der Produktionsfläche auf 600 m²",
+      "2019": "Eröffnung Produktionsstandort Traiskirchen;<br>Start mit Montagen für Industrieanlagen",
+      "2018": "Eröffnung Engineering-Büro HALLEIN",
+      "2016": "Gründung MBO services GmbH"
+    }
+  },
+  "HOME_NEW": {
+    "PARA1": "Die MBO plant und errichtet Prozessumgebungen wie Reinräume, Prüf-, Mess- und Klimakammern mit den zum Betrieb erforderlichen Anlagen und Aggregaten so, dass strengste Spezifikationen erfüllt werden und die Arbeitsprozesse in diesen Prozessumgebungen sicher und effizient durchgeführt werden können.",
+    "PARA2": "Die MBO integriert investitionsintensive Anlagen im Wert von 2-stelligen Millionen Euro Beträgen, wie z.B. MBMW-Tools, Photomask development systems, Scanning Electron Microscopes, Test benches, Climate Chambers, Cluster, usw., in Prozessumgebungen. Die Leistungen der MBO umfassen dabei den vollen Projektzyklus."
+  }
+}
