@@ -184,6 +184,8 @@ app-slideshow {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    z-index: 200;
 }
 
 .scrollPanel {
@@ -426,6 +428,7 @@ app-slideshow {
 
     .contentWrap {
         padding: 0 10px;
+        margin-top: 0;
     }
 
     .scrollPanel {

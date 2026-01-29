@@ -150,6 +150,8 @@
         font-size: 48px;
         margin: 50px 0 30px;
         letter-spacing: 1.5px;
+        white-space: normal;
+        line-height: 1.1;
     }
 }
 
@@ -177,8 +179,9 @@
     }
 
     .slogan {
-        font-size: 40px;
+        font-size: clamp(28px, 10vw, 40px);
         margin: 40px 0 20px;
+        padding: 0 10px;
     }
 }
 
